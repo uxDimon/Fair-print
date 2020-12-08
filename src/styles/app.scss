@@ -9,11 +9,13 @@ $content-max-weight: 1240px;
 $color-black: #000000;
 $color-light-black: #2F363D;
 $color-foot-grey: #42506B;
+$color-blue: #4E72DB;
 $color-dark-grey: #6D6D6D;
 $color-bor-grey: #8090AE;
 $color-grey_1: #EDEDED;
 
 $color-main-bg: #D8E6FF;
+$color-card-1: #F8D3D4;
 
 $color-white: #FFFFFF;
 $color-dark-blue: #4E72DB;
@@ -50,10 +52,23 @@ p {
 }
 
 .container {
-	max-width: 1400px;
+	max-width: 1200px;
     margin: 0 auto;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .main {

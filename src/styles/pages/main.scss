@@ -1,8 +1,10 @@
 .main-top {
     background-color: $color-main-bg;
-    .container {
-        display: flex;
-    }
+}
+.main-top__box {
+    display: flex;
+    align-items: center;
+    padding: 105px 0;
 }
 .main-top__wrap {
     max-width: 670px;
@@ -18,4 +20,73 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
+    margin-top: 40px;
+}
+.main-top__img-wrap {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 461px;
+        height: 461px;
+        background-color: #A9B5D8;
+        border-radius: 50%;
+        z-index: -1;
+        top: -19px;
+        left: 79px;
+    }
+
+    img {
+        z-index: 2;
+    }
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 50px;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 10px;
+}
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+}
+.swiper-pagination-bullet-active {
+    background-color: $color-blue;
+}
+
+//main-links
+
+.main-links__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.main-links__item {
+    position: relative;
+    max-height: 300px;
+    overflow: hidden;
+}
+.main-links__item--fir {
+    background-image: url('../images/main-bg-hoodie-min.png');
+}
+.main-links__link {
+    display: flex;
+    align-items: flex-end;
+
+    &:hover .main-links__wrap {
+        opacity: 1;
+    }
+}
+.main-links__wrap {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(78, 114, 219, 0.85);
+    opacity: 0;
 }

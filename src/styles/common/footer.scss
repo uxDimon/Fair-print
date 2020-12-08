@@ -17,7 +17,7 @@
 }
 .footer-top__nav-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, max-content);
     column-gap: 100px;
     row-gap: 15px;
 }
@@ -41,19 +41,17 @@
     row-gap: 16px;
 
     .footer-top__item {
-        position: relative;
-        padding-left: 32px;
-        
-        &:last-of-type {
-            display: grid;
-            grid-template-columns: 1fr;
-        }
+        display: flex;
     }
 }
-.footer-top__item--add::before {
-    background-image: url('../images/sprite.svg');
+.footer-top__svg {
+    margin-right: 12px;
 }
-
+.footer-top__wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 3px;
+}
 .footer-bottom {
     border-top: 1px solid $color-bor-grey;
     .container {
