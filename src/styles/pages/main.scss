@@ -1,0 +1,21 @@
+.main-top {
+    background-color: $color-main-bg;
+    .container {
+        display: flex;
+    }
+}
+.main-top__wrap {
+    max-width: 670px;
+}
+.main-top__title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 110%;
+    margin: 0;
+}
+.main-top__text {
+    max-width: 600px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}

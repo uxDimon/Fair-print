@@ -1,0 +1,17 @@
+extends ../template
+
+block variables
+    - var title = 'Карта сайта'
+    - var contactForm = false
+
+block content
+    main.main.map-site
+        .container
+            h1.map-site__title
+            table.map-site__table
+                tr.map-site__row
+                    td.map-site__cell
+                        a.map-site__link(href="index.html" target="_blank") Карта сайта
+                tr.map-site__row
+                    td.map-site__cell
+                        a.map-site__link(href="main.html" target="_blank") Главная

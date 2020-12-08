@@ -1,0 +1,15 @@
+.map-site {
+    padding: 50px 0;
+}
+.map-site__table {
+    border-collapse: collapse;
+}
+.map-site__cell {
+    padding: 10px 20px;
+    border: 1px solid $color-light-black;
+}
+.map-site__link {
+    font-size: 18px;
+    text-decoration: none;
+    color: $color-light-black;
+}
