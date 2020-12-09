@@ -2,6 +2,7 @@ extends ../template
 
 block variables
     - var title = 'Главная'
+    - var aboutText = true
     - var contactForm = true
 
 block content
@@ -12,21 +13,21 @@ block content
                     .main-top__item.swiper-slide
                         .main-top__box.container
                             .main-top__wrap
-                                h1.main-top__title Печатаем на одежде<br> и сувенирной продукции оптом и в розницу
+                                h1.main-top__title.title Печатаем на одежде<br> и сувенирной продукции оптом и в розницу
                                 p.main-top__text Мы печатаем в кратчайшие сроки, всегда внимательны к деталям и вежливы с клиентами. Только здесь самые низкие цены на рынке. Главное для нас — это качество и удовлетворённые покупатели!
                             .main-top__img-wrap
                                 img(src="assets/images/main-logo.png", alt="Логотип Fair-Print")
                     .main-top__item.swiper-slide
                         .main-top__box.container
                             .main-top__wrap
-                                h1.main-top__title Печатаем на одежде<br> и сувенирной продукции оптом и в розницу
+                                h1.main-top__title.title Печатаем на одежде<br> и сувенирной продукции оптом и в розницу
                                 p.main-top__text Мы печатаем в кратчайшие сроки, всегда внимательны к деталям и вежливы с клиентами. Только здесь самые низкие цены на рынке. Главное для нас — это качество и удовлетворённые покупатели!
                             .main-top__img-wrap
                                 img(src="assets/images/main-logo.png", alt="Логотип Fair-Print")
                     .main-top__item.swiper-slide
                         .main-top__box.container
                             .main-top__wrap
-                                h1.main-top__title Печатаем на одежде<br> и сувенирной продукции оптом и в розницу
+                                h1.main-top__title.title Печатаем на одежде<br> и сувенирной продукции оптом и в розницу
                                 p.main-top__text Мы печатаем в кратчайшие сроки, всегда внимательны к деталям и вежливы с клиентами. Только здесь самые низкие цены на рынке. Главное для нас — это качество и удовлетворённые покупатели!
                             .main-top__img-wrap
                                 img(src="assets/images/main-logo.png", alt="Логотип Fair-Print")
@@ -39,27 +40,143 @@ block content
                     a.main-links__link(href="#")
                         img.main-links__img(src="assets/images/product-hoodie-min.png", alt="")
                         .main-links__wrap
-                            span Печать на бейсболках
-                            a(href="#") от 1650 ₽
+                            span.main-links__text Печать на толстовках
+                            .main-links__btn от 1650 ₽
                 li.main-links__item.main-links__item--sec
-                    a.main-links__link(href="#")
-                        img(src="#", alt="")
+                    a.main-links__link(href="")
+                        img.main-links__img(src="#", alt="")
                         .main-links__wrap
-                            span Печать на бейсболках
-                            a(href="#") от 1650 ₽
+                            span.main-links__text Печать на бейсболках
+                            .main-links__btn от 1650 ₽
                 li.main-links__item.main-links__item--thir
                     a.main-links__link(href="#")
+                        img.main-links__img(src="#", alt="")
+                        .main-links__wrap
+                            span.main-links__text Печать на бейсболках
+                            .main-links__btn от 1650 ₽
                 li.main-links__item.main-links__item--four
                     a.main-links__link(href="#")
+                        img.main-links__img(src="assets/images/product-cap-min.png", alt="")
+                        .main-links__wrap
+                            span.main-links__text Печать на бейсболках
+                            .main-links__btn от 1650 ₽
                 li.main-links__item.main-links__item--fif
                     a.main-links__link(href="#")
+                        img.main-links__img(src="assets/images/product-cups-min.png", alt="")
+                        .main-links__wrap
+                            span.main-links__text Печать на бейсболках
+                            .main-links__btn от 1650 ₽
                 li.main-links__item.main-links__item--six
                     a.main-links__link(href="#")
+                        img.main-links__img(src="assets/images/product-bomber-min.png", alt="")
+                        .main-links__wrap
+                            span.main-links__text Печать на бейсболках
+                            .main-links__btn от 1650 ₽
                 li.main-links__item.main-links__item--sev
                     a.main-links__link(href="#")
+                        img.main-links__img(src="assets/images/product-sweatshot-min.png", alt="")
+                        .main-links__wrap
+                            span.main-links__text Печать на бейсболках
+                            .main-links__btn от 1650 ₽
                 li.main-links__item.main-links__item--eig
                     a.main-links__link(href="#")
+                        img.main-links__img(src="assets/images/product-cases-min.png", alt="")
+                        .main-links__wrap
+                            span.main-links__text Печать на бейсболках
+                            .main-links__btn от 1650 ₽
                 li.main-links__item.main-links__item--nin
                     a.main-links__link(href="#")
+                        img.main-links__img(src="assets/images/product-mask-min.png", alt="")
+                        .main-links__wrap
+                            span.main-links__text Печать на бейсболках
+                            .main-links__btn от 1650 ₽
                 li.main-links__item.main-links__item--ten
                     a.main-links__link(href="#")
+                        img.main-links__img(src="#", alt="")
+                        .main-links__wrap
+                            span.main-links__text Печать на бейсболках
+                            .main-links__btn от 1650 ₽
+
+        section.main-clothes
+            .container
+                .main-clothes__wrap
+                    h2.main-clothes__title.title Одежда без рисунка
+                    a.main-clothes__btn.btn-blue(href="#") Выбрать принт от 500 ₽
+                include ../components/clothes-list.pug
+
+        include ../components/advantages.pug
+
+        section.production
+            .container
+                .production__wrap
+                    .production__left
+                        h2.production__title.title Собственное производство
+                        p.production__text Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки существенных финансовых и административных условий.
+                    a.production__btn.btn-blue(href="#") Узнать о технологии печати
+
+                ul.production__list
+                    li.production__item
+                        img.production__img(src="assets/images/production-1-min.png", alt="")
+                    li.production__item
+                        img.production__img(src="assets/images/production-2-min.png", alt="")
+                    li.production__item
+                        img.production__img(src="assets/images/production-3-min.png", alt="")
+
+        section.clients
+            .container
+                h2.clients__title.title Наши клиенты
+                .clients__swiper-top.swiper-container
+                    ul.clients__list.swiper-wrapper
+                        li.clients__item.swiper-slide
+                            a.clients__link(href="#")
+                                img.clients__img(src="assets/images/logo-kfc.png", alt="")
+                        li.clients__item.swiper-slide
+                            a.clients__link(href="#")
+                                img.clients__img(src="assets/images/logo-cofix.png", alt="")
+                        li.clients__item.swiper-slide
+                            a.clients__link(href="#")
+                                img.clients__img(src="assets/images/logo-craft-store.png", alt="")
+                        li.clients__item.swiper-slide
+                            a.clients__link(href="#")
+                                img.clients__img(src="assets/images/logo-postgress.png", alt="")
+                        li.clients__item.swiper-slide
+                            a.clients__link(href="#")
+                                img.clients__img(src="assets/images/logo-girosmart.png", alt="")
+                        li.clients__item.swiper-slide
+                            a.clients__link(href="#")
+                                img.clients__img(src="assets/images/logo-kfc.png", alt="")
+                        li.clients__item.swiper-slide
+                            a.clients__link(href="#")
+                                img.clients__img(src="assets/images/logo-cofix.png", alt="")
+                        li.clients__item.swiper-slide
+                            a.clients__link(href="#")
+                                img.clients__img(src="assets/images/logo-craft-store.png", alt="")
+                
+                .clients__swiper-bot.swiper-container(dir="rtl")
+                    ul.clients__list.swiper-wrapper
+                        li.clients__item.swiper-slide
+                            a.clients__link(href="#")
+                                img.clients__img(src="assets/images/logo-kfc.png", alt="")
+                        li.clients__item.swiper-slide
+                            a.clients__link(href="#")
+                                img.clients__img(src="assets/images/logo-cofix.png", alt="")
+                        li.clients__item.swiper-slide
+                            a.clients__link(href="#")
+                                img.clients__img(src="assets/images/logo-craft-store.png", alt="")
+                        li.clients__item.swiper-slide
+                            a.clients__link(href="#")
+                                img.clients__img(src="assets/images/logo-postgress.png", alt="")
+                        li.clients__item.swiper-slide
+                            a.clients__link(href="#")
+                                img.clients__img(src="assets/images/logo-girosmart.png", alt="")
+                        li.clients__item.swiper-slide
+                            a.clients__link(href="#")
+                                img.clients__img(src="assets/images/logo-kfc.png", alt="")
+                        li.clients__item.swiper-slide
+                            a.clients__link(href="#")
+                                img.clients__img(src="assets/images/logo-cofix.png", alt="")
+                        li.clients__item.swiper-slide
+                            a.clients__link(href="#")
+                                img.clients__img(src="assets/images/logo-craft-store.png", alt="")
+
+        include ../components/work-examples.pug

@@ -1,0 +1,11 @@
+@mixin hover-red {
+    &:hover {
+        background-color: $color-dark-red;
+	    transition: all 0.2s ease 0s;
+    }
+}
+@mixin list-reset {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

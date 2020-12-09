@@ -13,12 +13,13 @@ $color-blue: #4E72DB;
 $color-dark-grey: #6D6D6D;
 $color-bor-grey: #8090AE;
 $color-grey_1: #EDEDED;
-
+$color-pr-bg: #EEF4FF;
 $color-main-bg: #D8E6FF;
+$color-middle-blue: #DAE0F0;
 $color-card-1: #F8D3D4;
+$color-f-grey: #ADADAD;
 
 $color-white: #FFFFFF;
-$color-dark-blue: #4E72DB;
 $color-red: #EF4B4E;
 $color-dark-red: #D22B2F;
 
@@ -32,12 +33,20 @@ body {
 	font-weight: 400;
 	font-size: 16px;
 	color: $color-light-black;
+	overflow-x: hidden;
 }
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
 p {
 	margin: 0;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+img {
+	max-width: 100%;
 }
 // https://github.com/WICG/focus-visible
 .js-focus-visible :focus:not(.focus-visible) {
@@ -75,28 +84,77 @@ p {
 	flex: 1;
 }
 
-.main-btn {
-	width: 170px;
+.main-btn, .btn-blue, .btn-red {
 	display: flex;
 	justify-content: center;
-	font-weight: 500;
 	font-size: 14px;
 	line-height: 24px;
-	color: $color-white;
-	background-color: $color-red;
+	background: none;
 	border-radius: 35px;
 	border: none;
+	text-decoration: none;
 	cursor: pointer;
 	padding: 10px 0 11px;
+	transition: all 0.2s ease 0s;
+}
+
+.main-btn {
+	width: 170px;
+	font-weight: 500;
+	color: $color-white;
+	background-color: $color-red;
+	box-shadow: 0px 0px 8px rgba(239, 75, 78, 0.35);
+}
+
+.btn-blue {
+	width: 270px;
+	font-weight: 600;
+	color: $color-blue;
+	border: 2px solid $color-blue;
 
 	&:hover {
-		background-color: $color-dark-red;
+		color: $color-white;
+		background-color: $color-blue;
 		transition: all 0.2s ease 0s;
 	}
 }
 
+.btn-red {
+	width: 170px;
+	font-weight: 500;
+	color: $color-red;
+	border: 1px solid $color-red;
+
+	&:hover {
+		color: $color-white;
+		background-color: $color-red;
+		box-shadow: 0px 0px 8px rgba(239, 75, 78, 0.35);
+	}
+}
+
+.title {
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 110%;
+	margin: 0;
+}
+
+.caption {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 28px;
+	color: $color-black;
+}
+
 @import "./common/normalize";
 @import "./common/fonts";
+@import "./common/mixins";
+
+@import "./common/clothes-list";
+@import "./common/advantages";
+@import "./common/work-examples";
+@import "./common//about";
+@import "./common/contact";
 
 @import "./common/header";
 @import "./pages/index";

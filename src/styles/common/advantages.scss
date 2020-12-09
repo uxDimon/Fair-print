@@ -1,0 +1,30 @@
+.advantages {
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+.advantages__list {
+    @include list-reset;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    margin-top: 45px;
+}
+.advantages__item {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+
+    &:hover {
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+    }
+}
+.advantages__link {
+    height: 100%;
+    display: block;
+    padding: 34px 20px 30px;
+}
+.advantages__caption {
+    line-height: 21px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}

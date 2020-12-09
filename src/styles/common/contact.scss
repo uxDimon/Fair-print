@@ -1,0 +1,63 @@
+.contact {
+    background-color: $color-middle-blue;
+    padding-top: 58px;
+    padding-bottom: 58px;
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 11.5%;
+    }
+}
+.contact__text {
+    max-width: 483px;
+    margin-top: 15px;
+    margin-bottom: 54px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.form__label {
+    height: 45px;
+    margin-bottom: 10px;
+}
+.form__field, .form__label--file  {
+    width: 100%;
+    background: $color-white;
+    border: 1px solid #F0F0F0;
+    border-radius: 30px;
+    padding: 11px 20px 12px;
+
+    &::placeholder {
+        color: $color-f-grey;
+    }
+}
+.form__label--file {
+    display: flex;
+    align-items: center;
+    color: $color-f-grey;
+    cursor: pointer;
+}
+.form__svg {
+    margin-right: 10px;
+}
+.form__field--comment {
+    height: 120px;
+    resize: none;
+}
+.form__wrap {
+    display: flex;
+    margin-top: 20px;
+}
+.form__btn {
+    @include hover-red;
+}
+
+.contact__map-wrap {
+    width: 570px;
+}
+.contact__map {
+    width: 100%;
+    border-radius: 15px;
+}

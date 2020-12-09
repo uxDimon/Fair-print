@@ -1,0 +1,19 @@
+.about {
+    padding-top: 67.5px;
+    padding-bottom: 120px;
+}
+.about__title {
+    margin-bottom: 45px;
+}
+.about__wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+}
+.about__text {
+    margin-bottom: 20px;
+
+    &:last-of-type {
+        margin: 0;
+    }
+}

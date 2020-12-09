@@ -1,0 +1,40 @@
+section.contact
+    .container
+        .contact__left
+            h2.contact__title.title Контакты
+            p.contact__text Если у вас есть вопросы, заполните форму, и мы свяжемся с вами в ближайшее время
+
+            form.contact__form.form(action="#" method="")
+                label.form__label
+                    input.form__field(type="text" placeholder="Ваше имя")
+                label.form__label
+                    input.form__field(type="email" placeholder="E-mail")
+                label.form__label.form__label--file 
+                    svg.form__svg(width="16" height="16")
+                        use(xlink:href="assets/images/sprite.svg#icon-paperclip")
+                    input.visually-hidden(type="file" placeholder="Фото")
+                    | Фото
+                textarea.form__field.form__field--comment(name="" placeholder="Ваш запрос по заказу")
+
+                .form__wrap
+                    button.form__btn.main-btn(type="submit") Отправить
+                    p.form__text Заполняя форму, вы соглашаетесь с <a class="form__link" href="#"> Правилами сайта</a>
+
+        .contact__right
+            .contact__map-wrap
+                img.contact__map(src="assets/images/map-min.jpg", alt="")
+            ul.footer-top__cont-list
+                li.footer-top__item
+                    svg.footer-top__svg(width="15" height="16")
+                        use(xlink:href="assets/images/sprite.svg#icon-home")
+                    address.footer-top__address Шлюзовая набережная, 6 стр. 4
+                li.footer-top__item
+                    svg.footer-top__svg(width="16" height="16")
+                        use(xlink:href="assets/images/sprite.svg#icon-clock")
+                    p Пн – пт с 11:00 до 20:00
+                li.footer-top__item
+                    svg.footer-top__svg(width="16" height="16")
+                        use(xlink:href="assets/images/sprite.svg#icon-phone")
+                    .footer-top__wrap
+                        a.footer-top__link(href="tel:+74992880140") +7 (499) 288-01-40
+                        a.footer-top__link(href="tel:+79037654676") +7 (903) 765-46-76
