@@ -7,11 +7,14 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 11.5%;
+        row-gap: 15px;
     }
+}
+.contact__title {
+    grid-column: 1 / -1;
 }
 .contact__text {
     max-width: 483px;
-    margin-top: 15px;
     margin-bottom: 54px;
 }
 .form {
@@ -48,16 +51,48 @@
 }
 .form__wrap {
     display: flex;
+    align-items: center;
     margin-top: 20px;
 }
 .form__btn {
     @include hover-red;
 }
+.form__text {
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 23px;
+}
+.form__link {
+    color: $color-blue;
+}
 
 .contact__map-wrap {
     width: 570px;
+    margin-bottom: 25px;
 }
 .contact__map {
     width: 100%;
     border-radius: 15px;
+}
+.contact__right {
+    .contact__list {
+        grid-template-columns: 1fr max-content;
+        column-gap: 78px;
+        row-gap: 11px;
+        @include list-reset;
+        padding-left: 11px;
+    }
+    .contact-list__item--tels {
+        grid-column: 2 / -1;
+        grid-row: 1 / span 2;
+    }
+    .contact-list__wrap {
+        row-gap: 11px;
+    }
+    .contact-list__link {
+        color: inherit;
+    }
+    .contact-list__svg {
+        --icon-color: #2F363D;
+    }
 }

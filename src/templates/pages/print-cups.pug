@@ -1,0 +1,154 @@
+extends ../template
+
+block variables
+    - var title = 'Печать на кружках'
+    - var aboutText = true
+    - var contactForm = true
+
+block content
+    main.main
+        section.catalog.products-cups
+            .catalog__banner
+                .container
+                    h1.catalog__title.title Печать на кружках
+            .container
+                include ../components/breadcrumbs.pug
+
+                ul.product__list.clothes-list
+                    li.clothes-list__item
+                        a.clothes-list__link(href="#")
+                            .clothes-list__img-wrap
+                                span.clothes-list__text Минимальный тираж: 20 штук
+                                img.clothes-list__img(src="assets/images/products-cups-min.png", alt="Кружки")
+                            h3.clothes-list__caption.caption Кружки
+                            .clothes-list__btn.main-btn от 1650 ₽
+                    li.clothes-list__item
+                        a.clothes-list__link(href="#")
+                            .clothes-list__img-wrap
+                                span.clothes-list__text Минимальный тираж: 20 штук
+                                img.clothes-list__img(src="assets/images/products-cups-min.png", alt="Кружки")
+                            h3.clothes-list__caption.caption Кружки
+                            .clothes-list__btn.main-btn от 1650 ₽
+                    li.clothes-list__item
+                        a.clothes-list__link(href="#")
+                            .clothes-list__img-wrap
+                                span.clothes-list__text Минимальный тираж: 20 штук
+                                img.clothes-list__img(src="assets/images/products-cups-min.png", alt="Кружки")
+                            h3.clothes-list__caption.caption Кружки
+                            .clothes-list__btn.main-btn от 1650 ₽
+                    li.clothes-list__item
+                        a.clothes-list__link(href="#")
+                            .clothes-list__img-wrap
+                                span.clothes-list__text Минимальный тираж: 20 штук
+                                img.clothes-list__img(src="assets/images/products-cups-min.png", alt="Кружки")
+                            h3.clothes-list__caption.caption Кружки
+                            .clothes-list__btn.main-btn от 1650 ₽
+                    li.clothes-list__item
+                        a.clothes-list__link(href="#")
+                            .clothes-list__img-wrap
+                                span.clothes-list__text Минимальный тираж: 20 штук
+                                img.clothes-list__img(src="assets/images/products-cups-min.png", alt="Кружки")
+                            h3.clothes-list__caption.caption Кружки
+                            .clothes-list__btn.main-btn от 1650 ₽
+
+        section.catalog-calc
+            .container
+                .catalog-calc__img-wrap
+
+                .catalog-calc__calc
+                    h2.catalog-calc__title.title Керамическая кружка
+                    .catalog-calc__calc-wrap
+                        .catalog-calc__head-col
+                            span Материал
+                            span Количество
+                            span Цвет
+                            span Стоимость изделия
+                            span Итого
+                        .catalog-calc__col
+                            span Стекло
+                            .catalog-calc__btns
+                                button.catalog-calc__btn -
+                                span.catalog-calc__num 20
+                                button.catalog-calc__btn +
+                            .catalog-calc__select
+                                span
+                                span Синий
+                                .catalog-calc__drop
+                                    span
+                                    span Синий
+                            span 800 ₽
+                            span 800 ₽
+        section.print-cups
+            .container
+                .print-cups__text-wrap
+                    h2.print-cups__title.title Печать на кружках
+                    p.print-cups__text Печать на кружках в современном мире просто необходима, когда Вы хотите сделать приятно близким и любимым людям. Или запечатлить приятные моменты из жизни, напечатав его на кружке.
+
+                    p.print-cups__text Если у вас есть уже готовый макет для печати или только задумка — приходите, мы воплотим любую вашу идею! Печать на кружках в современном мире просто необходима, когда Вы хотите сделать приятно близким и любимым людям. Или запечатлить приятные моменты из жизни, напечатав его на кружке.
+                
+                .print-cups__slider
+                    .swiper-container
+                        .swiper-wrapper
+                            .swiper-slide
+                                .print-cups__img-wrap
+                                    img.print-cups__img(src="assets/images/production-3-min.jpg", alt="")
+                                h3.print-cups__caption.caption Архитектурное бюро Асадова
+                                p.print-cups__desc Печать на кружках
+                            .swiper-slide
+                                .print-cups__img-wrap
+                                    img.print-cups__img(src="assets/images/production-3-min.jpg", alt="")
+                                h3.print-cups__caption.caption Архитектурное бюро Асадова
+                                p.print-cups__desc Печать на кружках
+                            .swiper-slide
+                                .print-cups__img-wrap
+                                    img.print-cups__img(src="assets/images/production-3-min.jpg", alt="")
+                                h3.print-cups__caption.caption Архитектурное бюро Асадова
+                                p.print-cups__desc Печать на кружках
+                        .swiper-pagination
+                        .swiper-button-prev
+                        .swiper-button-next
+
+        section.print-way
+            .container
+                h2.print-way__title.title Способы печати на кружках
+                ul.print-way__list
+                    li.print-way__item
+                        .print-way__img-wrap
+                            img.print-way__img(src="assets/images/print-cups-min.png", alt="")
+                        .print-way__text-wrap
+                            h3.print-way__caption.caption Лазерная гравировка
+                            p.print-way__text Идеально для печати фотографий и многоцветных изображений размером до 40см х 50см на светлых вещах
+                    li.print-way__item
+                        .print-way__img-wrap
+                            img.print-way__img(src="assets/images/print-way-min.png", alt="")
+                        .print-way__text-wrap
+                            h3.print-way__caption.caption Круговая сублимационная печать
+                            p.print-way__text Подходит для печати надписей, фамилий, номеров и простых одноцветных принтов.
+
+                
+        include ../components/steps.pug
+
+        section.application
+            .container
+                h2.application__title.title Нанесение рисунка на кружки
+                .application__text-wrap
+                    p.application__text В нашей компании можно заказать печать на чехлах для телефонов недорого в Москве. Создаем брендированные обложки для xiaomi, redmi 6, iPhone и других производителей телефонов. Предлагаем выбрать материал и способ нанесения изображения. Осуществляем нанесение принтов на чехлы телефонов под ключ. Вам остается только выбрать материал изготовления и рисунок.
+
+                    h3.application__subtitle Виды чехлов для нанесения логотипа
+                    p.application__text Своим клиентам в Москве мы предлагаем чехлы с печатью фото или любой картинки из таких материалов как:
+                    ul.application__list
+                        li.application__item — Прозрачный силикон имеет просвечивающуюся глянцевую структуру. Толщина силикона 0,9 мм. Логотип наносится на заднюю поверхность футляра. Силиконовый футляр демонстрирует сочетание высокого качества и доступной цены.
+                        li.application__item — Пластик – бюджетный вариант упаковки. Краска хорошо ложится на поверхность, не стирается со временем.
+                        li.application__item — Пластик soft-touch - твердый пластик, защищающий технику от механических повреждений при падении. Покрытие характеризуется высокими противоударными свойствами, трудно царапается. Прорезиненное покрытие не даст устройству выскользнуть из рук.
+
+                    h3.application__subtitle Технология печати на кружках
+                    p.application__text Основным методом нанесения принта на футляр устройства является УФ печать. Технология позволяет наносить рисунок не только на заднюю поверхность изделия, но и по бокам. Наша компания пользуется двумя способами распечатки по УФ технологии:
+                    ul.application__list
+                        li.application__item — Однослойная - используется для создания многоцветных рисунков на промо-товарах.
+                        li.application__item — Многослойная - применяется в производстве изделий премиум класса.
+                    a.application__btn.main-btn(href="#") Написать нам
+                .application__img-wrapper
+                    .application__img-wrap
+                        img.application__img(src="assets/images/production-2-min.jpg", alt="")
+                    .application__img-wrap
+                        img.application__img(src="assets/images/production-1-min.jpg", alt="")

@@ -17,8 +17,9 @@ $color-pr-bg: #EEF4FF;
 $color-main-bg: #D8E6FF;
 $color-middle-blue: #DAE0F0;
 $color-card-1: #F8D3D4;
+$color-blue-grey: #F6F7FA;
 $color-f-grey: #ADADAD;
-
+$color-grey: #9C9C9C;
 $color-white: #FFFFFF;
 $color-red: #EF4B4E;
 $color-dark-red: #D22B2F;
@@ -47,6 +48,7 @@ a {
 }
 img {
 	max-width: 100%;
+	max-height: 100%;
 }
 // https://github.com/WICG/focus-visible
 .js-focus-visible :focus:not(.focus-visible) {
@@ -150,15 +152,22 @@ img {
 @import "./common/fonts";
 @import "./common/mixins";
 
+@import "./common/breadcrumbs";
 @import "./common/clothes-list";
 @import "./common/advantages";
 @import "./common/work-examples";
 @import "./common//about";
 @import "./common/contact";
+@import "./common/print-methods";
+@import "./common/steps";
 
 @import "./common/header";
 @import "./pages/index";
 @import "./pages/main";
+@import "./pages/catalog";
+@import "./pages/products";
+@import "./pages/products-cups";
+@import "./pages/print-cups";
 @import "./common/footer";
 
 // @media screen and (max-width: 1274px) {

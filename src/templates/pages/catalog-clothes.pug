@@ -1,0 +1,19 @@
+extends ../template
+
+block variables
+    - var title = 'Одежда без рисунка'
+    - var aboutText = true
+    - var contactForm = true
+
+block content
+    main.main
+        section.catalog
+            .catalog__banner
+                .container
+                    h1.catalog__title.title Одежда без рисунка
+            .container
+                include ../components/breadcrumbs.pug
+
+                include ../components/clothes-list.pug
+
+        include ../components/advantages.pug

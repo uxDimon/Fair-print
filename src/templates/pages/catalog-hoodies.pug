@@ -1,0 +1,27 @@
+extends ../template
+
+block variables
+    - var title = 'Каталог толстовок'
+    - var aboutText = true
+    - var contactForm = true
+
+block content
+    main.main
+        section.catalog.catalog-hoodies
+            .catalog__banner
+                .container
+                    h1.catalog__title.title Каталог толстовок
+            .container
+                include ../components/breadcrumbs.pug
+
+                ul.catalog__list.clothes-list
+                    include ../components/card-item.pug
+                    include ../components/card-item.pug
+                    include ../components/card-item.pug
+                    include ../components/card-item.pug
+                    include ../components/card-item.pug
+                    include ../components/card-item.pug
+                    include ../components/card-item.pug
+
+        include ../components/advantages.pug
+        include ../components/work-examples.pug

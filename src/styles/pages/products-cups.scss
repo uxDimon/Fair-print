@@ -1,0 +1,74 @@
+.print-cups {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    .container {
+        display: grid;
+        grid-template-columns: minmax(auto, 570px) minmax(auto, 470px);
+        column-gap: 30px;
+        justify-content: space-between;
+    }
+}
+.print-cups__text {
+    font-size: 18px;
+    line-height: 140%;
+    margin-top: 45px;
+    margin-bottom: 20px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+.print-cups__slider {
+    .swiper-container {
+        padding-bottom: 30px;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        top: 40%;
+        width: 40px;
+        height: 40px;
+    }
+    .swiper-button-next:after, .swiper-button-prev:after {
+        background: $color-blue;
+        color: $color-white;
+        width: 40px;
+        height: 40px;
+        font-size: 22px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        padding-left: 42%;
+    }
+    .swiper-button-prev:after {
+        padding-left: 33%;
+    }
+    .swiper-button-next {
+        right: -10px;
+    }
+    .swiper-button-prev {
+        left: -10px;
+    }
+    .swiper-pagination {
+        text-align: left;
+        bottom: 0;
+    }
+    .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+        &:first-of-type {
+            margin-left: 0;
+        }
+    }
+}
+.print-cups__img-wrap {
+    width: 470px;
+    height: 318px;
+    filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.15));
+}
+.print-cups__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.print-cups__caption {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,95 @@
+extends ../template
+
+block variables
+    - var title = 'Изделия без рисунка'
+    - var aboutText = true
+    - var contactForm = true
+
+block content
+    main.main
+        section.catalog.products
+            .catalog__banner
+                .container
+                    h1.catalog__title.title Изделия без рисунка
+            .container
+                include ../components/breadcrumbs.pug
+
+                ul.products__top-list.top-list
+                    li.top-list__item
+                        a.top-list__link(href="#")
+                            .top-list__img-wrap
+                                img.top-list__img(src="assets/images/products-mask-min.jpg", alt="")
+                            h3.top-list__caption.caption Маски
+                            .top-list__btn.main-btn от 1650 ₽
+                    li.top-list__item
+                        a.top-list__link(href="#")
+                            .top-list__img-wrap
+                                img.top-list__img(src="assets/images/products-bags-min.jpg", alt="")
+                            h3.top-list__caption.caption Экосумки
+                            .top-list__btn.main-btn от 1650 ₽
+
+                ul.product__list.clothes-list
+                    li.clothes-list__item
+                        a.clothes-list__link(href="#")
+                            .clothes-list__img-wrap
+                                span.clothes-list__text Минимальный тираж: 20 штук
+                                img.clothes-list__img(src="assets/images/products-jacket-min.png", alt="Куртки")
+                            h3.clothes-list__caption.caption Куртки
+                            .clothes-list__btn.main-btn от 1650 ₽
+                    li.clothes-list__item
+                        a.clothes-list__link(href="#")
+                            .clothes-list__img-wrap
+                                span.clothes-list__text Минимальный тираж: 20 штук
+                                img.clothes-list__img(src="assets/images/products-cups-min.png", alt="Кружки")
+                            h3.clothes-list__caption.caption Кружки
+                            .clothes-list__btn.main-btn от 1650 ₽
+                    li.clothes-list__item
+                        a.clothes-list__link(href="#")
+                            .clothes-list__img-wrap
+                                span.clothes-list__text Минимальный тираж: 20 штук
+                                img.clothes-list__img(src="assets/images/products-cases-min.png", alt="Картхолдеры")
+                            h3.clothes-list__caption.caption Картхолдеры
+                            .clothes-list__btn.main-btn от 1650 ₽
+                    li.clothes-list__item
+                        a.clothes-list__link(href="#")
+                            .clothes-list__img-wrap
+                                span.clothes-list__text Минимальный тираж: 20 штук
+                                img.clothes-list__img(src="assets/images/products-covers-min.png", alt="Чехлы на документы")
+                            h3.clothes-list__caption.caption Чехлы на документы
+                            .clothes-list__btn.main-btn от 1650 ₽
+                    li.clothes-list__item
+                        a.clothes-list__link(href="#")
+                            .clothes-list__img-wrap
+                                span.clothes-list__text Минимальный тираж: 20 штук
+                                img.clothes-list__img(src="assets/images/products-badges-min.png", alt="Значки")
+                            h3.clothes-list__caption.caption Значки
+                            .clothes-list__btn.main-btn от 1650 ₽
+                    li.clothes-list__item
+                        a.clothes-list__link(href="#")
+                            .clothes-list__img-wrap
+                                span.clothes-list__text Минимальный тираж: 20 штук
+                                img.clothes-list__img(src="assets/images/products-bandana-min.png", alt="Банданы")
+                            h3.clothes-list__caption.caption Банданы
+                            .clothes-list__btn.main-btn от 1650 ₽
+                    li.clothes-list__item
+                        a.clothes-list__link(href="#")
+                            .clothes-list__img-wrap
+                                span.clothes-list__text Минимальный тираж: 20 штук
+                                img.clothes-list__img(src="assets/images/products-backup-min.png", alt="Рюкзаки")
+                            h3.clothes-list__caption.caption Рюкзаки
+                            .clothes-list__btn.main-btn от 1650 ₽
+                    li.clothes-list__item
+                        a.clothes-list__link(href="#")
+                            .clothes-list__img-wrap
+                                span.clothes-list__text Минимальный тираж: 20 штук
+                                img.clothes-list__img(src="assets/images/products-telcas-min.png", alt="Чехлы для телефона")
+                            h3.clothes-list__caption.caption Чехлы для телефона
+                            .clothes-list__btn.main-btn от 1650 ₽
+                    li.clothes-list__item
+                        a.clothes-list__link(href="#")
+                            .clothes-list__img-wrap
+                                span.clothes-list__text Минимальный тираж: 20 штук
+                                img.clothes-list__img(src="assets/images/product-cap-min.png", alt="Бейсболки")
+                            h3.clothes-list__caption.caption Бейсболки
+                            .clothes-list__btn.main-btn от 1650 ₽
+                        

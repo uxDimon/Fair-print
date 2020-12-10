@@ -1,0 +1,112 @@
+extends ../template
+
+block variables
+    - var title = 'Кружки'
+    - var aboutText = true
+    - var contactForm = true
+
+block content
+    main.main
+        section.catalog.products-cups
+            .catalog__banner
+                .container
+                    h1.catalog__title.title Кружки
+            .container
+                include ../components/breadcrumbs.pug
+
+                ul.product__list.clothes-list
+                    li.clothes-list__item
+                        a.clothes-list__link(href="#")
+                            .clothes-list__img-wrap
+                                span.clothes-list__text Минимальный тираж: 20 штук
+                                img.clothes-list__img(src="assets/images/products-cups-min.png", alt="Кружки")
+                            h3.clothes-list__caption.caption Кружки
+                            .clothes-list__btn.main-btn от 1650 ₽
+                    li.clothes-list__item
+                        a.clothes-list__link(href="#")
+                            .clothes-list__img-wrap
+                                span.clothes-list__text Минимальный тираж: 20 штук
+                                img.clothes-list__img(src="assets/images/products-cups-min.png", alt="Кружки")
+                            h3.clothes-list__caption.caption Кружки
+                            .clothes-list__btn.main-btn от 1650 ₽
+                    li.clothes-list__item
+                        a.clothes-list__link(href="#")
+                            .clothes-list__img-wrap
+                                span.clothes-list__text Минимальный тираж: 20 штук
+                                img.clothes-list__img(src="assets/images/products-cups-min.png", alt="Кружки")
+                            h3.clothes-list__caption.caption Кружки
+                            .clothes-list__btn.main-btn от 1650 ₽
+                    li.clothes-list__item
+                        a.clothes-list__link(href="#")
+                            .clothes-list__img-wrap
+                                span.clothes-list__text Минимальный тираж: 20 штук
+                                img.clothes-list__img(src="assets/images/products-cups-min.png", alt="Кружки")
+                            h3.clothes-list__caption.caption Кружки
+                            .clothes-list__btn.main-btn от 1650 ₽
+                    li.clothes-list__item
+                        a.clothes-list__link(href="#")
+                            .clothes-list__img-wrap
+                                span.clothes-list__text Минимальный тираж: 20 штук
+                                img.clothes-list__img(src="assets/images/products-cups-min.png", alt="Кружки")
+                            h3.clothes-list__caption.caption Кружки
+                            .clothes-list__btn.main-btn от 1650 ₽
+
+        section.catalog-calc
+            .container
+                .catalog-calc__img-wrap
+
+                .catalog-calc__calc
+                    h2.catalog-calc__title.title Керамическая кружка
+                    .catalog-calc__calc-wrap
+                        .catalog-calc__head-col
+                            span Материал
+                            span Количество
+                            span Цвет
+                            span Стоимость изделия
+                            span Итого
+                        .catalog-calc__col
+                            span Стекло
+                            .catalog-calc__btns
+                                button.catalog-calc__btn -
+                                span.catalog-calc__num 20
+                                button.catalog-calc__btn +
+                            .catalog-calc__select
+                                span
+                                span Синий
+                                .catalog-calc__drop
+                                    span
+                                    span Синий
+                            span 800 ₽
+                            span 800 ₽
+        section.print-cups
+            .container
+                .print-cups__text-wrap
+                    h2.print-cups__title.title Печать на кружках
+                    p.print-cups__text Печать на кружках в современном мире просто необходима, когда Вы хотите сделать приятно близким и любимым людям. Или запечатлить приятные моменты из жизни, напечатав его на кружке.
+
+                    p.print-cups__text Если у вас есть уже готовый макет для печати или только задумка — приходите, мы воплотим любую вашу идею! Печать на кружках в современном мире просто необходима, когда Вы хотите сделать приятно близким и любимым людям. Или запечатлить приятные моменты из жизни, напечатав его на кружке.
+                
+                .print-cups__slider
+                    .swiper-container
+                        .swiper-wrapper
+                            .swiper-slide
+                                .print-cups__img-wrap
+                                    img.print-cups__img(src="assets/images/production-3-min.jpg", alt="")
+                                h3.print-cups__caption.caption Архитектурное бюро Асадова
+                                p.print-cups__desc Печать на кружках
+                            .swiper-slide
+                                .print-cups__img-wrap
+                                    img.print-cups__img(src="assets/images/production-3-min.jpg", alt="")
+                                h3.print-cups__caption.caption Архитектурное бюро Асадова
+                                p.print-cups__desc Печать на кружках
+                            .swiper-slide
+                                .print-cups__img-wrap
+                                    img.print-cups__img(src="assets/images/production-3-min.jpg", alt="")
+                                h3.print-cups__caption.caption Архитектурное бюро Асадова
+                                p.print-cups__desc Печать на кружках
+                        .swiper-pagination
+                        .swiper-button-prev
+                        .swiper-button-next
+        include ../components/steps.pug
+        include ../components/work-examples.pug
+

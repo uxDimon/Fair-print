@@ -41,3 +41,16 @@ var mySwiper = new Swiper('.work-examples__swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+var mySwiper = new Swiper('.print-cups__slider .swiper-container', {
+  // Optional parameters
+  slidesPerView: 1,
+  spaceBetween: 30,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});

@@ -1,0 +1,18 @@
+.breadcrumbs-list {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+.breadcrumbs-list__item {
+    margin-right: 10px;
+    &:last-of-type {
+        margin-right: 0;
+    }
+}
+.breadcrumbs-list__link {
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-grey;
+    margin-right: 10px;
+}

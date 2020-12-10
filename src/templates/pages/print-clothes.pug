@@ -1,0 +1,19 @@
+extends ../template
+
+block variables
+    - var title = 'Печать на одежде'
+    - var aboutText = true
+    - var contactForm = true
+
+block content
+    main.main
+        section.catalog
+            .catalog__banner
+                .container
+                    h1.catalog__title.title Печать на одежде
+            .container
+                include ../components/breadcrumbs.pug
+
+                include ../components/clothes-list.pug
+
+        include ../components/print-methods.pug

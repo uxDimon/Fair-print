@@ -1,7 +1,7 @@
 section.contact
     .container
+        h2.contact__title.title Контакты
         .contact__left
-            h2.contact__title.title Контакты
             p.contact__text Если у вас есть вопросы, заполните форму, и мы свяжемся с вами в ближайшее время
 
             form.contact__form.form(action="#" method="")
@@ -18,23 +18,23 @@ section.contact
 
                 .form__wrap
                     button.form__btn.main-btn(type="submit") Отправить
-                    p.form__text Заполняя форму, вы соглашаетесь с <a class="form__link" href="#"> Правилами сайта</a>
+                    p.form__text Заполняя форму, вы соглашаетесь<br> с <a class="form__link" href="#"> Правилами сайта</a>
 
         .contact__right
             .contact__map-wrap
                 img.contact__map(src="assets/images/map-min.jpg", alt="")
-            ul.footer-top__cont-list
-                li.footer-top__item
-                    svg.footer-top__svg(width="15" height="16")
+            ul.contact__list.contact-list.footer-top__cont-list
+                li.contact-list__item.footer-top__item
+                    svg.contact-list__svg.footer-top__svg(width="15" height="16")
                         use(xlink:href="assets/images/sprite.svg#icon-home")
-                    address.footer-top__address Шлюзовая набережная, 6 стр. 4
-                li.footer-top__item
-                    svg.footer-top__svg(width="16" height="16")
+                    address.contact-list__address.footer-top__address Шлюзовая набережная, 6 стр. 4
+                li.contact-list__item.footer-top__item
+                    svg.contact-list__svg.footer-top__svg(width="16" height="16")
                         use(xlink:href="assets/images/sprite.svg#icon-clock")
                     p Пн – пт с 11:00 до 20:00
-                li.footer-top__item
-                    svg.footer-top__svg(width="16" height="16")
+                li.contact-list__item.contact-list__item--tels.footer-top__item
+                    svg.contact-list__svg.footer-top__svg(width="16" height="16")
                         use(xlink:href="assets/images/sprite.svg#icon-phone")
-                    .footer-top__wrap
-                        a.footer-top__link(href="tel:+74992880140") +7 (499) 288-01-40
-                        a.footer-top__link(href="tel:+79037654676") +7 (903) 765-46-76
+                    .contact-list__wrap.footer-top__wrap
+                        a.contact-list__link.footer-top__link(href="tel:+74992880140") +7 (499) 288-01-40
+                        a.contact-list__link.footer-top__link(href="tel:+79037654676") +7 (903) 765-46-76
