@@ -1,5 +1,5 @@
 {
-  "name": "Fintech",
+  "name": "Fair-Print",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jedenkoor/Fintech.git"
+    "url": "git+https://github.com/hecathe/Fair-print.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jedenkoor/Fintech/issues"
+    "url": "https://github.com/hecathe/Fair-print/issues"
   },
-  "homepage": "https://github.com/jedenkoor/Fintech#readme",
+  "homepage": "https://github.com/hecathe/Fair-print#readme",
   "devDependencies": {
     "browser-sync": "^2.26.12",
     "del": "^5.1.0",
