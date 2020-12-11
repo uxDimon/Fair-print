@@ -1,0 +1,491 @@
+extends ../template
+
+block variables
+    - var title = 'Цены'
+    - var aboutText = false
+    - var contactForm = true
+
+block content
+    main.main
+        section.price
+            .price__banner.catalog__banner
+                .container
+                    h1.price__title.catalog__title.title Цены
+
+            .container
+                include ../components/breadcrumbs.pug
+
+                section.price__products
+                    h2.price__subtitle.subtitle Продукция (стоимость указана в рублях)
+
+                    table.price-table
+                        thead.price-table__head
+                            tr.price-table__head-row
+                                td.price-table__head-cell Модель
+                                td.price-table__head-cell(colspan="20") Тираж, шт./руб. (Тираж более 1000 штук обсуждается индивидуально)
+                            tr.price-table__head-row-sub
+                                th.price-table__head-cell
+                                th.price-table__head-cell 1-5
+                                th.price-table__head-cell 6-10
+                                th.price-table__head-cell 11-20
+                                th.price-table__head-cell 21-50
+                                th.price-table__head-cell 51-100
+                                th.price-table__head-cell 101-300
+                                th.price-table__head-cell 301-500
+                                th.price-table__head-cell 501-1000
+                                th.price-table__head-cell 501-1000
+                        tbody.price-table__body
+                            tr.price-table__row
+                                th.price-table__head-cell Футболка 100% хлопок, плотность 155 гр./м2 (МОДЕЛЬ: СТАНДАРТ)
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                            tr.price-table__row
+                                th.price-table__head-cell Футболка 100% хлопок, плотность165 гр./м2 (МОДЕЛЬ: ПРЕМИУМ)
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                            tr.price-table__row
+                                th.price-table__head-cell Поло пике 100% хлопок, плотность 200 гр./м2
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                            tr.price-table__row
+                                th.price-table__head-cell Свитшот 100% хлопок, плотность 240-260 гр./м2 (МОДЕЛЬ: стандартная унисекс)
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                            tr.price-table__row
+                                th.price-table__head-cell Свитшот 80% хлопок 20% полиэстер, плотность 320-340 гр./м2(МОДЕЛЬ: утепленная унисекс)
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                            tr.price-table__row
+                                th.price-table__head-cell Толстовка 100% хлопок, плотность 240-260 гр./м2 (МОДЕЛЬ: стандартная унисекс)
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                            tr.price-table__row
+                                th.price-table__head-cell Толстовка 80% хлопок 20% полиэстер, плотность 320-340 гр./м2(МОДЕЛЬ: утепленная унисекс)
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                            tr.price-table__row
+                                th.price-table__head-cell Бомбер 100% хлопок (модель женская и мужская)
+                                td.price-table__cell 1900
+                                td.price-table__cell 1840
+                                td.price-table__cell 1800
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+
+                section.price__print
+                    h2.price__subtitle.subtitle Печать
+                    h3.price__option Печать термопленкой
+                    p.price__desc Обычная пленка POLI-FLEX PREMIUM (1 цвет)
+                    table.price-table
+                        thead.price-table__head
+                            tr.price-table__head-row
+                                td.price-table__head-cell Формат
+                                td.price-table__head-cell(colspan="20") Тираж, шт./руб.
+                            tr.price-table__head-row-sub
+                                th.price-table__head-cell
+                                th.price-table__head-cell 1-5
+                                th.price-table__head-cell 6-10
+                                th.price-table__head-cell 11-20
+                                th.price-table__head-cell 21-35
+                                th.price-table__head-cell 36-50
+                        tbody.price-table__body
+                            tr.price-table__row
+                                th.price-table__head-cell А6 (10*15 см.)
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                            tr.price-table__row
+                                th.price-table__head-cell А5 (15*20 см.)
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                            tr.price-table__row
+                                th.price-table__head-cell А4 (20*30 см.)
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                            tr.price-table__row
+                                th.price-table__head-cell А3 (30*42 см.)
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                    
+                    p.price__desc Флюресцентная пленка / супер-серебро / супер-золото (1 цвет)
+                    table.price-table
+                        thead.price-table__head
+                            tr.price-table__head-row
+                                td.price-table__head-cell Формат
+                                td.price-table__head-cell(colspan="20") Тираж, шт./руб.
+                            tr.price-table__head-row-sub
+                                th.price-table__head-cell
+                                th.price-table__head-cell 1-5
+                                th.price-table__head-cell 6-10
+                                th.price-table__head-cell 11-20
+                                th.price-table__head-cell 21-35
+                                th.price-table__head-cell 36-50
+                        tbody.price-table__body
+                            tr.price-table__row
+                                th.price-table__head-cell А6 (10*15 см.)
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                            tr.price-table__row
+                                th.price-table__head-cell А5 (15*20 см.)
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                            tr.price-table__row
+                                th.price-table__head-cell А4 (20*30 см.)
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                            tr.price-table__row
+                                th.price-table__head-cell А3 (30*42 см.)
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+
+                    h3.price__option Печать эко-сольвентными красками (полноцветная печать)
+                    p.price__desc Принтер-плоттер роланд
+                    table.price-table
+                        thead.price-table__head
+                            tr.price-table__head-row
+                                td.price-table__head-cell Формат
+                                td.price-table__head-cell(colspan="20") Тираж, шт./руб.  (Тираж более 100 штук обсуждается индивидуально) 
+                            tr.price-table__head-row-sub
+                                th.price-table__head-cell
+                                th.price-table__head-cell 1-5
+                                th.price-table__head-cell 6-10
+                                th.price-table__head-cell 11-20
+                                th.price-table__head-cell 21-35
+                                th.price-table__head-cell 36-50
+                        tbody.price-table__body
+                            tr.price-table__row
+                                th.price-table__head-cell А6 (10*15 см.)
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                            tr.price-table__row
+                                th.price-table__head-cell А5 (15*20 см.)
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                            tr.price-table__row
+                                th.price-table__head-cell А4 (20*30 см.)
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                            tr.price-table__row
+                                th.price-table__head-cell А3 (30*42 см.)
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+
+                    h3.price__option Сублимационная печать (полноцвет на белых и на серых вещах)
+                    table.price-table
+                        thead.price-table__head
+                            tr.price-table__head-row
+                                td.price-table__head-cell Формат
+                                td.price-table__head-cell(colspan="20") Тираж, шт./руб.  (Тираж более 100 штук обсуждается индивидуально) 
+                            tr.price-table__head-row-sub
+                                th.price-table__head-cell
+                                th.price-table__head-cell 1-5
+                                th.price-table__head-cell 6-10
+                                th.price-table__head-cell 11-20
+                                th.price-table__head-cell 21-35
+                                th.price-table__head-cell 36-50
+                        tbody.price-table__body
+                            tr.price-table__row
+                                th.price-table__head-cell А6 (10*15 см.)
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                            tr.price-table__row
+                                th.price-table__head-cell А5 (15*20 см.)
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                            tr.price-table__row
+                                th.price-table__head-cell А4 (20*30 см.)
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                            tr.price-table__row
+                                th.price-table__head-cell А3 (30*42 см.)
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+                                td.price-table__cell 50
+
+                    h3.price__option Печать шелкографией
+                    table.price-table.price-table--silk
+                        thead.price-table__head
+                            tr.price-table__head-row
+                                td.price-table__head-cell Тираж
+                                td.price-table__head-cell Размер
+                                td.price-table__head-cell 1 цв. (руб.)
+                                td.price-table__head-cell 2 цв. (руб.)
+                                td.price-table__head-cell 3 цв. (руб.)
+                                td.price-table__head-cell 4 цв. (руб.)
+                                td.price-table__head-cell 5 цв. (руб.)
+                        tbody.price-table__body
+                            tr.price-table__row
+                                th.price-table__head-cell 50–100
+                                td.price-table__cell А6 – А4
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                            tr.price-table__row
+                                th.price-table__head-cell
+                                td.price-table__cell А3
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                            tr.price-table__row
+                                th.price-table__head-cell
+                                td.price-table__cell А3
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                            tr.price-table__row
+                                th.price-table__head-cell 100-200
+                                td.price-table__cell А3
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                            tr.price-table__row
+                                th.price-table__head-cell
+                                td.price-table__cell А3
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                            tr.price-table__row
+                                th.price-table__head-cell
+                                td.price-table__cell А3
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                            tr.price-table__row
+                                th.price-table__head-cell 200-300
+                                td.price-table__cell А3
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                            tr.price-table__row
+                                th.price-table__head-cell
+                                td.price-table__cell А3
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                            tr.price-table__row
+                                th.price-table__head-cell
+                                td.price-table__cell А3
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                            tr.price-table__row
+                                th.price-table__head-cell 300-500
+                                td.price-table__cell А3
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                            tr.price-table__row
+                                th.price-table__head-cell
+                                td.price-table__cell А3
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                            tr.price-table__row
+                                th.price-table__head-cell
+                                td.price-table__cell А3
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                            tr.price-table__row
+                                th.price-table__head-cell 500-700
+                                td.price-table__cell А3
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                            tr.price-table__row
+                                th.price-table__head-cell
+                                td.price-table__cell А3
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                            tr.price-table__row
+                                th.price-table__head-cell
+                                td.price-table__cell А3
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                            tr.price-table__row
+                                th.price-table__head-cell 700-1000
+                                td.price-table__cell А3
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                            tr.price-table__row
+                                th.price-table__head-cell
+                                td.price-table__cell А3
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                            tr.price-table__row
+                                th.price-table__head-cell
+                                td.price-table__cell А3
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                            tr.price-table__row
+                                th.price-table__head-cell 1000-2000
+                                td.price-table__cell А3
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                                td.price-table__cell 112
+                            tr.price-table__row
+                                td.price-table__head-cell(colspan="20" style="padding-top: 40px;") Партия больше 2000 экземпляров, а также печать в более чем 5 цветов - обсуждается индивидуально.
+
+                    h3.price__option Услуги дизайна
+                    p.price__desc Подбор шрифтов, работа с фоном, обработка фотографий, перевод рисунков в векторный формат, создание макетов.
+                    .price__design
+                        .price__wrap
+                            p.price-table__head-cell Стоимость зависит от времени работы:
+                            ul.price__inner-wrap
+                                li.price__inner-item
+                                    span.price-table__head-cell 10 мин
+                                    span.price__text бесплатно
+                                li.price__inner-item
+                                    span.price-table__head-cell 1 час
+                                    span.price__text 500 руб.
+                                li.price__inner-item
+                                    span.price-table__head-cell 30 мин
+                                    span.price__text 700 руб.
+                        .price__wrap
+                            p.price-table__head-cell Скидки и наценки за дизайн:
+                            ul.price__inner-wrap
+                                li.price__inner-item
+                                    span.price__text -10% — постоянным покупателям
+                                li.price__inner-item
+                                    span.price__text +50% — срочная работа (сжатые сроки)

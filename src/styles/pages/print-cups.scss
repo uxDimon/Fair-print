@@ -56,7 +56,13 @@
     grid-column: 1 / -1;
     margin-bottom: 50px;
 }
+.application__text-wrap {
+    line-height: 24px;
+}
 .application__subtitle {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
     margin-top: 40px;
     margin-bottom: 20px;
 }

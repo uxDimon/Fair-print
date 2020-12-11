@@ -140,7 +140,11 @@ img {
 	line-height: 110%;
 	margin: 0;
 }
-
+.subtitle {
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 43px;
+}
 .caption {
 	font-weight: 500;
 	font-size: 18px;
@@ -168,6 +172,7 @@ img {
 @import "./pages/products";
 @import "./pages/products-cups";
 @import "./pages/print-cups";
+@import "./pages/price";
 @import "./common/footer";
 
 // @media screen and (max-width: 1274px) {

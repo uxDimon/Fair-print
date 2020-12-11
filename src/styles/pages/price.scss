@@ -1,0 +1,80 @@
+.price-table {
+    width: 100%;
+    text-align: left;
+    padding: 25px 25px 35px;
+    background-color: $color-blue-grey;
+    border-spacing: 10px 15px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.price-table__head-cell {
+    font-weight: 600;
+}
+.price-table__body {
+    .price-table__head-cell {
+        max-width: 389px;
+        padding-right: 42px;
+    }
+}
+.price-table__cell {
+    text-align: center;
+    vertical-align: top;
+}
+.price-table__head-row-sub {
+    .price-table__head-cell {
+        text-align: center;
+    }
+}
+
+.price__print {
+    .price-table__head-cell {
+        padding-right: 0;
+    }
+    .price-table__head-cell {
+        &:nth-of-type(2) {
+            text-align: left;
+        }
+    }
+    .price-table__cell {
+        &:nth-of-type(1) {
+            text-align: left;
+        }
+    }
+}
+.price__option {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.price__desc {
+    font-weight: 600;
+}
+
+.price-table--silk {
+    .price-table__cell {
+        text-align: left;
+    }
+}
+
+.price__design {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: $color-blue-grey;
+    padding: 40px 35px 35px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.price__inner-wrap {
+    @include list-reset;
+}
+p.price-table__head-cell {
+    margin-bottom: 15px;
+}
+.price__inner-item {
+    &:not(:last-of-type) {
+        margin-bottom: 10px;
+    }
+}
