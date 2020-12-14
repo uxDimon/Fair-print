@@ -1,0 +1,19 @@
+.pagination__list {
+    @include list-reset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination__link {
+    display: flex;
+
+    &:active .pagination__svg {
+        --default-color: #{$color-sat-blue};
+    }
+}
+.pagination__item {
+    margin-right: 25px;
+    &:last-of-type {
+        margin-right: 0;
+    }
+}

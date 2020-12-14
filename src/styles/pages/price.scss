@@ -69,12 +69,19 @@
 }
 .price__inner-wrap {
     @include list-reset;
+    width: max-content;
 }
 p.price-table__head-cell {
     margin-bottom: 15px;
 }
 .price__inner-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     &:not(:last-of-type) {
         margin-bottom: 10px;
     }
+}
+.price-list {
+    padding-top: 70px;
+    padding-bottom: 120px;
 }

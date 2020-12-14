@@ -1,0 +1,106 @@
+extends ../template
+
+block variables
+    - var title = 'О нас'
+    - var aboutText = false
+    - var contactForm = true
+
+block content
+    main.main
+        section.about-us
+            .catalog__banner
+                .container
+                    h1.about-us__title.title О нас
+            .container
+                include ../components/breadcrumbs.pug
+
+                .about-us__img-wrap
+                    img.about-us__img(src="assets/images/about-us-min.jpg", alt="")
+
+        section.about-us__slider.about-slider
+            .container
+                h2.about-us__subtitle.subtitle Мы являемся дистрибьюторами крупнейших организаций России
+                .about-slider__top.swiper-container
+                    .swiper-wrapper
+                        .swiper-slide
+                            .about-slider__img-wrap
+                                img.about-slider__img(src="assets/images/logo-niu-min.png", alt="" width="134" height="130")
+                        .swiper-slide
+                            .about-slider__img-wrap
+                                img.about-slider__img(src="assets/images/logo-mfti-min.png", alt="")
+                        .swiper-slide
+                            .about-slider__img-wrap
+                                img.about-slider__img(src="assets/images/logo-bic-min.png", alt="" )
+                        .swiper-slide
+                            .about-slider__img-wrap
+                                img.about-slider__img(src="assets/images/logo-bota-min.png", alt="")
+                        .swiper-slide
+                            .about-slider__img-wrap
+                                img.about-slider__img(src="assets/images/logo-kfc.png", alt="" width="136" height="136")
+                        .swiper-slide
+                            .about-slider__img-wrap
+                                img.about-slider__img(src="assets/images/logo-relaxus-min.png", alt="" width="138" height="97")
+                        .swiper-slide
+                            .about-slider__img-wrap
+                                img.about-slider__img(src="assets/images/logo-niu-min.png", alt="" width="134" height="130")
+                        .swiper-slide
+                            .about-slider__img-wrap
+                                img.about-slider__img(src="assets/images/logo-mfti-min.png", alt="")
+                .about-slider__bot.swiper-container(dir="rtl")
+                    .swiper-wrapper
+                        .swiper-slide
+                            .about-slider__img-wrap
+                                img.about-slider__img(src="assets/images/logo-niu-min.png", alt="" width="134" height="130")
+                        .swiper-slide
+                            .about-slider__img-wrap
+                                img.about-slider__img(src="assets/images/logo-relaxus-min.png", alt="" width="138" height="97")
+                        .swiper-slide
+                            .about-slider__img-wrap
+                                img.about-slider__img(src="assets/images/logo-kfc.png", alt="" width="136" height="136")
+                        .swiper-slide
+                            .about-slider__img-wrap
+                                img.about-slider__img(src="assets/images/logo-mfti-min.png", alt="")
+                        .swiper-slide
+                            .about-slider__img-wrap
+                                img.about-slider__img(src="assets/images/logo-niu-min.png", alt="" width="134" height="130")
+                        .swiper-slide
+                            .about-slider__img-wrap
+                                img.about-slider__img(src="assets/images/logo-relaxus-min.png", alt="" width="138" height="97")
+                        .swiper-slide
+                            .about-slider__img-wrap
+                                img.about-slider__img(src="assets/images/logo-kfc.png", alt="" width="136" height="136")
+                        .swiper-slide
+                            .about-slider__img-wrap
+                                img.about-slider__img(src="assets/images/logo-bota-min.png", alt="")    
+
+        section.about-us__advantages
+            .about-us__advantage.about-advantage
+                .container
+                    .about-advantage__text-wrap
+                        h2.about-advantage__subtitle.about-us__subtitle.subtitle Мы сами шьем одежду
+                        p.about-advantage__text Мы шьём футболки, толстовки, текстильные сумки и множество других нужных в обиходе вещей. Если среди наших предложений вам не удастся найти то, что вас интересует, вы всегда можете заказать индивидуальный пошив изделий. Вместе с закройщиками мы создадим выкройку и сделаем ту вещь, которая вам нужна. Это касается как изделий в единичном экземпляре, так и массового пошива.
+                    .about-advantage__img-wrap
+                        img.about-advantage__img(src="assets/images/sewing-min.jpg", alt="")
+            .about-us__advantage.about-advantage
+                .container
+                    .about-advantage__img-wrap
+                            img.about-advantage__img(src="assets/images/sewing-min.jpg", alt="")
+                    .about-advantage__text-wrap
+                        h2.about-advantage__subtitle.about-us__subtitle.subtitle Мы покупаем только высококачественное сырье
+                        p.about-advantage__text Вам стоит заказать изделие на пошив и печать у нас, так как на всех этапах мы используем качественное оборудование и комплектующие. Компания «FairPrint» старается, чтобы даже самый требовательный клиент не смог найти, к чему придраться. Если вы ищете, где заказать печать на футболке или другой одежде, добро пожаловать к нам. Результат и цены приятно удивят.
+            .about-us__advantage.about-advantage--back
+                .container
+                    .about-advantage__wrap
+                        .about-advantage__text-wrap
+                            h2.about-advantage__subtitle.about-us__subtitle.subtitle У нас высокотехнологичное производство
+                            p.about-advantage__text В процессе закройки, пошива и печати мы используем только передовое оборудование, обеспечивающее особо точные результаты. В особенности стоит уделить внимание швейным машинам, так как вещи, сшитые нашими специалистами, качественные, в них не торчат нитки, и они не расходятся по швам после нескольких носок. Что касается печати, то и здесь мы даём гарантии – полученный рисунок будет сохранять первоначальный вид даже после нескольких стирок. А за счёт использования качественных красок, он не будет выгорать на солнце.
+            .about-us__advantage.about-advantage
+                .container
+                    .about-advantage__img-wrap
+                            img.about-advantage__img(src="assets/images/sewing-min.jpg", alt="")
+                    .about-advantage__text-wrap
+                        h2.about-advantage__subtitle.about-us__subtitle.subtitle Мы контролируем качество продукции
+                        p.about-advantage__text Перед тем, как передать изделие клиенту, мы проверяем его качество. Нам важно, чтобы каждый, кто обратился за пошивом и печатью, остался доволен. Ведь это гарантия того, что вы обратитесь снова.
+
+        .about-us__methods
+            include ../components/print-methods.pug

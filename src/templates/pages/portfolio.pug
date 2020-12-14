@@ -1,0 +1,75 @@
+extends ../template
+
+block variables
+    - var title = 'Портфолио'
+    - var aboutText = false
+    - var contactForm = true
+
+block content
+    main.main
+        section.portfolio
+            .catalog__banner
+                .container
+                    h1.portfolio__title.title Портфолио
+            .container
+                include ../components/breadcrumbs.pug
+
+                .blog__grid.grid-layout
+                    .grid-layout__item
+                        a.grid-layout__link(href="#")
+                            .grid-layout__img-wrap
+                                img.grid-layout__img(src="assets/images/portfolio-min.jpg", alt="")
+                            h3.grid-layout__caption.caption Форум «Надежная смена»
+                            p.grid-layout__text Заказ свитшотов, футболок и бомберов для участников форума
+                    .grid-layout__item
+                        a.grid-layout__link(href="#")
+                            .grid-layout__img-wrap
+                                img.grid-layout__img(src="assets/images/portfolio-2-min.jpg", alt="")
+                            h3.grid-layout__caption.caption Аттракцион Воронова
+                            p.grid-layout__text Заказ футболок для концерта группы «Аттракцион Воронова»
+                    .grid-layout__item
+                        a.grid-layout__link(href="#")
+                            .grid-layout__img-wrap
+                                img.grid-layout__img(src="assets/images/portfolio-3-min.jpg", alt="")
+                            h3.grid-layout__caption.caption Фитнес-клуб Все Свои
+                            p.grid-layout__text Заказ бомберов для сотрудников фитнес-клуба Все свои
+                    .grid-layout__item
+                        a.grid-layout__link(href="#")
+                            .grid-layout__img-wrap
+                                img.grid-layout__img(src="assets/images/portfolio-min.jpg", alt="")
+                            h3.grid-layout__caption.caption Форум «Надежная смена»
+                            p.grid-layout__text Заказ свитшотов, футболок и бомберов для участников форума
+                    .grid-layout__item
+                        a.grid-layout__link(href="#")
+                            .grid-layout__img-wrap
+                                img.grid-layout__img(src="assets/images/portfolio-2-min.jpg", alt="")
+                            h3.grid-layout__caption.caption Аттракцион Воронова
+                            p.grid-layout__text Заказ футболок для концерта группы «Аттракцион Воронова»
+                    .grid-layout__item
+                        a.grid-layout__link(href="#")
+                            .grid-layout__img-wrap
+                                img.grid-layout__img(src="assets/images/portfolio-3-min.jpg", alt="")
+                            h3.grid-layout__caption.caption Фитнес-клуб Все Свои
+                            p.grid-layout__text Заказ бомберов для сотрудников фитнес-клуба Все свои
+                    .grid-layout__item
+                        a.grid-layout__link(href="#")
+                            .grid-layout__img-wrap
+                                img.grid-layout__img(src="assets/images/portfolio-min.jpg", alt="")
+                            h3.grid-layout__caption.caption Форум «Надежная смена»
+                            p.grid-layout__text Заказ свитшотов, футболок и бомберов для участников форума
+                    .grid-layout__item
+                        a.grid-layout__link(href="#")
+                            .grid-layout__img-wrap
+                                img.grid-layout__img(src="assets/images/portfolio-2-min.jpg", alt="")
+                            h3.grid-layout__caption.caption Аттракцион Воронова
+                            p.grid-layout__text Заказ футболок для концерта группы «Аттракцион Воронова»
+                    .grid-layout__item
+                        a.grid-layout__link(href="#")
+                            .grid-layout__img-wrap
+                                img.grid-layout__img(src="assets/images/portfolio-3-min.jpg", alt="")
+                            h3.grid-layout__caption.caption Фитнес-клуб Все Свои
+                            p.grid-layout__text Заказ бомберов для сотрудников фитнес-клуба Все свои
+
+                include ../components/pagination.pug
+
+        

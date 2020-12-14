@@ -1,0 +1,156 @@
+extends ../template
+
+block variables
+    - var title = 'Блог'
+    - var aboutText = false
+    - var contactForm = true
+
+block content
+    main.main
+        section.blog
+            .catalog__banner
+                .container
+                    h1.blog__title.title Блог
+            .container
+                include ../components/breadcrumbs.pug
+
+                .blog__grid.grid-layout
+                    .grid-layout__item
+                        a.grid-layout__link(href="#")
+                            .grid-layout__img-wrap
+                                img.grid-layout__img(src="assets/images/blog-1-min.jpg", alt="")
+                            h3.grid-layout__caption.caption Что такое ультрафиолетовая печать на ткани?
+                            p.grid-layout__text Ультрафиолетовая печать основывается на использовании ультрафиолетовых красок. За счёт этого изображение можно нанести на всем.
+                            ul.grid-layout__wrap
+                                li.grid-layout__inner-item
+                                    svg.grid-layout__svg(width="15" height="13")
+                                        use(xlink:href="assets/images/sprite.svg#icon-calendar")
+                                    span.grid-layout__num 11.06.2020
+                                li.grid-layout__inner-item
+                                    svg.grid-layout__svg(width="17" height="10")
+                                        use(xlink:href="assets/images/sprite.svg#icon-eye")
+                                    span.grid-layout__num 223
+                    .grid-layout__item
+                        a.grid-layout__link(href="#")
+                            .grid-layout__img-wrap
+                                img.grid-layout__img(src="assets/images/blog-2-min.jpg", alt="")
+                            h3.grid-layout__caption.caption Что такое ультрафиолетовая печать на ткани?
+                            p.grid-layout__text Ультрафиолетовая печать основывается на использовании ультрафиолетовых красок. За счёт этого изображение можно нанести на всем.
+                            ul.grid-layout__wrap
+                                li.grid-layout__inner-item
+                                    svg.grid-layout__svg(width="15" height="13")
+                                        use(xlink:href="assets/images/sprite.svg#icon-calendar")
+                                    span.grid-layout__num 11.06.2020
+                                li.grid-layout__inner-item
+                                    svg.grid-layout__svg(width="17" height="10")
+                                        use(xlink:href="assets/images/sprite.svg#icon-eye")
+                                    span.grid-layout__num 223
+                    .grid-layout__item
+                        a.grid-layout__link(href="#")
+                            .grid-layout__img-wrap
+                                img.grid-layout__img(src="assets/images/blog-3-min.jpg", alt="")
+                            h3.grid-layout__caption.caption Что такое ультрафиолетовая печать на ткани?
+                            p.grid-layout__text Ультрафиолетовая печать основывается на использовании ультрафиолетовых красок. За счёт этого изображение можно нанести на всем.
+                            ul.grid-layout__wrap
+                                li.grid-layout__inner-item
+                                    svg.grid-layout__svg(width="15" height="13")
+                                        use(xlink:href="assets/images/sprite.svg#icon-calendar")
+                                    span.grid-layout__num 11.06.2020
+                                li.grid-layout__inner-item
+                                    svg.grid-layout__svg(width="17" height="10")
+                                        use(xlink:href="assets/images/sprite.svg#icon-eye")
+                                    span.grid-layout__num 223
+                    .grid-layout__item
+                        a.grid-layout__link(href="#")
+                            .grid-layout__img-wrap
+                                img.grid-layout__img(src="assets/images/blog-1-min.jpg", alt="")
+                            h3.grid-layout__caption.caption Что такое ультрафиолетовая печать на ткани?
+                            p.grid-layout__text Ультрафиолетовая печать основывается на использовании ультрафиолетовых красок. За счёт этого изображение можно нанести на всем.
+                            ul.grid-layout__wrap
+                                li.grid-layout__inner-item
+                                    svg.grid-layout__svg(width="15" height="13")
+                                        use(xlink:href="assets/images/sprite.svg#icon-calendar")
+                                    span.grid-layout__num 11.06.2020
+                                li.grid-layout__inner-item
+                                    svg.grid-layout__svg(width="17" height="10")
+                                        use(xlink:href="assets/images/sprite.svg#icon-eye")
+                                    span.grid-layout__num 223
+                    .grid-layout__item
+                        a.grid-layout__link(href="#")
+                            .grid-layout__img-wrap
+                                img.grid-layout__img(src="assets/images/blog-2-min.jpg", alt="")
+                            h3.grid-layout__caption.caption Что такое ультрафиолетовая печать на ткани?
+                            p.grid-layout__text Ультрафиолетовая печать основывается на использовании ультрафиолетовых красок. За счёт этого изображение можно нанести на всем.
+                            ul.grid-layout__wrap
+                                li.grid-layout__inner-item
+                                    svg.grid-layout__svg(width="15" height="13")
+                                        use(xlink:href="assets/images/sprite.svg#icon-calendar")
+                                    span.grid-layout__num 11.06.2020
+                                li.grid-layout__inner-item
+                                    svg.grid-layout__svg(width="17" height="10")
+                                        use(xlink:href="assets/images/sprite.svg#icon-eye")
+                                    span.grid-layout__num 223
+                    .grid-layout__item
+                        a.grid-layout__link(href="#")
+                            .grid-layout__img-wrap
+                                img.grid-layout__img(src="assets/images/blog-3-min.jpg", alt="")
+                            h3.grid-layout__caption.caption Что такое ультрафиолетовая печать на ткани?
+                            p.grid-layout__text Ультрафиолетовая печать основывается на использовании ультрафиолетовых красок. За счёт этого изображение можно нанести на всем.
+                            ul.grid-layout__wrap
+                                li.grid-layout__inner-item
+                                    svg.grid-layout__svg(width="15" height="13")
+                                        use(xlink:href="assets/images/sprite.svg#icon-calendar")
+                                    span.grid-layout__num 11.06.2020
+                                li.grid-layout__inner-item
+                                    svg.grid-layout__svg(width="17" height="10")
+                                        use(xlink:href="assets/images/sprite.svg#icon-eye")
+                                    span.grid-layout__num 223
+                    .grid-layout__item
+                        a.grid-layout__link(href="#")
+                            .grid-layout__img-wrap
+                                img.grid-layout__img(src="assets/images/blog-1-min.jpg", alt="")
+                            h3.grid-layout__caption.caption Что такое ультрафиолетовая печать на ткани?
+                            p.grid-layout__text Ультрафиолетовая печать основывается на использовании ультрафиолетовых красок. За счёт этого изображение можно нанести на всем.
+                            ul.grid-layout__wrap
+                                li.grid-layout__inner-item
+                                    svg.grid-layout__svg(width="15" height="13")
+                                        use(xlink:href="assets/images/sprite.svg#icon-calendar")
+                                    span.grid-layout__num 11.06.2020
+                                li.grid-layout__inner-item
+                                    svg.grid-layout__svg(width="17" height="10")
+                                        use(xlink:href="assets/images/sprite.svg#icon-eye")
+                                    span.grid-layout__num 223
+                    .grid-layout__item
+                        a.grid-layout__link(href="#")
+                            .grid-layout__img-wrap
+                                img.grid-layout__img(src="assets/images/blog-2-min.jpg", alt="")
+                            h3.grid-layout__caption.caption Что такое ультрафиолетовая печать на ткани?
+                            p.grid-layout__text Ультрафиолетовая печать основывается на использовании ультрафиолетовых красок. За счёт этого изображение можно нанести на всем.
+                            ul.grid-layout__wrap
+                                li.grid-layout__inner-item
+                                    svg.grid-layout__svg(width="15" height="13")
+                                        use(xlink:href="assets/images/sprite.svg#icon-calendar")
+                                    span.grid-layout__num 11.06.2020
+                                li.grid-layout__inner-item
+                                    svg.grid-layout__svg(width="17" height="10")
+                                        use(xlink:href="assets/images/sprite.svg#icon-eye")
+                                    span.grid-layout__num 223
+                    .grid-layout__item
+                        a.grid-layout__link(href="#")
+                            .grid-layout__img-wrap
+                                img.grid-layout__img(src="assets/images/blog-3-min.jpg", alt="")
+                            h3.grid-layout__caption.caption Что такое ультрафиолетовая печать на ткани?
+                            p.grid-layout__text Ультрафиолетовая печать основывается на использовании ультрафиолетовых красок. За счёт этого изображение можно нанести на всем.
+                            ul.grid-layout__wrap
+                                li.grid-layout__inner-item
+                                    svg.grid-layout__svg(width="15" height="13")
+                                        use(xlink:href="assets/images/sprite.svg#icon-calendar")
+                                    span.grid-layout__num 11.06.2020
+                                li.grid-layout__inner-item
+                                    svg.grid-layout__svg(width="17" height="10")
+                                        use(xlink:href="assets/images/sprite.svg#icon-eye")
+                                    span.grid-layout__num 223
+
+                include ../components/pagination.pug
+
+        

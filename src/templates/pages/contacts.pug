@@ -1,0 +1,51 @@
+extends ../template
+
+block variables
+    - var title = 'Контакты'
+    - var aboutText = false
+    - var contactForm = false
+
+block content
+    main.main
+        section.contacts
+            .catalog__banner
+                .container
+                    h1.contacts__title.title Контакты
+            .container
+                include ../components/breadcrumbs.pug
+
+                .contacts__wrapper
+                    ul.contacts__cont-list
+                        li.contacts__item
+                            svg.contacts__svg(width="15" height="16")
+                                use(xlink:href="assets/images/sprite.svg#icon-home")
+                            address.contacts__address Шлюзовая набережная, 6 стр. 4
+                        li.contacts__item
+                            svg.contacts__svg(width="16" height="16")
+                                use(xlink:href="assets/images/sprite.svg#icon-clock")
+                            .contacts__wrap
+                                p Пн – пт с 11:00 до 20:00
+                                p Перерыв с 15:00 до 16:00
+                                a(href="mailto:myfairprint@gmail.com") myfairprint@gmail.com
+                        li.contacts__item
+                            svg.contacts__svg(width="16" height="16")
+                                use(xlink:href="assets/images/sprite.svg#icon-phone")
+                            .contacts__wrap
+                                a.contacts__link(href="tel:+74992880140") +7 (499) 288-01-40
+                                a.contacts__link(href="tel:+79037654676") +7 (903) 765-46-76
+                    .contacts__props
+                        h3.contacts__subtitle Наши реквизиты
+                        span.contacts__props ИП "Касаткина А.Н."
+                        span.contacts__props ИНН 772322361094
+                        span.contacts__props КПП 772301001
+                        span.contacts__props ОГРНИП 304770000545912
+                    .contacts__map-wrap
+                        img(src="assets/images/map-min.png", alt="")
+                
+                .contacts__
+                    h3.contacts__subtitle Как к нам пройти?
+                    p.contacts__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant in habitasse imperdiet vulputate platea velit nam porttitor morbi. Venenatis, malesuada augue non mus eleifend ac. Amet sed neque nibh odio pretium pellentesque aenean. Luctus penatibus etiam et tellus erat cursus ut est et.
+
+                    .contacts__gallery
+                        .contacts__img-wrap
+                            img(src="assets/images/contacts.png", alt="")

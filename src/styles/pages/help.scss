@@ -1,0 +1,59 @@
+.help {
+    padding-bottom: 120px;
+    .steps {
+        padding-top: 0px;
+    }
+    .steps__title {
+        text-align: center;
+    }
+}
+.help-hint {
+    padding-top: 90px;
+}
+.help__container {
+    max-width: 770px;
+}
+.help-tabs__item {
+    margin-bottom: 20px;
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+.help__subtitle {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.help-tabs__head {
+    position: relative;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    color: $color-lighter-black;
+    border: 1px solid $color-grey_2;
+    border-radius: 30px;
+    padding: 12px 35px 13px;
+    cursor: pointer;
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 20px;
+        height: 18px;
+        background-image: url('../images/sprite.svg#icon-tabcheck');
+        background-repeat: no-repeat;
+        top: 17px;
+        right: 35px;
+    }
+}
+.help-tabs__cont {
+    line-height: 140%;
+    padding: 20px 35px 25px;
+}
+.help__text {
+    max-width: 700px;
+    padding-left: 23px;
+    margin-bottom: 30px;
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}

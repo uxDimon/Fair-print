@@ -1,6 +1,3 @@
-let text = "Привет Васян";
-console.log(text);
-
 var mySwiper = new Swiper('.main-top__container', {
     // Optional parameters
     loop: true,
@@ -54,3 +51,20 @@ var mySwiper = new Swiper('.print-cups__slider .swiper-container', {
     prevEl: '.swiper-button-prev',
   },
 });
+var mySwiper = new Swiper('.about-slider__top', {
+  // Optional parameters
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
+  slidesPerView: 6,
+  spaceBetween: 30,
+});
+var mySwiper = new Swiper('.about-slider__bot', {
+  // Optional parameters
+  slidesPerView: 6,
+  spaceBetween: 30,
+});
+
+new Accordion('.accordion-container');
+new Accordion('.help-tabs__wrap');

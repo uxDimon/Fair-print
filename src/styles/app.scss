@@ -10,12 +10,14 @@ $color-black: #000000;
 $color-light-black: #2F363D;
 $color-foot-grey: #42506B;
 $color-blue: #4E72DB;
+$color-sat-blue: #315CD8;
 $color-dark-grey: #6D6D6D;
 $color-bor-grey: #8090AE;
 $color-grey_1: #EDEDED;
 $color-pr-bg: #EEF4FF;
 $color-main-bg: #D8E6FF;
 $color-middle-blue: #DAE0F0;
+$color-grey_2: #CED3E3;
 $color-card-1: #F8D3D4;
 $color-blue-grey: #F6F7FA;
 $color-f-grey: #ADADAD;
@@ -23,6 +25,7 @@ $color-grey: #9C9C9C;
 $color-white: #FFFFFF;
 $color-red: #EF4B4E;
 $color-dark-red: #D22B2F;
+$color-lighter-black: #616161;
 
 * {
 	box-sizing: border-box;
@@ -164,6 +167,7 @@ img {
 @import "./common/contact";
 @import "./common/print-methods";
 @import "./common/steps";
+@import "./common/pagination";
 
 @import "./common/header";
 @import "./pages/index";
@@ -173,6 +177,11 @@ img {
 @import "./pages/products-cups";
 @import "./pages/print-cups";
 @import "./pages/price";
+@import "./pages/blog";
+@import "./pages/about-us";
+@import "./pages/help";
+@import "./pages/portfolio";
+@import "./pages/contacts";
 @import "./common/footer";
 
 // @media screen and (max-width: 1274px) {
