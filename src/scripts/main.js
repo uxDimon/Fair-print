@@ -66,5 +66,5 @@ var mySwiper = new Swiper('.about-slider__bot', {
   spaceBetween: 30,
 });
 
-new Accordion('.accordion-container');
 new Accordion('.help-tabs__wrap');
+new Accordion('.help-tabs__wrap--payment');

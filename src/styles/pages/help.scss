@@ -18,6 +18,11 @@
     &:last-of-type {
         margin-bottom: 0;
     }
+    &.is-active .help-tabs__head::after {
+        transform: rotate(180deg);
+        transition: all 0.2s ease 0s;
+        top: 15px;
+    }
 }
 .help__subtitle {
     margin-bottom: 50px;
@@ -25,13 +30,10 @@
 }
 .help-tabs__head {
     position: relative;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 140%;
     color: $color-lighter-black;
     border: 1px solid $color-grey_2;
     border-radius: 30px;
-    padding: 12px 35px 13px;
+    
     cursor: pointer;
 
     &::after {
@@ -43,9 +45,10 @@
         background-repeat: no-repeat;
         top: 17px;
         right: 35px;
+        transition: all 0.2s ease 0s;
     }
 }
-.help-tabs__cont {
+.help-tabs__text {
     line-height: 140%;
     padding: 20px 35px 25px;
 }
@@ -56,4 +59,16 @@
     &:last-of-type {
         margin-bottom: 0;
     }
+}
+
+.ac .ac-trigger::after {
+    display: none;
+}
+.ac .ac-trigger {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    color: $color-lighter-black;
+    padding: 12px 35px 13px;
 }

@@ -24,6 +24,11 @@
     grid-template-rows: max-content max-content;
     column-gap: 30px;
     justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 500;
+    margin-bottom: 40px;
 }
 .contacts__map-wrap {
     grid-column: 2 / -1;
@@ -36,9 +41,18 @@
     line-height: 29px;
     margin-bottom: 20px;
 }
-.contacts__props {
+.contacts__num {
     margin-bottom: 15px;
     &:last-of-type {
         margin-bottom: 0;
     }
+}
+.contacts__map {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.contacts__text {
+    max-width: 627px;
 }
