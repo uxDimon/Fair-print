@@ -1,4 +1,5 @@
-var mySwiper = new Swiper('.main-top__container', {
+if (document.querySelector('.main-top__container')) {
+  var mySwiper1 = new Swiper('.main-top__container', {
     // Optional parameters
     loop: true,
     spaceBetween: 30,
@@ -7,64 +8,104 @@ var mySwiper = new Swiper('.main-top__container', {
     pagination: {
       el: '.swiper-pagination',
     },
-});
-var mySwiper = new Swiper('.clients__swiper-top', {
-  // Optional parameters
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
-  slidesPerView: 6,
-  spaceBetween: 30,
-});
-var mySwiper = new Swiper('.clients__swiper-bot', {
-  // Optional parameters
-  slidesPerView: 6,
-  spaceBetween: 30,
-});
-var mySwiper = new Swiper('.work-examples__swiper', {
-  // Optional parameters
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
-  slidesPerView: 3,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
-var mySwiper = new Swiper('.print-cups__slider .swiper-container', {
-  // Optional parameters
-  slidesPerView: 1,
-  spaceBetween: 30,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
-var mySwiper = new Swiper('.about-slider__top', {
-  // Optional parameters
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
-  slidesPerView: 6,
-  spaceBetween: 30,
-});
-var mySwiper = new Swiper('.about-slider__bot', {
-  // Optional parameters
-  slidesPerView: 6,
-  spaceBetween: 30,
-});
+  });
+}
+if (document.querySelector('.clients__swiper-top')) {
+  var mySwiper2 = new Swiper('.clients__swiper-top', {
+    // Optional parameters
+    // autoplay: {
+    //   delay: 2500,
+    //   disableOnInteraction: false,
+    // },
+    slidesPerView: 6,
+    spaceBetween: 30,
+  });
+}
+if (document.querySelector('.clients__swiper-bot')) {
+  var mySwiper3 = new Swiper('.clients__swiper-bot', {
+    // Optional parameters
+    slidesPerView: 6,
+    spaceBetween: 30,
+  });
+}
+if (document.querySelector('.work-examples__swiper')) {
+  var mySwiper4 = new Swiper('.work-examples__swiper', {
+    // Optional parameters
+    // autoplay: {
+    //   delay: 2500,
+    //   disableOnInteraction: false,
+    // },
+    slidesPerView: 3,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+}
+if (document.querySelector('.print-cups__slider .swiper-container')) {
+  var mySwiper5 = new Swiper('.print-cups__slider .swiper-container', {
+    // Optional parameters
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+}
+if (document.querySelector('.about-slider__top.')) {
+  var mySwiper6 = new Swiper('.about-slider__top', {
+    // Optional parameters
+    // autoplay: {
+    //   delay: 2500,
+    //   disableOnInteraction: false,
+    // },
+    slidesPerView: 6,
+    spaceBetween: 30,
+  });
+}
+if (document.querySelector('.about-slider__bot')) {
+  var mySwiper7 = new Swiper('.about-slider__bot', {
+    // Optional parameters
+    slidesPerView: 6,
+    spaceBetween: 30,
+  });
+}
+
+if (document.querySelector('.gallery-thumbs')) {
+  var galleryThumbs = new Swiper('.gallery-thumbs', {
+    spaceBetween: 30,
+    slidesPerView: 5,
+    watchSlidesProgress: true,
+  });
+  var galleryTop = new Swiper('.gallery-top', {
+    spaceBetween: 10,
+    thumbs: {
+      swiper: galleryThumbs,
+    }
+  });
+  galleryTop[0].controller.control = galleryThumbs;
+  galleryThumbs[0].controller.control = galleryTop;
+}
 
 new Accordion('.help-tabs__wrap');
 new Accordion('.help-tabs__wrap--payment');
+
+if (document.querySelectorAll('.clothes-list__link').length) {
+  let cardLinks = document.querySelectorAll('.clothes-list__link');
+  let calculator = document.querySelector('.calc');
+  for (let cardLink of cardLinks) {
+    cardLink.addEventListener('click', function (event) {
+      event.preventDefault();
+      calculator.classList.add('active');
+    });
+  }
+}

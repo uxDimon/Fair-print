@@ -107,8 +107,8 @@
           </div>
         </div>
       </header>
-      <main class="main">
-        <section class="catalog catalog-hoodies">
+      <main class="main catalog-page">
+        <section class="catalog">
           <div class="catalog__banner">
             <div class="container">
               <h1 class="catalog__title title">Каталог толстовок</h1>
@@ -121,8 +121,122 @@
                   <use xlink:href="assets/images/sprite.svg#icon-breadtick"></use>
                 </svg>
               </div>
-              <div class="breadcrumbs-list__item"><a class="breadcrumbs-list__link" href="#">Товары без рисунка</a></div>
+              <div class="breadcrumbs-list__item"><span class="breadcrumbs-list__link" href="#">Товары без рисунка</span></div>
             </div>
+          </div>
+        </section>
+        <section class="calc">
+          <div class="container">
+            <div class="calc__slider">
+              <div class="swiper-container gallery-top">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="calc__img-wrap"><img class="calc__img" src="assets/images/hoodies-min.jpg" alt=""></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="calc__img-wrap"><img class="calc__img" src="assets/images/product-view2-min.png" alt=""></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="calc__img-wrap"><img class="calc__img" src="assets/images/hoodies-min.jpg" alt=""></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="calc__img-wrap"><img class="calc__img" src="assets/images/product-view2-min.png" alt=""></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="calc__img-wrap"><img class="calc__img" src="assets/images/hoodies-min.jpg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-container gallery-thumbs">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="calc__img-wrap"><img class="calc__img" src="assets/images/hoodies-min.jpg" alt=""></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="calc__img-wrap"><img class="calc__img" src="assets/images/product-view2-min.png" alt=""></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="calc__img-wrap"><img class="calc__img" src="assets/images/hoodies-min.jpg" alt=""></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="calc__img-wrap"><img class="calc__img" src="assets/images/product-view2-min.png" alt=""></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="calc__img-wrap"><img class="calc__img" src="assets/images/hoodies-min.jpg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="calc__wrap">
+              <div class="calc__top">
+                <h2 class="calc__subtitle subtitle">Толстовка</h2>
+                <div class="calc__tabs">
+                  <label class="calc__radio-label">
+                    <input class="calc__radio-input visually-hidden" type="radio" name="sex" value="male" checked><span class="calc__radio-value">Мужская</span>
+                  </label>
+                  <label class="calc__radio-label">
+                    <input class="calc__radio-input visually-hidden" type="radio" name="sex" value="female"><span class="calc__radio-value">Женская</span>
+                  </label>
+                </div><a class="calc__btn btn-red" href="#">Таблица размеров</a>
+              </div>
+              <div class="calc__cont">
+                <div class="calc-table">
+                  <div class="calc-table__row">
+                    <div class="calc-table__cell">Состав </div>
+                    <div class="calc-table__cell">100% хлопок, плотность 155-165 гр/м2.</div>
+                  </div>
+                  <div class="calc-table__row">
+                    <div class="calc-table__cell">Количество</div>
+                    <div class="calc-table__cell">
+                      <button class="calc-table__btn">-</button><span class="calc-table__num">502</span>
+                      <button class="calc-table__btn">+</button>
+                    </div>
+                  </div>
+                  <div class="calc-table__row">
+                    <div class="calc-table__cell">Модель</div>
+                    <div class="calc-table__cell calc-table__cell--select">
+                      <select class="calc-table__select" name="model">
+                        <option class="calc-table__option" value="">Утеплённая</option>
+                        <option class="calc-table__option" value="">Утеплённая</option>
+                        <option class="calc-table__option" value="">Утеплённая</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="calc-table__row">
+                    <div class="calc-table__cell">Доступные цвета</div>
+                    <div class="calc-table__cell"> 
+                      <ul class="calc__colors calc-colors">
+                        <li class="calc-colors"></li>
+                        <li class="calc-colors"></li>
+                        <li class="calc-colors"></li>
+                        <li class="calc-colors"></li>
+                        <li class="calc-colors"></li>
+                        <li class="calc-colors"></li>
+                        <li class="calc-colors"></li>
+                        <li class="calc-colors"></li>
+                        <li class="calc-colors"></li>
+                        <li class="calc-colors"></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="calc-table__row">
+                    <div class="calc-table__cell">Стоимость изделий</div>
+                    <div class="calc-table__cell">1 650 ₽</div>
+                  </div>
+                  <div class="calc-table__row">
+                    <div class="calc-table__cell">Итого</div>
+                    <div class="calc-table__cell">2 450 ₽</div>
+                  </div>
+                </div>
+                <div class="calc__row">
+                  <button class="calc__btn-app main-btn" type="">Оставить заявку</button><a class="calc__btn-print btn-red" href="#">Нанести принт</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="catalog-hoodies">
+          <div class="container">
             <ul class="catalog__list clothes-list">
               <li class="clothes-list__item"><a class="clothes-list__link" href="#">
                   <div class="clothes-list__img-wrap"><img class="clothes-list__img" src="assets/images/hoodies-min.jpg" alt="Толстовки"></div>
