@@ -1,0 +1,20 @@
+.calc-table__cell {
+    .form__label {
+        height: auto;
+        width: 300px;
+        font-size: 14px;
+        line-height: 16px;
+        background: none;
+        border: 1px solid $color-grey_2;
+        margin-bottom: 0;
+    }
+}
+.calc-table__wrap {
+    @include list-reset;
+}
+.calc-table__item {
+    display: flex;
+    .calc-table__svg {
+        margin-right: 30px;
+    }
+}

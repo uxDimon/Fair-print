@@ -20,6 +20,7 @@ $color-middle-blue: #DAE0F0;
 $color-grey_2: #CED3E3;
 $color-card-1: #F8D3D4;
 $color-blue-grey: #F6F7FA;
+$color-grey_6: #F2F2F2;
 $color-f-grey: #ADADAD;
 $color-grey: #9C9C9C;
 $color-white: #FFFFFF;
@@ -168,11 +169,13 @@ img {
 @import "./common/print-methods";
 @import "./common/steps";
 @import "./common/pagination";
+@import "./common/catalog-calc";
 
 @import "./common/header";
 @import "./pages/index";
 @import "./pages/main";
 @import "./pages/catalog";
+@import "./pages/print-item-shirt";
 @import "./pages/products";
 @import "./pages/products-cups";
 @import "./pages/print-cups";
@@ -182,6 +185,7 @@ img {
 @import "./pages/help";
 @import "./pages/portfolio";
 @import "./pages/contacts";
+@import "./pages/404";
 @import "./common/footer";
 
 // @media screen and (max-width: 1274px) {

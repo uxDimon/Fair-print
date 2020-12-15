@@ -6,14 +6,18 @@ block variables
     - var contactForm = true
 
 block content
-    main.main
-        section.catalog.catalog-hoodies
+    main.main.catalog-page
+        section.catalog
             .catalog__banner
                 .container
                     h1.catalog__title.title Каталог толстовок
             .container
                 include ../components/breadcrumbs.pug
 
+        include ../components/catalog-calc.pug
+
+        section.catalog-hoodies
+            .container
                 ul.catalog__list.clothes-list
                     include ../components/card-item.pug
                     include ../components/card-item.pug
