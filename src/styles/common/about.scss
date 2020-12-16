@@ -1,19 +1,46 @@
 .about {
     padding-top: 67.5px;
     padding-bottom: 120px;
+
+    @include w480 {
+        padding-top: 35px;
+        padding-bottom: 33px;
+    }
 }
 .about__title {
     margin-bottom: 45px;
+}
+.about__column {
+    display: none;
+    &:first-of-type {
+        display: block;
+    }
 }
 .about__wrap {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
+
+    @include w480 {
+        grid-template-columns: 1fr;
+    }
+
+    &.more .about__column {
+        display: block;
+    }
 }
 .about__text {
     margin-bottom: 20px;
 
     &:last-of-type {
         margin: 0;
+    }
+}
+.about__btn {
+    display: none;
+
+    @include w480 {
+        display: flex;
+        margin-top: 30px;
     }
 }

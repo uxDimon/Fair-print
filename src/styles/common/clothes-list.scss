@@ -1,9 +1,25 @@
 .clothes-list {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    column-gap: 30px;
-    row-gap: 60px;
+    // display: grid;
+    // grid-template-columns: repeat(5, 1fr);
+    // column-gap: 30px;
+    // row-gap: 60px;
     @include list-reset;
+}
+.clothes-list__swiper {
+    .swiper-pagination {
+        display: none;
+        
+        @include w480 {
+            display: block;
+        }
+    }
+    @include w480 {
+        padding-bottom: 45px;
+    }
+}
+.catalog-list__item {
+    background: linear-gradient(0deg, #E5E5E5, #E5E5E5), url(image_2020-06-18_14-00-37-450x650.png);
+    border-radius: 15px;
 }
 .clothes-list__link {
     display: flex;
@@ -20,6 +36,11 @@
     width: 210px;
     height: 300px;
     border-radius: 15px;
+
+    @include w480 {
+        width: 137px;
+        height: 190px;
+    }
 }
 .imgwrap {
     width: 210px;
@@ -33,8 +54,14 @@
     height: 100%;
     object-fit: contain;
     object-position: center;
+    border-radius: 15px;
 }
 .clothes-list__caption {
     margin-top: 15px;
     margin-bottom: 15px;
+}
+.clothes-list__btn {
+    width: 109px;
+    height: 30px;
+    padding: 3px 25px;
 }

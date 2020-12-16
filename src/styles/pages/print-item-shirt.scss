@@ -1,3 +1,6 @@
+.calc {
+    margin-bottom: 45px;
+}
 .calc-table__cell {
     .form__label {
         height: auto;
@@ -17,4 +20,12 @@
     .calc-table__svg {
         margin-right: 30px;
     }
+}
+
+.print-item-list {
+    padding-top: 45px;
+    padding-bottom: 60px;
+}
+.print-item-list__title {
+    margin-bottom: 45px;
 }

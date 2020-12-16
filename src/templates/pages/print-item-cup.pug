@@ -1,0 +1,118 @@
+extends ../template
+
+block variables
+    - var title = 'Печать на керамической кружке'
+    - var aboutText = true
+    - var contactForm = true
+
+block content
+    main.main.print-item-cup
+        section.catalog
+            .catalog__banner
+                .container
+                    h1.catalog__title.title Печать на керамической кружке
+            .container
+                include ../components/breadcrumbs.pug
+        section.calc
+            .container
+                .calc__slider
+                    .swiper-container.gallery-top
+                        .swiper-wrapper
+                            .swiper-slide
+                                .calc__img-wrap
+                                    img.calc__img(src="assets/images/product-cup.png", alt="")
+                            .swiper-slide
+                                .calc__img-wrap
+                                    img.calc__img(src="assets/images/product-cup.png", alt="")
+                    .swiper-container.gallery-thumbs
+                        .swiper-wrapper
+                            .swiper-slide
+                                .calc__img-wrap
+                                    img.calc__img(src="assets/images/product-cup.png", alt="")
+                            .swiper-slide
+                                .calc__img-wrap
+                                    img.calc__img(src="assets/images/product-cup.png", alt="")
+                .calc__wrap
+                    .calc__top
+                        h2.calc__subtitle.subtitle Керамическая кружка
+                    .calc__cont
+                        .calc-table
+                            .calc-table__row
+                                .calc-table__cell Материал 
+                                .calc-table__cell Стекло
+                            .calc-table__row
+                                .calc-table__cell Количество
+                                .calc-table__cell
+                                    button.calc-table__btn -
+                                    span.calc-table__num 20
+                                    button.calc-table__btn +
+                            .calc-table__row
+                                .calc-table__cell Цвет
+                                .calc-table__cell.calc-table__cell--select.calc-table__cell--cupcolor
+                                    .calc-table__color
+                                    select.calc-table__select(name="model")
+                                        option.calc-table__option(value="") Синий
+                                        option.calc-table__option(value="") Синий
+                                        option.calc-table__option(value="") Синий
+                            .calc-table__row
+                                .calc-table__cell.calc-table__cell--hint
+                                    span Метод печати
+                                    a.calc-table__hint(href="#")
+                                        svg.calc-table__svg(width="16" height="16")
+                                            use(xlink:href="assets/images/sprite.svg#icon-help-circle") 
+                                .calc-table__cell.calc-table__cell--select
+                                    select.calc-table__select(name="")
+                                        option.calc-table__option(value="") Круговая сублимационная
+                                        option.calc-table__option(value="") Круговая сублимационная
+                                        option.calc-table__option(value="") Круговая сублимационная
+                            .calc-table__row
+                                .calc-table__cell Файл принта
+                                .calc-table__cell
+                                    label.form__label.form__label--file 
+                                        svg.form__svg(width="16" height="16")
+                                            use(xlink:href="assets/images/sprite.svg#icon-paperclip")
+                                        input.visually-hidden(type="file" placeholder="Фото")
+                                        | Фото
+                            .calc-table__row
+                                .calc-table__cell.calc-table__cell--hint
+                                    span Размер печати
+                                .calc-table__cell.calc-table__cell--select
+                                    select.calc-table__select(name="")
+                                        option.calc-table__option(value="") A6
+                                        option.calc-table__option(value="") A6
+                                        option.calc-table__option(value="") A6
+                            .calc-table__row.calc-table__row--sum
+                                .calc-table__cell Стоимость изделия
+                                .calc-table__cell 800 ₽
+                            .calc-table__row.calc-table__row--print
+                                .calc-table__cell Стоимость печати
+                                .calc-table__cell 800 ₽
+                            .calc-table__row
+                                .calc-table__cell Итого
+                                .calc-table__cell 800 ₽
+                        .calc__row
+                            button.calc__btn-app.main-btn(type="") Оставить заявку
+        section.application
+            .container
+                h2.application__title.title Нанесение рисунка на кружки
+                .application__text-wrap
+                    p.application__text В нашей компании можно заказать печать на чехлах для телефонов недорого в Москве. Создаем брендированные обложки для xiaomi, redmi 6, iPhone и других производителей телефонов. Предлагаем выбрать материал и способ нанесения изображения. Осуществляем нанесение принтов на чехлы телефонов под ключ. Вам остается только выбрать материал изготовления и рисунок.
+
+                    h3.application__subtitle Виды чехлов для нанесения логотипа
+                    p.application__text Своим клиентам в Москве мы предлагаем чехлы с печатью фото или любой картинки из таких материалов как:
+                    ul.application__list
+                        li.application__item — Прозрачный силикон имеет просвечивающуюся глянцевую структуру. Толщина силикона 0,9 мм. Логотип наносится на заднюю поверхность футляра. Силиконовый футляр демонстрирует сочетание высокого качества и доступной цены.
+                        li.application__item — Пластик – бюджетный вариант упаковки. Краска хорошо ложится на поверхность, не стирается со временем.
+                        li.application__item — Пластик soft-touch - твердый пластик, защищающий технику от механических повреждений при падении. Покрытие характеризуется высокими противоударными свойствами, трудно царапается. Прорезиненное покрытие не даст устройству выскользнуть из рук.
+
+                    h3.application__subtitle Технология печати на кружках
+                    p.application__text Основным методом нанесения принта на футляр устройства является УФ печать. Технология позволяет наносить рисунок не только на заднюю поверхность изделия, но и по бокам. Наша компания пользуется двумя способами распечатки по УФ технологии:
+                    ul.application__list
+                        li.application__item — Однослойная - используется для создания многоцветных рисунков на промо-товарах.
+                        li.application__item — Многослойная - применяется в производстве изделий премиум класса.
+                    a.application__btn.main-btn(href="#") Написать нам
+                .application__img-wrapper
+                    .application__img-wrap
+                        img.application__img(src="assets/images/production-2-min.jpg", alt="")
+                    .application__img-wrap
+                        img.application__img(src="assets/images/production-1-min.jpg", alt="")                   

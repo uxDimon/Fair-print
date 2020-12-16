@@ -1,19 +1,19 @@
 extends ../template
 
 block variables
-    - var title = 'Печать калькулятор'
+    - var title = 'Печать на бордовой футболке'
     - var aboutText = true
     - var contactForm = true
 
 block content
-    main.main
+    main.main.print-item-shirt
         section.catalog
             .catalog__banner
                 .container
                     h1.catalog__title.title Печать на бордовой футболке
             .container
                 include ../components/breadcrumbs.pug
-        section.calc
+        section.calc.calc--clothes
             .container
                 .calc__slider
                     .swiper-container.gallery-top
@@ -46,13 +46,13 @@ block content
                                     img.calc__img(src="assets/images/print-shirt-min.png", alt="")
                             .swiper-slide
                                 .calc__img-wrap
-                                    img.calc__img(src="assets/images/print-shirt-2-min.png.png", alt="")
+                                    img.calc__img(src="assets/images/print-shirt-2-min.png", alt="")
                             .swiper-slide
                                 .calc__img-wrap
                                     img.calc__img(src="assets/images/print-shirt-min.png", alt="")
                 .calc__wrap
                     .calc__top
-                        h2.calc__subtitle.subtitle Толстовка
+                        h2.calc__subtitle.subtitle Футболка
                         .calc__tabs
                             label.calc__radio-label
                                 input.calc__radio-input.visually-hidden(type="radio" name="sex" value="male" checked)
@@ -82,22 +82,23 @@ block content
                             .calc-table__row
                                 .calc-table__cell Цвет
                                 .calc-table__cell 
-                                    .calc__colors.calc-colors
-                                        .calc-colors
-                                        .calc-colors
-                                        .calc-colors
-                                        .calc-colors
-                                        .calc-colors
-                                        .calc-colors
-                                        .calc-colors
-                                        .calc-colors
-                                        .calc-colors
-                                        .calc-colors
+                                    ul.calc__colors.calc-colors
+                                        li.calc-colors__item(style="background-color: #5A040D;")
+                                        li.calc-colors__item(style="background-color: #00B6B1;")
+                                        li.calc-colors__item(style="background-color: #0153AA;")
+                                        li.calc-colors__item(style="background-color: #FFEA00;")
+                                        li.calc-colors__item(style="background-color: #FFFFFF;")
+                                        li.calc-colors__item(style="background-color: #070062;")
+                                        li.calc-colors__item(style="background-color: #D50005;")
+                                        li.calc-colors__item(style="background-color: #FF9000;")
+                                        li.calc-colors__item(style="background-color: #000000;")
+                                        li.calc-colors__item(style="background-color: #808080;")
                             .calc-table__row
-                                .calc-table__cell
+                                .calc-table__cell.calc-table__cell--hint
                                     span Принт
-                                    svg.calc-table__svg(width="16" height="16")
-                                        use(xlink:href="assets/images/sprite.svg#icon-help-circle") 
+                                    a.calc-table__hint(href="#")
+                                        svg.calc-table__svg(width="16" height="16")
+                                            use(xlink:href="assets/images/sprite.svg#icon-help-circle") 
                                 .calc-table__cell.calc-table__cell--select
                                     select.calc-table__select(name="")
                                         option.calc-table__option(value="") Флюресцентная плёнка
@@ -112,57 +113,65 @@ block content
                                         input.visually-hidden(type="file" placeholder="Фото")
                                         | Фото
                             .calc-table__row
-                                .calc-table__cell
+                                .calc-table__cell.calc-table__cell--hint
                                     span Метод печати
-                                    svg.calc-table__svg(width="16" height="16")
-                                        use(xlink:href="assets/images/sprite.svg#icon-help-circle") 
+                                    a.calc-table__hint(href="#")
+                                        svg.calc-table__svg(width="16" height="16")
+                                            use(xlink:href="assets/images/sprite.svg#icon-help-circle") 
                                 .calc-table__cell.calc-table__cell--select
                                     select.calc-table__select(name="")
                                         option.calc-table__option(value="") Шелкография
                                         option.calc-table__option(value="") Шелкография
                                         option.calc-table__option(value="") Шелкография
-                            .calc-table__row
+                            .calc-table__row.calc-table__row--place
                                 .calc-table__cell
                                     span Где печатать
-                                    svg.calc-table__svg(width="16" height="16")
-                                        use(xlink:href="assets/images/sprite.svg#icon-help-circle") 
-                                .calc-table__cell.calc-table__cell--select
+                                .calc-table__cell
                                     ul.calc-table__wrap
                                         li.calc-table__item
                                             svg.calc-table__svg(width="70" height="70")
                                                 use(xlink:href="assets/images/sprite.svg#tshirt-center")
                                             .calc-table__box
                                                 span Грудь
-                                                select.calc-table__select(name="")
-                                                    option.calc-table__option(value="") А2
-                                                    option.calc-table__option(value="") А2
-                                                    option.calc-table__option(value="") А2
+                                                .calc-table__cell--select
+                                                    select.calc-table__select(name="")
+                                                        option.calc-table__option(value="") А2
+                                                        option.calc-table__option(value="") А2
+                                                        option.calc-table__option(value="") А2
                                         li.calc-table__item
                                             svg.calc-table__svg(width="70" height="70")
                                                 use(xlink:href="assets/images/sprite.svg#tshirt-top")
                                             .calc-table__box
                                                 span Спина
-                                                select.calc-table__select(name="")
-                                                    option.calc-table__option(value="") нет
-                                                    option.calc-table__option(value="") нет
-                                                    option.calc-table__option(value="") нет
+                                                .calc-table__cell--select
+                                                    select.calc-table__select(name="")
+                                                        option.calc-table__option(value="") нет
+                                                        option.calc-table__option(value="") нет
+                                                        option.calc-table__option(value="") нет
                                         li.calc-table__item
                                             svg.calc-table__svg(width="70" height="70")
                                                 use(xlink:href="assets/images/sprite.svg#tshirt-sleeve")
                                             .calc-table__box
                                                 span Рукав
-                                                select.calc-table__select(name="")
-                                                    option.calc-table__option(value="") А6
-                                                    option.calc-table__option(value="") А6
-                                                    option.calc-table__option(value="") А6
-                            .calc-table__row
+                                                .calc-table__cell--select
+                                                    select.calc-table__select(name="")
+                                                        option.calc-table__option(value="") А6
+                                                        option.calc-table__option(value="") А6
+                                                        option.calc-table__option(value="") А6
+                            .calc-table__row.calc-table__row--sum
                                 .calc-table__cell Стоимость изделий
                                 .calc-table__cell 1 650 ₽
+                            .calc-table__row.calc-table__row--print
+                                .calc-table__cell Стоимость печати
+                                .calc-table__cell 800 ₽
                             .calc-table__row
                                 .calc-table__cell Итого
                                 .calc-table__cell 2 450 ₽
                         .calc__row
                             button.calc__btn-app.main-btn(type="") Оставить заявку
                             a.calc__btn-print.btn-red(href="#") Нанести принт
-
+        section.print-item-list
+            .container
+                h2.print-item-list__title.title Похожие товары
+                include ../components/clothes-list.pug
 

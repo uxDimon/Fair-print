@@ -32,13 +32,19 @@ $color-lighter-black: #616161;
 	box-sizing: border-box;
 	outline-offset: 4px;
 }
-
+html {
+	overflow-x: hidden;
+}
 body {
 	font-family: "Gilroy";
 	font-weight: 400;
 	font-size: 16px;
 	color: $color-light-black;
 	overflow-x: hidden;
+
+	@media screen and (max-width: 767px) {
+		font-size: 14px;
+	}
 }
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
@@ -123,6 +129,12 @@ img {
 		background-color: $color-blue;
 		transition: all 0.2s ease 0s;
 	}
+
+	@media screen and (max-width: 767px) {
+		width: 214px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
 }
 
 .btn-red {
@@ -143,6 +155,10 @@ img {
 	font-size: 48px;
 	line-height: 110%;
 	margin: 0;
+
+	@media screen and (max-width: 767px) {
+		font-size: 24px;
+	}
 }
 .subtitle {
 	font-weight: 600;
@@ -154,11 +170,16 @@ img {
 	font-size: 18px;
 	line-height: 28px;
 	color: $color-black;
+
+	@media screen and (max-width: 767px) {
+		font-size: 16px;
+	}
 }
 
 @import "./common/normalize";
 @import "./common/fonts";
 @import "./common/mixins";
+@import "./common/adaptive";
 
 @import "./common/breadcrumbs";
 @import "./common/clothes-list";
@@ -170,15 +191,19 @@ img {
 @import "./common/steps";
 @import "./common/pagination";
 @import "./common/catalog-calc";
+@import "./common/size-table";
+@import "./common/form-popup";
 
 @import "./common/header";
 @import "./pages/index";
 @import "./pages/main";
 @import "./pages/catalog";
+@import "./pages/catalog-clothes";
 @import "./pages/print-item-shirt";
 @import "./pages/products";
 @import "./pages/products-cups";
 @import "./pages/print-cups";
+@import "./pages/print-item-cup";
 @import "./pages/price";
 @import "./pages/blog";
 @import "./pages/about-us";

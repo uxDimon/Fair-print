@@ -8,6 +8,16 @@
         grid-template-columns: 1fr 1fr;
         column-gap: 11.5%;
         row-gap: 15px;
+
+        @include w480 {
+            grid-template-columns: 1fr;
+            row-gap: 25px;
+        }
+    }
+
+    @include w480 {
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 }
 .contact__title {
@@ -16,6 +26,10 @@
 .contact__text {
     max-width: 483px;
     margin-bottom: 54px;
+
+    @include w480 {
+        margin-bottom: 24px;
+    }
 }
 .form {
     display: flex;
@@ -53,14 +67,33 @@
     display: flex;
     align-items: center;
     margin-top: 20px;
+
+    @include w480 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 .form__btn {
     @include hover-red;
+
+    @include w480 {
+        width: 214px;
+    }
 }
 .form__text {
     font-size: 14px;
     line-height: 16px;
     margin-left: 23px;
+
+    @include w480 {
+        font-size: 11px;
+        margin-left: 0;
+        margin-top: 10px;
+
+        br {
+            display: none;
+        }
+    }
 }
 .form__link {
     color: $color-blue;
@@ -69,10 +102,23 @@
 .contact__map-wrap {
     width: 570px;
     margin-bottom: 25px;
+
+    @include w480 {
+        width: 115%;
+        height: 335px;
+        margin: 0 -15px;
+        margin-bottom: 22px;
+    }
 }
 .contact__map {
     width: 100%;
     border-radius: 15px;
+    object-fit: cover;
+
+    @include w480 {
+        height: 100%;
+        border-radius: 0;
+    }
 }
 .contact__right {
     .contact__list {
@@ -81,10 +127,19 @@
         row-gap: 11px;
         @include list-reset;
         padding-left: 11px;
+
+        @include w480 {
+            grid-template-columns: 1fr;
+        }
     }
     .contact-list__item--tels {
         grid-column: 2 / -1;
         grid-row: 1 / span 2;
+
+        @include w480 {
+            grid-column: auto;
+            grid-row: auto;
+        }
     }
     .contact-list__wrap {
         row-gap: 11px;

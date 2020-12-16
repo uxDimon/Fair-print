@@ -1,25 +1,26 @@
 footer.footer
     .footer__top.footer-top
         .container
-            a(href="#")
-                img(src="assets/images/logo-fair-white.svg", alt="Логотип Fire-Print")
+            a.footer__logo(href="#")
+                img.footer__img(src="assets/images/logo-fair-white.png", alt="Логотип Fire-Print")
             ul.footer-top__nav-list
                 li.footer-top__item
                     a.footer-top__link(href="#") Печать на одежде
                 li.footer-top__item
-                    a.footer-top__link(href="#") О нас
-                li.footer-top__item
-                    a.footer-top__link(href="#") Помощь
-                li.footer-top__item
                     a.footer-top__link(href="#") Печать на изделиях
+                li.footer-top__item
+                    a.footer-top__link(href="#") Товары без рисунка
+            ul.footer-top__com-nav
+                li.footer-top__item
+                    a.footer-top__link(href="#") О нас
                 li.footer-top__item
                     a.footer-top__link(href="#") Портфолио
                 li.footer-top__item
-                    a.footer-top__link(href="#") Контакты
-                li.footer-top__item
-                    a.footer-top__link(href="#") Товары без рисунка
-                li.footer-top__item
                     a.footer-top__link(href="#") Блог
+                li.footer-top__item
+                    a.footer-top__link(href="#") Помощь
+                li.footer-top__item
+                    a.footer-top__link(href="#") Контакты
                 li.footer-top__item
                     a.footer-top__link(href="#") Цены
             ul.footer-top__cont-list
@@ -30,7 +31,8 @@ footer.footer
                 li.footer-top__item
                     svg.footer-top__svg(width="16" height="16")
                         use(xlink:href="assets/images/sprite.svg#icon-clock")
-                    p Пн – пт с 11:00 до 20:00
+                    p.footer-top__time Пн – пт с 11:00 до 20:00
+            ul.footer-top__tel-list
                 li.footer-top__item
                     svg.footer-top__svg(width="16" height="16")
                         use(xlink:href="assets/images/sprite.svg#icon-phone")
@@ -40,8 +42,7 @@ footer.footer
     .footer__bottom.footer-bottom
         .container
             ul.footer-bottom__list
-                li.footer-bottom__item
-                    a.footer-bottom__link(href="#") FairPrint © 2020. Все права защищены.
+                li.footer-bottom__item FairPrint © 2020. Все права защищены.
                 li.footer-bottom__item
                     a.footer-bottom__link(href="#") Политика конфиденциальности
                 li.footer-bottom__item

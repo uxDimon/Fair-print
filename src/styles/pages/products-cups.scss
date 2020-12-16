@@ -76,3 +76,19 @@
     margin-top: 15px;
     margin-bottom: 5px;
 }
+
+.calc-table__cell--cupcolor {
+    .calc-table__select {
+        padding-left: 46px;
+    }
+}
+.calc-table__color {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 12px;
+    left: 20px;
+    background-color: #29619B;
+    border-radius: 50%;
+    border: 1px solid $color-lighter-black;
+}
