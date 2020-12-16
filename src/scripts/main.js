@@ -68,6 +68,24 @@ if (document.querySelector('.clients__swiper-bot')) {
     },
   });
 }
+if (document.querySelector('.production__slider')) {
+  var mySwiper9 = new Swiper('.production__slider .swiper-container', {
+    breakpoints: {
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      280: {
+        slidesPerView: 1.5,
+        spaceBetween: 17,
+      }
+    },
+  });
+}
 if (document.querySelector('.work-examples__swiper')) {
   var mySwiper4 = new Swiper('.work-examples__swiper', {
     // Optional parameters

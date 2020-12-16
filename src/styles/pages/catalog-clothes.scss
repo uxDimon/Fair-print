@@ -4,4 +4,17 @@
     grid-template-columns: repeat(5, 1fr);
     column-gap: 30px;
     row-gap: 60px;
+    @include w1024 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @include w768 {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+        row-gap: 40px;
+    }
+    @include w480 {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 17px;
+        row-gap: 30px;
+    }
 }
