@@ -24,6 +24,7 @@ block content
                             .swiper-slide
                                 .calc__img-wrap
                                     img.calc__img(src="assets/images/product-cup.png", alt="")
+                        .swiper-pagination
                     .swiper-container.gallery-thumbs
                         .swiper-wrapper
                             .swiper-slide
@@ -95,24 +96,32 @@ block content
         section.application
             .container
                 h2.application__title.title Нанесение рисунка на кружки
-                .application__text-wrap
-                    p.application__text В нашей компании можно заказать печать на чехлах для телефонов недорого в Москве. Создаем брендированные обложки для xiaomi, redmi 6, iPhone и других производителей телефонов. Предлагаем выбрать материал и способ нанесения изображения. Осуществляем нанесение принтов на чехлы телефонов под ключ. Вам остается только выбрать материал изготовления и рисунок.
+                
+                p.application__text В нашей компании можно заказать печать на чехлах для телефонов недорого в Москве. Создаем брендированные обложки для xiaomi, redmi 6, iPhone и других производителей телефонов. Предлагаем выбрать материал и способ нанесения изображения. Осуществляем нанесение принтов на чехлы телефонов под ключ. Вам остается только выбрать материал изготовления и рисунок.
 
+                .application__img-wrapper
+                    .swiper-container
+                        .swiper-wrapper
+                            .swiper-slide
+                                .application__img-wrap
+                                    img.application__img(src="assets/images/production-2-min.jpg", alt="")
+                            .swiper-slide
+                                .application__img-wrap
+                                    img.application__img(src="assets/images/production-1-min.jpg", alt="")
+
+                .application__text-wrap
                     h3.application__subtitle Виды чехлов для нанесения логотипа
                     p.application__text Своим клиентам в Москве мы предлагаем чехлы с печатью фото или любой картинки из таких материалов как:
-                    ul.application__list
+                    ul.application__list.application__list--more
                         li.application__item — Прозрачный силикон имеет просвечивающуюся глянцевую структуру. Толщина силикона 0,9 мм. Логотип наносится на заднюю поверхность футляра. Силиконовый футляр демонстрирует сочетание высокого качества и доступной цены.
                         li.application__item — Пластик – бюджетный вариант упаковки. Краска хорошо ложится на поверхность, не стирается со временем.
                         li.application__item — Пластик soft-touch - твердый пластик, защищающий технику от механических повреждений при падении. Покрытие характеризуется высокими противоударными свойствами, трудно царапается. Прорезиненное покрытие не даст устройству выскользнуть из рук.
+                    a.application__btn.application__btn--more.btn-blue(href="#") Развернуть
 
+                .application__text-wrap
                     h3.application__subtitle Технология печати на кружках
                     p.application__text Основным методом нанесения принта на футляр устройства является УФ печать. Технология позволяет наносить рисунок не только на заднюю поверхность изделия, но и по бокам. Наша компания пользуется двумя способами распечатки по УФ технологии:
                     ul.application__list
                         li.application__item — Однослойная - используется для создания многоцветных рисунков на промо-товарах.
                         li.application__item — Многослойная - применяется в производстве изделий премиум класса.
-                    a.application__btn.main-btn(href="#") Написать нам
-                .application__img-wrapper
-                    .application__img-wrap
-                        img.application__img(src="assets/images/production-2-min.jpg", alt="")
-                    .application__img-wrap
-                        img.application__img(src="assets/images/production-1-min.jpg", alt="")                   
+                    a.application__btn.main-btn(href="#") Написать нам              

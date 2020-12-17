@@ -11,9 +11,11 @@
     margin-bottom: 45px;
 }
 .about__column {
-    display: none;
-    &:first-of-type {
-        display: block;
+    @include w480 {
+        display: none;
+        &:first-of-type {
+            display: block;
+        }
     }
 }
 .about__wrap {

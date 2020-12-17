@@ -2,11 +2,24 @@
     padding-top: 55px;
     padding-bottom: 52px;
     background-color: $color-blue-grey;
+    margin-bottom: 45px;
 
     .container {
         display: grid;
         grid-template-columns: minmax(auto, 470px) 1fr;
         column-gap: 30px;
+
+        @include w768 {
+            grid-template-columns: minmax(auto, 100%);
+        }
+    }
+    @include w1024 {
+        padding-top: 30px;
+
+    }
+    @include w480 {
+        padding: 30px 0 50px;
+        margin-bottom: 25px;
     }
 }
 
@@ -14,12 +27,34 @@
     margin-bottom: 25px;
     .calc__img-wrap {
         max-width: 470px;
-        height: 568px;
+        max-height: 568px;
         display: flex;
         justify-content: center;
         align-items: center;
         background: linear-gradient(0deg, #E5E5E5, #E5E5E5);
         border-radius: 4px;
+
+        @include w480 {
+            max-width: 291px;
+            max-height: 350px;
+        }
+    }
+    .swiper-pagination {
+        display: none;
+        @include w768 {
+            display: block;
+            bottom: 0;
+        }
+    }
+    .swiper-slide {
+        @include w1024 {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    @include w1024 {
+        padding-bottom: 25px;
+        margin-bottom: 30px;
     }
 }
 .gallery-thumbs {
@@ -32,6 +67,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    @include w768 {
+        display: none;
     }
 }
 .calc--clothes {
@@ -51,10 +89,16 @@
 .calc__subtitle {
     line-height: 40px;
     align-self: baseline;
+    @include w480 {
+        display: none;
+    }
 }
 .calc__tabs {
     display: flex;
     margin: 0 30px;
+    @include w480 {
+        margin: 0 auto;
+    }
 }
 .calc__radio-label {
     display: flex;
@@ -78,18 +122,37 @@
     background-color: $color-blue;
     color: $color-grey_6;
 }
-
+.calc__btn {
+    @include w1024 {
+        display: none;
+    }
+}
 .calc__cont {
     max-width: 500px;
 }
 .calc__row {
     display: flex;
     margin-top: 35px;
+
+    @include w480 {
+        flex-direction: column;
+    }
 }
 .calc__btn-app {
     width: 300px;
     margin-right: 30px;
     @include hover-red;
+
+    @include w480 {
+        width: 214px;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+.calc__btn-print {
+    @include w480 {
+        width: 214px;
+    }
 }
 .calc-colors {
     @include list-reset;
@@ -104,18 +167,29 @@
     column-gap: 30px;
     align-items: center;
     margin-top: 22px;
+
+    @include w480 {
+        grid-template-columns: 100%;
+        row-gap: 15px;
+        margin-top: 30px;
+    }
+
     &:first-of-type {
         margin-top: 0;
+        @include w480 {
+            row-gap: 5px;
+        }
     }
     &:last-of-type {
         margin-top: 20px;
     }
-}
-.calc-table__row {
     &:nth-last-of-type(2) {
         .calc-table__cell:last-of-type {
             font-weight: 600;
             text-align: right;
+        }
+        @include w480 {
+            grid-template-columns: 1fr max-content;
         }
     }
     &:last-of-type {
@@ -129,6 +203,16 @@
             line-height: 29px;
             text-align: right;
         }
+        @include w480 {
+            grid-template-columns: 1fr max-content;
+        }
+    }
+    .calc__btn {
+        display: none;
+        @include w1024 {
+            display: flex;
+            margin-top: 20px;
+        }
     }
 }
 .calc-table__row--sum {
@@ -138,12 +222,20 @@
         font-weight: 600;
         text-align: right;
     }
+    @include w480 {
+        grid-template-columns: 1fr max-content;
+    }
 }
 .calc-table__row--print {
     margin-top: 10px;
 }
 .calc-table__row--place {
     align-items: flex-start;
+}
+.calc-table__cell {
+    &:first-of-type {
+        font-weight: 500;
+    }
 }
 .calc-table__num {
     margin: 0 13px;
@@ -187,6 +279,15 @@
         background-repeat: no-repeat;
         top: 15px;
         right: 20px;
+        transition: all 0.2s ease 0s;
+    }
+    &.active::after {
+        transform: rotate(180deg);
+        transition: all 0.2s ease 0s;
+        top: 13px;
+    }
+    @include w480 {
+        max-width: 213px;
     }
 }
 .calc-table__box {
@@ -219,6 +320,10 @@
 .calc-colors {
     display: flex;
     justify-content: center;
+    @include w480 {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
 }
 .calc-colors__item {
     width: 16px;
@@ -228,5 +333,8 @@
 
     &:not(:last-of-type) {
         margin-right: 14px;
+    }
+    @include w480 {
+        margin-bottom: 5px;
     }
 }

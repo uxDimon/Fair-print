@@ -2,48 +2,9 @@
     background-color: $color-grey_1;
     padding: 17px 15px;
 
-    @include w480 {
+    @include w768 {
         display: none;
     }
-}
-.header__toggle {
-    display: none;
-    position: relative;
-    width: 19px;
-    height: 13px;
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-
-    &::before {
-        position: absolute;
-        content: '';
-        width: 19px;
-        height: 1px;
-        background-color: $color-black;
-        top: 0;
-        left: 0;
-    }
-    &::after {
-        position: absolute;
-        content: '';
-        width: 19px;
-        height: 1px;
-        background-color: $color-black;
-        bottom: 0;
-        left: 0;
-    }
-
-    @include w480 {
-        display: flex;
-        align-items: center;
-    }
-}
-.header__toggle-middle {
-    width: 19px;
-    height: 1px;
-    background-color: $color-black;
 }
 .header-top__nav {
     display: flex;
@@ -83,13 +44,16 @@
     }
 }
 .header-main__logo {
+    @include w1024 {
+        width: 150px;
+    }
     @include w480 {
         width: 101px;
         height: 13px;
     }
 }
 .header-main__nav {
-    @include w480 {
+    @include w768 {
         display: none;
     }
 }
@@ -98,10 +62,11 @@
     @include list-reset;
 }
 .header-main__item {
-    margin-right: 30px;
-
-    &:last-of-type {
-        margin-right: 0;
+    &:not(:last-of-type) {
+        margin-right: 30px;
+        @include w1024 {
+            margin-right: 20px;
+        }
     }
 }
 .header-main__link {
@@ -113,6 +78,9 @@
     &:hover {
         color: $color-blue;
         transition: all 0.2s ease 0s;
+    }
+    @include w1024 {
+        font-size: 14px;
     }
 }
 .header-main__inner-menu {
@@ -175,7 +143,7 @@
     display: flex;
     align-items: center;
 
-    @include w480 {
+    @include w768 {
         display: none;
     }
 }
@@ -219,4 +187,54 @@
 .header-main__btn {
     box-shadow: none;
     @include hover-red;
+}
+
+.header__toggle {
+    display: none;
+    position: relative;
+    width: 19px;
+    height: 13px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 19px;
+        height: 1px;
+        background-color: $color-black;
+        top: 0;
+        left: 0;
+    }
+    &::after {
+        position: absolute;
+        content: '';
+        width: 19px;
+        height: 1px;
+        background-color: $color-black;
+        bottom: 0;
+        left: 0;
+    }
+
+    @include w768 {
+        display: flex;
+        align-items: center;
+    }
+}
+.header__toggle-middle {
+    width: 19px;
+    height: 1px;
+    background-color: $color-black;
+}
+
+.burger-menu {
+    display: none;
+    @include w768 {
+        position: absolute;
+        // display: grid;
+        grid-template-columns: 100%;
+        background-color: $color-white;
+    }
 }

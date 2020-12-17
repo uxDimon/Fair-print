@@ -1,3 +1,11 @@
+.price__products {
+    @include w480 {
+        padding-top: 30px;
+    }
+}
+.price__table-wrap {
+    overflow-x: scroll;
+}
 .price-table {
     width: 100%;
     text-align: left;
@@ -6,6 +14,11 @@
     border-spacing: 10px 15px;
     margin-top: 30px;
     margin-bottom: 50px;
+
+    @include w1024 {
+        min-width: max-content;
+        margin-bottom: 20px;
+    }
 }
 .price-table__head-cell {
     font-weight: 600;
@@ -29,6 +42,10 @@
 .price__print {
     .price-table__head-cell {
         padding-right: 0;
+
+        @include w480 {
+            padding-right: 42px;
+        }
     }
     .price-table__head-cell {
         &:nth-of-type(2) {
@@ -65,11 +82,19 @@
     background-color: $color-blue-grey;
     padding: 40px 35px 35px;
     margin-top: 30px;
-    margin-bottom: 60px;
+    @include w480 {
+        grid-template-columns: 100%;
+        row-gap: 30px;
+
+        .price-table__head-cell {
+            padding: 0;
+        }
+    }
 }
 .price__inner-wrap {
     @include list-reset;
     width: max-content;
+    max-width: 100%;
 }
 p.price-table__head-cell {
     margin-bottom: 15px;
@@ -81,7 +106,44 @@ p.price-table__head-cell {
         margin-bottom: 10px;
     }
 }
+.price__wrap {
+    &:last-of-type {
+        .price__inner-item {
+            grid-template-columns: 100%;
+        }
+    }
+}
 .price-list {
-    padding-top: 70px;
+    padding-top: 80px;
     padding-bottom: 120px;
+    @include w480 {
+        padding-top: 30px;
+        padding-bottom: 110px;
+    }
+    .swiper-pagination {
+        bottom: 70px;
+    }
+}
+
+.price-pointer {
+    width: 100%;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    @include w1024 {
+        display: flex;
+    }
+}
+.price-pointer__text {
+    display: flex;
+    align-items: center;
+
+    .price-pointer__svg {
+        margin-right: 10px;
+    }
+}
+.price__cont {
+    padding-bottom: 40px;
 }

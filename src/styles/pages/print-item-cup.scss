@@ -5,4 +5,9 @@
     .calc__btn-app {
         margin-right: 0;
     }
+    .calc__top {
+        @include w480 {
+            margin-bottom: 0;
+        }
+    }
 }

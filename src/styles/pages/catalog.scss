@@ -1,17 +1,9 @@
 .catalog__banner {
-    min-height: 150px;
+    // min-height: 150px;
     background-image: url('../images/catalog-banner.jpg');
     padding: 45px 0 52px;
-}
-// .catalog {
-//     padding-bottom: 40px;
-// }
-// .catalog-page {
-//     .calc {
-//         display: none;
 
-//         &.active {
-//             display: block;
-//         }
-//     }
-// }
+    @include w480 {
+        padding: 37px 0 37px;
+    }
+}

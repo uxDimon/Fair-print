@@ -327,16 +327,18 @@
 }
 .production__slider {
     position: absolute;
+    width: 100%;
     bottom: -166px;
     @include w480 {
         bottom: -100px;
     }
 }
 .production__list {
+    max-width: 100%;
     @include list-reset;
 }
 .production__img-wrap {
-    width: 370px;
+    max-width: 370px;
     height: 350px;
 
     @include w480 {

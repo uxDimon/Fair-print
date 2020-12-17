@@ -33,6 +33,7 @@ block content
                             .swiper-slide
                                 .calc__img-wrap
                                     img.calc__img(src="assets/images/print-shirt-min.png", alt="")
+                        .swiper-pagination
                     .swiper-container.gallery-thumbs
                         .swiper-wrapper
                             .swiper-slide
@@ -66,6 +67,7 @@ block content
                             .calc-table__row
                                 .calc-table__cell Состав 
                                 .calc-table__cell 100% хлопок, плотность 155-165 гр/м2.
+                                a.calc__btn.btn-red(href="#") Таблица размеров
                             .calc-table__row
                                 .calc-table__cell Количество
                                 .calc-table__cell
@@ -79,8 +81,8 @@ block content
                                         option.calc-table__option(value="") Утеплённая
                                         option.calc-table__option(value="") Утеплённая
                                         option.calc-table__option(value="") Утеплённая
-                            .calc-table__row
-                                .calc-table__cell Цвет
+                            .calc-table__row.calc-table__row--color
+                                .calc-table__cell Доступные цвета
                                 .calc-table__cell 
                                     ul.calc__colors.calc-colors
                                         li.calc-colors__item(style="background-color: #5A040D;")
@@ -173,5 +175,6 @@ block content
         section.print-item-list
             .container
                 h2.print-item-list__title.title Похожие товары
-                include ../components/clothes-list.pug
-
+                .clothes-list__swiper.swiper-container
+                    include ../components/clothes-list.pug
+                    .swiper-pagination

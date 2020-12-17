@@ -1,6 +1,3 @@
-.calc {
-    margin-bottom: 45px;
-}
 .calc-table__cell {
     .form__label {
         height: auto;
@@ -10,6 +7,10 @@
         background: none;
         border: 1px solid $color-grey_2;
         margin-bottom: 0;
+
+        @include w480 {
+            max-width: 220px;
+        }
     }
 }
 .calc-table__wrap {
@@ -25,7 +26,15 @@
 .print-item-list {
     padding-top: 45px;
     padding-bottom: 60px;
+
+    @include w480 {
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
 }
 .print-item-list__title {
     margin-bottom: 45px;
+    @include w480 {
+        margin-bottom: 30px;
+    }
 }

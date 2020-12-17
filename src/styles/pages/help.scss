@@ -6,9 +6,21 @@
     .steps__title {
         text-align: center;
     }
+    @include w480 {
+        padding-bottom: 70px;
+
+        .steps {
+            padding-top: 30px;
+            padding-bottom: 0;
+        }
+    }
 }
 .help-hint {
     padding-top: 90px;
+
+    @include w480 {
+        padding-top: 70px;
+    }
 }
 .help__container {
     max-width: 770px;
@@ -27,6 +39,9 @@
 .help__subtitle {
     margin-bottom: 50px;
     text-align: center;
+    @include w480 {
+        margin-bottom: 30px;
+    }
 }
 .help-tabs__head {
     position: relative;
@@ -46,6 +61,19 @@
         top: 17px;
         right: 35px;
         transition: all 0.2s ease 0s;
+
+        @include w480 {
+            width: 16px;
+            height: 14px;
+            top: 19px;
+            right: 15px;
+        }
+    }
+
+    @include w480 {
+        min-height: 55px;
+        display: flex;
+        align-items: center;
     }
 }
 .help-tabs__text {
@@ -61,6 +89,9 @@
     }
 }
 
+.ac {
+    border: none;
+}
 .ac .ac-trigger::after {
     display: none;
 }
@@ -71,4 +102,10 @@
     line-height: 140%;
     color: $color-lighter-black;
     padding: 12px 35px 13px;
+
+    @include w480 {
+        font-size: 14px;
+        line-height: 17px;
+        padding: 10px 33px 10px 20px;
+    }
 }
