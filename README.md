@@ -1,25 +1,5 @@
 # Демо https://hecathe.github.io/Fair-print/
 
-## Использование
-
-Устанавливаем
-
-```
-npm install
-```
-
-Сборка для разработки
-
-```
-gulp
-```
-
-Сборка для продакшена
-
-```
-gulp prod
-```
-
 ## Используемые библиотеки
 
 https://michalsnik.github.io/aos/
