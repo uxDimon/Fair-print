@@ -1,4 +1,4 @@
-# Демо https://hecathe.github.io/Fair-print/build
+# Демо https://hecathe.github.io/Fair-print/
 
 ## Использование
 
