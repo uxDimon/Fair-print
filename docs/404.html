@@ -10,6 +10,7 @@
     <link rel="apple-touch-icon" href="assets/images/fav.png">
     <link rel="stylesheet" type="text/css" href="assets/styles/swiper-bundle.min.css">
     <link rel="stylesheet" type="text/css" href="assets/styles/accordion.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/styles/app.css">
   </head>
   <body>
@@ -33,7 +34,8 @@
           </div>
         </div>
         <div class="header__main header-main">
-          <div class="container"><a class="header-main__logo" href="#"><img src="assets/images/logo-fair.svg" alt="Логотип Fire-Print"></a>
+          <div class="container"><a class="header-main__logo" href="#"><img src="assets/images/logo-fair.png" alt="Логотип Fire-Print"></a>
+            <button class="header__toggle"><span class="header__toggle-middle"></span></button>
             <nav class="header-main__nav">
               <ul class="header-main__list">
                 <li class="header-main__item"><a class="header-main__link" href="#">Печать на одежде</a>
@@ -67,30 +69,32 @@
                 </li>
                 <li class="header-main__item"><a class="header-main__link" href="#">Товары без рисунка</a>
                   <div class="header-main__inner-menu header-main__inner-menu--without">
-                    <ul class="inner-list">
-                      <li class="inner-list__item inner-list__item--title">Одежда без рисунка</li>
-                      <li class="inner-list__item"><a class="inner-list__link" href="#">Печать на толстовках</a></li>
-                      <li class="inner-list__item"><a class="inner-list__link" href="#">Печать на футболках</a></li>
-                      <li class="inner-list__item"><a class="inner-list__link" href="#">Печать на свитшотах</a></li>
-                      <li class="inner-list__item"><a class="inner-list__link" href="#">Печать на поло</a></li>
-                      <li class="inner-list__item"><a class="inner-list__link" href="#">Печать на бомберах</a></li>
-                    </ul>
-                    <ul class="inner-list">
-                      <li class="inner-list__item inner-list__item--title">Изделия без рисунка</li>
-                      <li class="inner-list__item"><a class="inner-list__link" href="#">Маски</a></li>
-                      <li class="inner-list__item"><a class="inner-list__link" href="#">Рюкзаки</a></li>
-                      <li class="inner-list__item"><a class="inner-list__link" href="#">Чехлы для телефонов</a></li>
-                      <li class="inner-list__item"><a class="inner-list__link" href="#">Печать на свитшотах</a></li>
-                      <li class="inner-list__item"><a class="inner-list__link" href="#">Печать на поло</a></li>
-                      <li class="inner-list__item"><a class="inner-list__link" href="#">Печать на толстовках</a></li>
-                      <li class="inner-list__item"><a class="inner-list__link" href="#">Печать на футболках</a></li>
-                      <li class="inner-list__item"><a class="inner-list__link" href="#">Печать на свитшотах</a></li>
-                      <li class="inner-list__item"><a class="inner-list__link" href="#">Печать на поло</a></li>
-                      <li class="inner-list__item"><a class="inner-list__link" href="#">Печать на толстовках</a></li>
-                      <li class="inner-list__item"><a class="inner-list__link" href="#">Печать на футболках</a></li>
-                      <li class="inner-list__item"><a class="inner-list__link" href="#">Печать на свитшотах</a></li>
-                      <li class="inner-list__item"><a class="inner-list__link" href="#">Печать на поло</a></li>
-                    </ul>
+                    <div class="header-main__inner-wrap">
+                      <ul class="inner-list">
+                        <li class="inner-list__item inner-list__item--title">Одежда без рисунка</li>
+                        <li class="inner-list__item"><a class="inner-list__link" href="#">Печать на толстовках</a></li>
+                        <li class="inner-list__item"><a class="inner-list__link" href="#">Печать на футболках</a></li>
+                        <li class="inner-list__item"><a class="inner-list__link" href="#">Печать на свитшотах</a></li>
+                        <li class="inner-list__item"><a class="inner-list__link" href="#">Печать на поло</a></li>
+                        <li class="inner-list__item"><a class="inner-list__link" href="#">Печать на бомберах</a></li>
+                      </ul>
+                      <ul class="inner-list">
+                        <li class="inner-list__item inner-list__item--title">Изделия без рисунка</li>
+                        <li class="inner-list__item"><a class="inner-list__link" href="#">Маски</a></li>
+                        <li class="inner-list__item"><a class="inner-list__link" href="#">Рюкзаки</a></li>
+                        <li class="inner-list__item"><a class="inner-list__link" href="#">Чехлы для телефонов</a></li>
+                        <li class="inner-list__item"><a class="inner-list__link" href="#">Печать на свитшотах</a></li>
+                        <li class="inner-list__item"><a class="inner-list__link" href="#">Печать на поло</a></li>
+                        <li class="inner-list__item"><a class="inner-list__link" href="#">Печать на толстовках</a></li>
+                        <li class="inner-list__item"><a class="inner-list__link" href="#">Печать на футболках</a></li>
+                        <li class="inner-list__item"><a class="inner-list__link" href="#">Печать на свитшотах</a></li>
+                        <li class="inner-list__item"><a class="inner-list__link" href="#">Печать на поло</a></li>
+                        <li class="inner-list__item"><a class="inner-list__link" href="#">Печать на толстовках</a></li>
+                        <li class="inner-list__item"><a class="inner-list__link" href="#">Печать на футболках</a></li>
+                        <li class="inner-list__item"><a class="inner-list__link" href="#">Печать на свитшотах</a></li>
+                        <li class="inner-list__item"><a class="inner-list__link" href="#">Печать на поло</a></li>
+                      </ul>
+                    </div>
                   </div>
                 </li>
                 <li class="header-main__item"><a class="header-main__link" href="#">Цены</a></li>
@@ -99,10 +103,41 @@
             </nav>
             <div class="header-main__right">
               <form class="header-main__form" action="#" method="">
-                <input class="header-main__search" type="search">
+                <input class="header-main__search" type="search" placeholder="Введите запрос">
+                <button class="header-main__search-submit" type="submit">
+                  <svg class="header-main__search-icon" width="24" height="24">
+                    <use xlink:href="assets/images/sprite.svg#icon-search"></use>
+                  </svg>
+                </button>
+              </form>
+              <button class="header-main__btn main-btn js-write" type="button">Написать нам</button>
+            </div>
+            <div class="header-main__mobile burger-menu">
+              <form class="header-main__form" action="#" method="">
+                <input class="header-main__search" type="search" placeholder="Введите запрос">
                 <button class="header-main__search-submit" type="submit"><img src="assets/images/svg/icon-search.svg" alt=""></button>
               </form>
-              <button class="header-main__btn main-btn" type="button">Написать нам</button>
+              <nav class="burger-menu__nav">
+                <ul class="burger-menu__list">
+                  <li class="burger-menu__item"><a class="burger-menu__link" href="#">Печать на одежде</a></li>
+                  <li class="burger-menu__item"><a class="burger-menu__link" href="#">Печать на изделиях</a></li>
+                  <li class="burger-menu__item"><a class="burger-menu__link" href="#">Товары без рисунка</a></li>
+                  <li class="burger-menu__item"><a class="burger-menu__link" href="#">Цены</a></li>
+                  <li class="burger-menu__item"><a class="burger-menu__link" href="#">Портфолио</a></li>
+                </ul>
+                <ul class="burger-menu__com-list">
+                  <li class="burger-menu__com-item"><a class="burger-menu__com-link" href="#">Блог</a></li>
+                  <li class="burger-menu__com-item"><a class="burger-menu__com-link" href="#">О нас</a></li>
+                  <li class="burger-menu__com-item"><a class="burger-menu__com-link" href="#">Помощь</a></li>
+                  <li class="burger-menu__com-item"><a class="burger-menu__com-link" href="#">Контакты</a></li>
+                </ul>
+              </nav>
+              <button class="header-main__btn main-btn js-write" type="button">Написать нам</button>
+              <ul class="burger-menu__cont-list">
+                <li class="burger-menu__cont-item"><a class="burger-menu__cont-link" href="tel:+74992880140">+7 499 288-01-40</a></li>
+                <li class="burger-menu__cont-item"><a class="burger-menu__cont-link" href="tel:+79037654676">+7 903 765-46-76</a></li>
+                <li class="burger-menu__cont-item"><a class="burger-menu__cont-link" href="mailto:myfairprint@gmail.com">myfairprint@gmail.com</a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -115,23 +150,28 @@
         </section>
         <section class="error-page__content">
           <div class="container">
-            <div class="error-page__wrap"><span class="error-page__num">4</span><img class="error-page__img" src="assets/images/404-logo.svg" alt=""><span class="error-page__num">4</span></div>
+            <div class="error-page__wrap">
+              <div class="error-page__num">4</div><img class="error-page__img" src="assets/images/404-logo.svg" alt="">
+              <div class="error-page__num">4</div>
+            </div>
             <p class="error-page__text">Упс... Что-то пошло не так</p><a class="error-page__link btn-red" href="#">Вернуться на главную</a>
           </div>
         </section>
       </main>
       <footer class="footer">
         <div class="footer__top footer-top">
-          <div class="container"><a href="#"><img src="assets/images/logo-fair-white.svg" alt="Логотип Fire-Print"></a>
+          <div class="container"><a class="footer__logo" href="#"><img class="footer__img" src="assets/images/logo-fair-white.png" alt="Логотип Fire-Print"></a>
             <ul class="footer-top__nav-list">
               <li class="footer-top__item"><a class="footer-top__link" href="#">Печать на одежде</a></li>
-              <li class="footer-top__item"><a class="footer-top__link" href="#">О нас</a></li>
-              <li class="footer-top__item"><a class="footer-top__link" href="#">Помощь</a></li>
               <li class="footer-top__item"><a class="footer-top__link" href="#">Печать на изделиях</a></li>
-              <li class="footer-top__item"><a class="footer-top__link" href="#">Портфолио</a></li>
-              <li class="footer-top__item"><a class="footer-top__link" href="#">Контакты</a></li>
               <li class="footer-top__item"><a class="footer-top__link" href="#">Товары без рисунка</a></li>
+            </ul>
+            <ul class="footer-top__com-nav">
+              <li class="footer-top__item"><a class="footer-top__link" href="#">О нас</a></li>
+              <li class="footer-top__item"><a class="footer-top__link" href="#">Портфолио</a></li>
               <li class="footer-top__item"><a class="footer-top__link" href="#">Блог</a></li>
+              <li class="footer-top__item"><a class="footer-top__link" href="#">Помощь</a></li>
+              <li class="footer-top__item"><a class="footer-top__link" href="#">Контакты</a></li>
               <li class="footer-top__item"><a class="footer-top__link" href="#">Цены</a></li>
             </ul>
             <ul class="footer-top__cont-list">
@@ -145,8 +185,10 @@
                 <svg class="footer-top__svg" width="16" height="16">
                   <use xlink:href="assets/images/sprite.svg#icon-clock"></use>
                 </svg>
-                <p>Пн – пт с 11:00 до 20:00</p>
+                <p class="footer-top__time">Пн – пт с 11:00 до 20:00</p>
               </li>
+            </ul>
+            <ul class="footer-top__tel-list">
               <li class="footer-top__item">
                 <svg class="footer-top__svg" width="16" height="16">
                   <use xlink:href="assets/images/sprite.svg#icon-phone"></use>
@@ -159,7 +201,7 @@
         <div class="footer__bottom footer-bottom">
           <div class="container">
             <ul class="footer-bottom__list">
-              <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">FairPrint © 2020. Все права защищены.</a></li>
+              <li class="footer-bottom__item">FairPrint © 2020. Все права защищены.</li>
               <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Политика конфиденциальности</a></li>
               <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Юридическая информация</a></li>
               <li class="footer-bottom__item">Сделано в<a class="footer-bottom__link" href="#"> RA-Studio</a></li>
@@ -167,8 +209,209 @@
           </div>
         </div>
       </footer>
+      <div class="main-size-table">
+        <div class="size-table">
+          <div class="size-table__container"><a class="popup__logo" href="#"><img class="popup__logo-img" src="assets/images/logo-fair.png" alt="Лого"></a>
+            <h2 class="size-table__title">Таблица размеров</h2>
+            <div class="size-table__wrap">
+              <div class="size-table__top">Пропорции тела и размеры | Толстовки</div>
+              <table class="size-table__table">
+                <tbody class="size-table__body">
+                  <tr class="size-table__row size-table__row--head">
+                    <th class="size-table__cell">Размер</th>
+                    <th class="size-table__cell">XS</th>
+                    <th class="size-table__cell">S</th>
+                    <th class="size-table__cell">M</th>
+                    <th class="size-table__cell">L</th>
+                    <th class="size-table__cell">XL</th>
+                    <th class="size-table__cell">XXL</th>
+                  </tr>
+                  <tr class="size-table__row">
+                    <td class="size-table__cell">Соответсвтует</td>
+                    <td class="size-table__cell">42-44</td>
+                    <td class="size-table__cell">44-46</td>
+                    <td class="size-table__cell">46-48</td>
+                    <td class="size-table__cell">48-50</td>
+                    <td class="size-table__cell">52-54</td>
+                    <td class="size-table__cell">54-56</td>
+                  </tr>
+                  <tr class="size-table__row">
+                    <td class="size-table__cell">Ширина</td>
+                    <td class="size-table__cell">48</td>
+                    <td class="size-table__cell">50</td>
+                    <td class="size-table__cell">52</td>
+                    <td class="size-table__cell">54</td>
+                    <td class="size-table__cell">56</td>
+                    <td class="size-table__cell">58</td>
+                  </tr>
+                  <tr class="size-table__row">
+                    <td class="size-table__cell">Длина</td>
+                    <td class="size-table__cell">66</td>
+                    <td class="size-table__cell">68</td>
+                    <td class="size-table__cell">70</td>
+                    <td class="size-table__cell">72</td>
+                    <td class="size-table__cell">74</td>
+                    <td class="size-table__cell">76</td>
+                  </tr>
+                  <tr class="size-table__row">
+                    <td class="size-table__cell">Допуск (+\-), см</td>
+                    <td class="size-table__cell">2</td>
+                    <td class="size-table__cell">2</td>
+                    <td class="size-table__cell">2</td>
+                    <td class="size-table__cell">2</td>
+                    <td class="size-table__cell">2</td>
+                    <td class="size-table__cell">2</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="size-table__wrap">
+              <div class="size-table__top">Пропорции тела и размеры | Футболки</div>
+              <table class="size-table__table">
+                <tbody class="size-table__body">
+                  <tr class="size-table__row">
+                    <th class="size-table__cell">Размер</th>
+                    <th class="size-table__cell">XS</th>
+                    <th class="size-table__cell">S</th>
+                    <th class="size-table__cell">M</th>
+                    <th class="size-table__cell">L</th>
+                    <th class="size-table__cell">XL</th>
+                    <th class="size-table__cell">XXL</th>
+                  </tr>
+                  <tr class="size-table__row">
+                    <td class="size-table__cell">Соответсвтует</td>
+                    <td class="size-table__cell">42-44</td>
+                    <td class="size-table__cell">44-46</td>
+                    <td class="size-table__cell">46-48</td>
+                    <td class="size-table__cell">48-50</td>
+                    <td class="size-table__cell">52-54</td>
+                    <td class="size-table__cell">54-56</td>
+                  </tr>
+                  <tr class="size-table__row">
+                    <td class="size-table__cell">Ширина</td>
+                    <td class="size-table__cell">48</td>
+                    <td class="size-table__cell">50</td>
+                    <td class="size-table__cell">52</td>
+                    <td class="size-table__cell">54</td>
+                    <td class="size-table__cell">56</td>
+                    <td class="size-table__cell">58</td>
+                  </tr>
+                  <tr class="size-table__row">
+                    <td class="size-table__cell">Длина</td>
+                    <td class="size-table__cell">66</td>
+                    <td class="size-table__cell">68</td>
+                    <td class="size-table__cell">70</td>
+                    <td class="size-table__cell">72</td>
+                    <td class="size-table__cell">74</td>
+                    <td class="size-table__cell">76</td>
+                  </tr>
+                  <tr class="size-table__row">
+                    <td class="size-table__cell">Допуск (+\-), см</td>
+                    <td class="size-table__cell">2</td>
+                    <td class="size-table__cell">2</td>
+                    <td class="size-table__cell">2</td>
+                    <td class="size-table__cell">2</td>
+                    <td class="size-table__cell">2</td>
+                    <td class="size-table__cell">2</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="size-table__wrap">
+              <div class="size-table__top">Пропорции тела и размеры | Свитшоты</div>
+              <table class="size-table__table">
+                <tbody class="size-table__body">
+                  <tr class="size-table__row">
+                    <th class="size-table__cell">Размер</th>
+                    <th class="size-table__cell">XS</th>
+                    <th class="size-table__cell">S</th>
+                    <th class="size-table__cell">M</th>
+                    <th class="size-table__cell">L</th>
+                    <th class="size-table__cell">XL</th>
+                    <th class="size-table__cell">XXL</th>
+                  </tr>
+                  <tr class="size-table__row">
+                    <td class="size-table__cell">Соответсвтует</td>
+                    <td class="size-table__cell">42-44</td>
+                    <td class="size-table__cell">44-46</td>
+                    <td class="size-table__cell">46-48</td>
+                    <td class="size-table__cell">48-50</td>
+                    <td class="size-table__cell">52-54</td>
+                    <td class="size-table__cell">54-56</td>
+                  </tr>
+                  <tr class="size-table__row">
+                    <td class="size-table__cell">Ширина</td>
+                    <td class="size-table__cell">48</td>
+                    <td class="size-table__cell">50</td>
+                    <td class="size-table__cell">52</td>
+                    <td class="size-table__cell">54</td>
+                    <td class="size-table__cell">56</td>
+                    <td class="size-table__cell">58</td>
+                  </tr>
+                  <tr class="size-table__row">
+                    <td class="size-table__cell">Длина</td>
+                    <td class="size-table__cell">66</td>
+                    <td class="size-table__cell">68</td>
+                    <td class="size-table__cell">70</td>
+                    <td class="size-table__cell">72</td>
+                    <td class="size-table__cell">74</td>
+                    <td class="size-table__cell">76</td>
+                  </tr>
+                  <tr class="size-table__row">
+                    <td class="size-table__cell">Допуск (+\-), см</td>
+                    <td class="size-table__cell">2</td>
+                    <td class="size-table__cell">2</td>
+                    <td class="size-table__cell">2</td>
+                    <td class="size-table__cell">2</td>
+                    <td class="size-table__cell">2</td>
+                    <td class="size-table__cell">2</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button class="size-table__btn popup-close" type="button">
+              <svg class="size-table__svg" width="24" height="24">
+                <use xlink:href="assets/images/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="main-form-popup">
+        <div class="form-popup">
+          <div class="form-popup__container"><a class="popup__logo" href="#"><img class="popup__logo-img" src="assets/images/logo-fair.png" alt="Лого"></a>
+            <h2 class="form-popup__title title">Написать нам</h2>
+            <p class="form-popup__text">Если у вас есть вопросы, заполните форму, и мы свяжемся с вами в ближайшее время</p>
+            <form class="contact__form form" action="#" method="">
+              <label class="form__label">
+                <input class="form__field" type="text" placeholder="Ваше имя">
+              </label>
+              <label class="form__label">
+                <input class="form__field" type="email" placeholder="E-mail">
+              </label>
+              <label class="form__label form__label--file"> 
+                <svg class="form__svg" width="16" height="16">
+                  <use xlink:href="assets/images/sprite.svg#icon-paperclip"></use>
+                </svg>
+                <input class="visually-hidden" type="file" placeholder="Фото">Фото
+              </label>
+              <textarea class="form__field form__field--comment" name="" placeholder="Ваш запрос по заказу"></textarea>
+              <div class="form__wrap">
+                <button class="form__btn main-btn" type="submit">Отправить</button>
+                <p class="form__text">Заполняя форму, вы соглашаетесь<br> с <a class="form__link" href="#"> Правилами сайта</a></p>
+              </div>
+            </form>
+            <button class="form-popup__btn popup-close" type="button">
+              <svg class="form-popup__svg" width="24" height="24">
+                <use xlink:href="assets/images/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="assets/scripts/imask.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/scripts/accordion.min.js"></script>
     <script src="assets/scripts/swiper-bundle.min.js"></script>
     <script src="assets/scripts/medium-zoom.min.js"></script>
