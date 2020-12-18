@@ -22,6 +22,8 @@ gulp prod
 
 ## Используемые библиотеки
 
+https://michalsnik.github.io/aos/
+
 https://imask.js.org
 
 https://github.com/michu2k/Accordion
