@@ -22,6 +22,12 @@
         margin-bottom: 25px;
     }
 }
+.js-calc {
+    display: none;
+    &.show {
+        display: block;
+    }
+}
 
 .gallery-top {
     margin-bottom: 25px;
@@ -129,6 +135,15 @@
 }
 .calc__cont {
     max-width: 500px;
+}
+.calc--clothes {
+    .calc__cont {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
 }
 .calc__row {
     display: flex;
@@ -287,7 +302,7 @@
         top: 13px;
     }
     @include w480 {
-        max-width: 213px;
+        max-width: 250px;
     }
 }
 .calc-table__box {

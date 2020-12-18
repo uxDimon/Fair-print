@@ -46,10 +46,10 @@
         padding-left: 33%;
     }
     .swiper-button-next {
-        right: 0;
+        right: -15px;
     }
     .swiper-button-prev {
-        left: 0;
+        left: -15px;
     }
     .swiper-pagination {
         @include w480 {
@@ -61,7 +61,6 @@
     @include list-reset;
 }
 .work-examples__img-wrap {
-    width: 370px;
     height: 250px;
     filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.15));
 

@@ -14,10 +14,12 @@
         row-gap: 40px;
     }
     @include w480 {
+        margin-top: 30px;
+    }
+    @media screen and (max-width: 500px) {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 17px;
         row-gap: 30px;
         margin-bottom: 25px;
-        margin-top: 30px;
     }
 }

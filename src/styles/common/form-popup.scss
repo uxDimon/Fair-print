@@ -29,8 +29,34 @@
     background-color: $color-white;
     border-radius: 15px;
     z-index: 20;
+
+    @include w480 {
+        height: 100vh;
+        padding: 20px 15px 15px;
+        border-radius: 0;
+    }
+}
+.popup__logo {
+    display: none;
+    @include w480 {
+        display: block;
+        width: 100px;
+        height: 15px;
+        margin-bottom: 19px;
+    }
 }
 .form-popup__text {
     margin-top: 15px;
     margin-bottom: 40px;
+}
+.popup-close {
+    @include w480 {
+        svg {
+            width: 12px;
+            height: 12px;
+            path {
+                --icon-close-color: #000000;
+            }
+        }
+    }
 }

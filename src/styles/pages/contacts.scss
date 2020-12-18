@@ -97,9 +97,15 @@
         row-gap: 30px;
     }
 }
+.contacts__img-wrap {
+    height: 230px;
+    @include w480 {
+        height: 180px;
+    }
+}
 .contacts__img {
     width: 100%;
-    height: 230px;
+    height: 100%;
     border-radius: 15px;
     object-fit: cover;
 }
