@@ -1823,6 +1823,9 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .map-site {
   padding: 50px 0; }
+  @media screen and (max-width: 1023px) {
+    .map-site {
+      overflow-x: scroll; } }
 
 .map-site__table {
   border-collapse: collapse; }

@@ -1,8 +1,13 @@
 .map-site {
     padding: 50px 0;
+
+    @include w768 {
+        overflow-x: scroll;
+    }
 }
 .map-site__table {
     border-collapse: collapse;
+
 }
 .map-site__cell {
     border: 1px solid $color-light-black;
