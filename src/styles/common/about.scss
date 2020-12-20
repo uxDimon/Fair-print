@@ -10,17 +10,6 @@
 .about__title {
     margin-bottom: 45px;
 }
-.about__column {
-    @include w480 {
-        display: none;
-        &:first-of-type {
-            display: block;
-        }
-        &.more {
-            display: block;
-        }
-    }
-}
 .about__wrap {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -30,8 +19,20 @@
         grid-template-columns: 1fr;
     }
 
-    &.more .about__column {
-        display: block;
+    &.more {
+        .about__column {
+            display: block;
+            transition: all 0.2s ease 0s;
+        }
+    }
+}
+.about__column {
+    @include w480 {
+        display: none;
+        transition: all 0.2s ease 0s;
+        &:first-of-type {
+            display: block;
+        }
     }
 }
 .about__text {
@@ -51,13 +52,7 @@
 }
 .about__btn--close {
     display: none;
-    &.active {
-        display: flex;
-
-        & + .about__btn {
-            display: none;
-        }
-    }
+    margin-top: 30px;
 }
 .about__list-head {
     margin-bottom: 0;

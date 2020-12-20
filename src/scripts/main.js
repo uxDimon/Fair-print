@@ -80,25 +80,7 @@ if (document.querySelector('.application__img-wrapper')) {
   };
 
   initSlider();
-  // var mySwiper10 = new Swiper('.application__img-wrapper .swiper-container', {
-  //   breakpoints: {
-  //     768: {
-  //       direction: 'vertical',
-  //       slidesPerView: 2,
-  //       allowTouchMove: false,
-  //       spaceBetween: 30,
-  //     },
-  //     280: {
-  //       direction: 'horizontal',
-  //       slidesPerView: 1.5,
-  //       spaceBetween: 17,
-  //       allowTouchMove: true,
-  //     }
-  //   }
-  // });
 }
-
-
 
 if (document.querySelector('.clothes-list__swiper')) {
   var mySwiper8 = new Swiper('.clothes-list__swiper', {
@@ -224,6 +206,7 @@ if (document.querySelector('.work-examples__swiper')) {
     },
   });
 }
+
 if (document.querySelector('.print-cups__slider .swiper-container')) {
   var mySwiper5 = new Swiper('.print-cups__slider .swiper-container', {
     // Optional parameters
@@ -374,41 +357,45 @@ if (document.querySelectorAll('.js-write')) {
 }
 
 //about text more
-if (document.querySelectorAll('.about__column').length) {
+if (document.querySelectorAll('.about__wrap').length) {
   let linksMore = document.querySelectorAll('.about__btn');
-  let text = document.querySelectorAll('.about__column');
+  let textWraps = document.querySelectorAll('.about__wrap');
 
   for(let linkMore of linksMore) {
     linkMore.addEventListener('click', function(){
-      text.classList.add('more');
-      linkMore.classList.add('active');
+      for (let textWrap of textWraps) {
+        if (linkMore.innerText == 'Развернуть') {
+          linkMore.innerText = 'Свернуть';
+          textWrap.classList.add('more');
+        } else {
+          linkMore.innerText = 'Развернуть';
+          textWrap.classList.remove('more');
+        }
+        
+      }
     });
   }
 }
 
-//header inner menu
-// if (document.querySelectorAll('.header-main__link').length) {
-//   let links = document.querySelectorAll('.header-main__link');
-//   let dropMenu = document.querySelector('.header-main__inner-menu');
-//   for(let link of links) {
-//     link.addEventListener('mouseover', function(event){
-//       link.nextElementSibling.classList.add('active');
+//application text more
+if (document.querySelectorAll('.application__text-wrap').length) {
+  let linksMore = document.querySelectorAll('.application__btn--more');
+  let textWraps = document.querySelectorAll('.application__text-wrap');
 
-//       if(dropMenu !== event.target) {
-//         dropMenu.classList.remove('active');
-//       }
-//     });
-//     dropMenu.addEventListener('mouseover', function(){
-//       dropMenu.classList.add('active');
-//     });
-//     // link.addEventListener('mouseout', function(){
-//     //   link.nextElementSibling.classList.remove('active');
-//     // });
-//     dropMenu.addEventListener('mouseleave', function(){
-//       dropMenu.classList.remove('active');
-//     });
-//   }
-// }
+  for(let linkMore of linksMore) {
+    linkMore.addEventListener('click', function(){
+      for (let textWrap of textWraps) {
+        if (linkMore.innerText == 'Развернуть') {
+          linkMore.innerText = 'Свернуть';
+          textWrap.classList.add('more');
+        } else {
+          linkMore.innerText = 'Развернуть';
+          textWrap.classList.remove('more');
+        }
+      }
+    });
+  }
+}
 
 //accordion
 new Accordion('.help-tabs__wrap');

@@ -103,9 +103,6 @@
         margin-bottom: 30px;
     }
 }
-.application__text-wrap {
-    line-height: 24px;
-}
 .application__subtitle {
     font-weight: 600;
     font-size: 24px;
@@ -167,6 +164,13 @@
                 display: block;
             }
         }
+    }
+}
+.application__text-wrap {
+    line-height: 24px;
+
+    &.more .application__item {
+        display: block;
     }
 }
 .application__btn {
