@@ -81,7 +81,7 @@
     bottom: 50px;
 
     @include w480 {
-        bottom: 50px;
+        bottom: 10vh;
     }
 }
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {

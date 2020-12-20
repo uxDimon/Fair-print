@@ -248,6 +248,7 @@
     align-items: flex-start;
 }
 .calc-table__cell {
+    white-space: nowrap;
     &:first-of-type {
         font-weight: 500;
     }
