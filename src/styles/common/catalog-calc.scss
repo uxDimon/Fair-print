@@ -40,6 +40,9 @@
         background: linear-gradient(0deg, #E5E5E5, #E5E5E5);
         border-radius: 4px;
 
+        @include w1024 {
+            width: 100%;
+        }
         @include w480 {
             max-width: 291px;
             max-height: 350px;

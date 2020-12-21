@@ -37,6 +37,7 @@
     width: 210px;
     height: 300px;
     border-radius: 15px;
+    overflow: hidden;
 
     @include w480 {
         width: 137px;
@@ -48,7 +49,6 @@
     height: 100%;
     object-fit: contain;
     object-position: center;
-    border-radius: 15px;
 }
 .clothes-list__caption {
     margin-top: 15px;
