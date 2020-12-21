@@ -46,11 +46,23 @@
     @include w768 {
         padding-bottom: 79px;
     }
+    @include w480 {
+        padding-bottom: 39px;
+    }
 }
 .about-slider__top,
 .about-slider__bot {
     overflow: visible;
     margin-top: 30px;
+}
+.about-slider__bot {
+    padding-bottom: 40px;
+    .swiper-pagination {
+        display: none;
+        @include w480 {
+            display: block;
+        }
+    }
 }
 .about-slider__img-wrap {
     height: 170px;

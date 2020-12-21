@@ -117,6 +117,7 @@ if (document.querySelector('.clients__swiper-top')) {
       },
       768: {
         slidesPerView: 3,
+        spaceBetween: 20,
       },
       280: {
         slidesPerView: 2,
@@ -139,11 +140,15 @@ if (document.querySelector('.clients__swiper-bot')) {
       },
       768: {
         slidesPerView: 3,
+        spaceBetween: 20,
       },
       280: {
         slidesPerView: 2,
         spaceBetween: 17,
       }
+    },
+    pagination: {
+      el: '.swiper-pagination',
     },
   });
 }
@@ -265,6 +270,9 @@ if (document.querySelector('.about-slider__bot')) {
         slidesPerView: 2,
         spaceBetween: 17,
       }
+    },
+    pagination: {
+      el: '.swiper-pagination',
     },
   });
 }
