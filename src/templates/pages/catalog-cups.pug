@@ -69,32 +69,33 @@ block content
                     .calc__top
                         h2.calc__subtitle.subtitle Керамическая кружка
                     .calc__cont
-                        .calc-table
-                            .calc-table__row
-                                .calc-table__cell Материал
-                                .calc-table__cell Стекло
-                            .calc-table__row
-                                .calc-table__cell Количество
-                                .calc-table__cell
-                                    button.calc-table__btn -
-                                    span.calc-table__num 20
-                                    button.calc-table__btn +
-                            .calc-table__row
-                                .calc-table__cell Цвет
-                                .calc-table__cell.calc-table__cell--select.calc-table__cell--cupcolor
-                                    .calc-table__color
-                                    select.calc-table__select(name="model")
-                                        option.calc-table__option(value="") Синий
-                                        option.calc-table__option(value="") Синий
-                                        option.calc-table__option(value="") Синий
-                            .calc-table__row.calc-table__row--sum
-                                .calc-table__cell Стоимость изделия
-                                .calc-table__cell 800 ₽
-                            .calc-table__row
-                                .calc-table__cell Итого
-                                .calc-table__cell 800 ₽
-                        .calc__row
-                            button.calc__btn-app.main-btn(type="") Оставить заявку
+                        form.calc__form(onsubmit="event.preventDefault();")
+                            .calc-table
+                                .calc-table__row
+                                    .calc-table__cell Материал
+                                    .calc-table__cell Стекло
+                                .calc-table__row
+                                    .calc-table__cell Количество
+                                    .calc-table__cell
+                                        button.calc-table__btn -
+                                        span.calc-table__num 20
+                                        button.calc-table__btn +
+                                .calc-table__row
+                                    .calc-table__cell Цвет
+                                    .calc-table__cell.calc-table__cell--select.calc-table__cell--cupcolor
+                                        .calc-table__color
+                                        select.calc-table__select(name="model")
+                                            option.calc-table__option(value="") Синий
+                                            option.calc-table__option(value="") Синий
+                                            option.calc-table__option(value="") Синий
+                                .calc-table__row.calc-table__row--sum
+                                    .calc-table__cell Стоимость изделия
+                                    .calc-table__cell 800 ₽
+                                .calc-table__row
+                                    .calc-table__cell Итого
+                                    .calc-table__cell 800 ₽
+                            .calc__row
+                                button.calc__btn-app.main-btn(type="") Оставить заявку
         section.print-cups
             .container
                 .print-cups__text-wrap

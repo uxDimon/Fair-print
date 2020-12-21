@@ -337,6 +337,12 @@ if (document.querySelector('.main-size-table')) {
   btnClose.addEventListener('click', function(){
     table.classList.remove('active');
   });
+  let tableOverlay = document.querySelector('.size-table');
+  tableOverlay.addEventListener('click', function(){
+    if(table.classList.contains('active')) {
+      table.classList.remove('active');
+    }
+  });
 }
 
 //popup write-us
@@ -354,6 +360,12 @@ if (document.querySelectorAll('.js-write')) {
       writePopup.classList.remove('active');
     });
   }
+  let formOverlay = document.querySelector('.form-popup');
+  formOverlay.addEventListener('click', function(){
+    if(writePopup.classList.contains('active')) {
+      writePopup.classList.remove('active');
+    }
+  });
 }
 
 //about text more
