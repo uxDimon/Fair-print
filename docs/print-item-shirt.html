@@ -204,303 +204,305 @@
               </div>
             </div>
             <div class="calc__wrap">
-              <div class="calc__top">
-                <h2 class="calc__subtitle subtitle">Футболка</h2>
-                <div class="calc__tabs">
-                  <label class="calc__radio-label">
-                    <input class="calc__radio-input visually-hidden" type="radio" name="sex" value="male" checked><span class="calc__radio-value">Мужская</span>
-                  </label>
-                  <label class="calc__radio-label">
-                    <input class="calc__radio-input visually-hidden" type="radio" name="sex" value="female"><span class="calc__radio-value">Женская</span>
-                  </label>
-                </div><a class="calc__btn btn-red" href="#">Таблица размеров</a>
-              </div>
-              <div class="calc__cont active" id="tab1">
-                <div class="calc-table">
-                  <div class="calc-table__row">
-                    <div class="calc-table__cell">Состав </div>
-                    <div class="calc-table__cell">100% хлопок, плотность 155-165 гр/м2.</div><a class="calc__btn btn-red" href="#">Таблица размеров</a>
-                  </div>
-                  <div class="calc-table__row">
-                    <div class="calc-table__cell">Количество</div>
-                    <div class="calc-table__cell">
-                      <button class="calc-table__btn">-</button><span class="calc-table__num">502</span>
-                      <button class="calc-table__btn">+</button>
+              <form class="form__calc" onsubmit="event.preventDefault();">
+                <div class="calc__top">
+                  <h2 class="calc__subtitle subtitle">Футболка</h2>
+                  <div class="calc__tabs">
+                    <label class="calc__radio-label">
+                      <input class="calc__radio-input visually-hidden" type="radio" name="sex" value="male" checked><span class="calc__radio-value">Мужская</span>
+                    </label>
+                    <label class="calc__radio-label">
+                      <input class="calc__radio-input visually-hidden" type="radio" name="sex" value="female"><span class="calc__radio-value">Женская</span>
+                    </label>
+                  </div><a class="calc__btn btn-red" href="#">Таблица размеров</a>
+                </div>
+                <div class="calc__cont active" id="tab1">
+                  <div class="calc-table">
+                    <div class="calc-table__row">
+                      <div class="calc-table__cell">Состав </div>
+                      <div class="calc-table__cell">100% хлопок, плотность 155-165 гр/м2.</div><a class="calc__btn btn-red" href="#">Таблица размеров</a>
                     </div>
-                  </div>
-                  <div class="calc-table__row">
-                    <div class="calc-table__cell">Модель</div>
-                    <div class="calc-table__cell calc-table__cell--select">
-                      <select class="calc-table__select" name="model">
-                        <option class="calc-table__option" value="">Утеплённая</option>
-                        <option class="calc-table__option" value="">Утеплённая</option>
-                        <option class="calc-table__option" value="">Утеплённая</option>
-                      </select>
+                    <div class="calc-table__row">
+                      <div class="calc-table__cell">Количество</div>
+                      <div class="calc-table__cell">
+                        <button class="calc-table__btn">-</button><span class="calc-table__num">502</span>
+                        <button class="calc-table__btn">+</button>
+                      </div>
                     </div>
-                  </div>
-                  <div class="calc-table__row calc-table__row--color">
-                    <div class="calc-table__cell">Доступные цвета</div>
-                    <div class="calc-table__cell"> 
-                      <ul class="calc__colors calc-colors">
-                        <li class="calc-colors__item" style="background-color: #5A040D;"></li>
-                        <li class="calc-colors__item" style="background-color: #00B6B1;"></li>
-                        <li class="calc-colors__item" style="background-color: #0153AA;"></li>
-                        <li class="calc-colors__item" style="background-color: #FFEA00;"></li>
-                        <li class="calc-colors__item" style="background-color: #FFFFFF;"></li>
-                        <li class="calc-colors__item" style="background-color: #070062;"></li>
-                        <li class="calc-colors__item" style="background-color: #D50005;"></li>
-                        <li class="calc-colors__item" style="background-color: #FF9000;"></li>
-                        <li class="calc-colors__item" style="background-color: #000000;"></li>
-                        <li class="calc-colors__item" style="background-color: #808080;"></li>
-                      </ul>
+                    <div class="calc-table__row">
+                      <div class="calc-table__cell">Модель</div>
+                      <div class="calc-table__cell calc-table__cell--select">
+                        <select class="calc-table__select" name="model">
+                          <option class="calc-table__option" value="">Утеплённая</option>
+                          <option class="calc-table__option" value="">Утеплённая</option>
+                          <option class="calc-table__option" value="">Утеплённая</option>
+                        </select>
+                      </div>
                     </div>
-                  </div>
-                  <div class="calc-table__row">
-                    <div class="calc-table__cell calc-table__cell--hint"><span>Принт</span><a class="calc-table__hint" href="#">
-                        <svg class="calc-table__svg" width="16" height="16">
-                          <use xlink:href="assets/images/sprite.svg#icon-help-circle"> </use>
-                        </svg></a></div>
-                    <div class="calc-table__cell calc-table__cell--select">
-                      <select class="calc-table__select" name="">
-                        <option class="calc-table__option" value="">Флюресцентная плёнка</option>
-                        <option class="calc-table__option" value="">Флюресцентная плёнка</option>
-                        <option class="calc-table__option" value="">Флюресцентная плёнка</option>
-                      </select>
+                    <div class="calc-table__row calc-table__row--color">
+                      <div class="calc-table__cell">Доступные цвета</div>
+                      <div class="calc-table__cell"> 
+                        <ul class="calc__colors calc-colors">
+                          <li class="calc-colors__item" style="background-color: #5A040D;"></li>
+                          <li class="calc-colors__item" style="background-color: #00B6B1;"></li>
+                          <li class="calc-colors__item" style="background-color: #0153AA;"></li>
+                          <li class="calc-colors__item" style="background-color: #FFEA00;"></li>
+                          <li class="calc-colors__item" style="background-color: #FFFFFF;"></li>
+                          <li class="calc-colors__item" style="background-color: #070062;"></li>
+                          <li class="calc-colors__item" style="background-color: #D50005;"></li>
+                          <li class="calc-colors__item" style="background-color: #FF9000;"></li>
+                          <li class="calc-colors__item" style="background-color: #000000;"></li>
+                          <li class="calc-colors__item" style="background-color: #808080;"></li>
+                        </ul>
+                      </div>
                     </div>
-                  </div>
-                  <div class="calc-table__row">
-                    <div class="calc-table__cell">Файл принта</div>
-                    <div class="calc-table__cell">
-                      <label class="form__label form__label--file"> 
-                        <svg class="form__svg" width="16" height="16">
-                          <use xlink:href="assets/images/sprite.svg#icon-paperclip"></use>
-                        </svg>
-                        <input class="visually-hidden" type="file" placeholder="Фото">Фото
-                      </label>
+                    <div class="calc-table__row">
+                      <div class="calc-table__cell calc-table__cell--hint"><span>Принт</span><a class="calc-table__hint" href="#">
+                          <svg class="calc-table__svg" width="16" height="16">
+                            <use xlink:href="assets/images/sprite.svg#icon-help-circle"> </use>
+                          </svg></a></div>
+                      <div class="calc-table__cell calc-table__cell--select">
+                        <select class="calc-table__select" name="">
+                          <option class="calc-table__option" value="">Флюресцентная плёнка</option>
+                          <option class="calc-table__option" value="">Флюресцентная плёнка</option>
+                          <option class="calc-table__option" value="">Флюресцентная плёнка</option>
+                        </select>
+                      </div>
                     </div>
-                  </div>
-                  <div class="calc-table__row">
-                    <div class="calc-table__cell calc-table__cell--hint"><span>Метод печати</span><a class="calc-table__hint" href="#">
-                        <svg class="calc-table__svg" width="16" height="16">
-                          <use xlink:href="assets/images/sprite.svg#icon-help-circle"> </use>
-                        </svg></a></div>
-                    <div class="calc-table__cell calc-table__cell--select">
-                      <select class="calc-table__select" name="">
-                        <option class="calc-table__option" value="">Шелкография</option>
-                        <option class="calc-table__option" value="">Шелкография</option>
-                        <option class="calc-table__option" value="">Шелкография</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="calc-table__row calc-table__row--place">
-                    <div class="calc-table__cell"><span>Где печатать</span></div>
-                    <div class="calc-table__cell">
-                      <ul class="calc-table__wrap">
-                        <li class="calc-table__item">
-                          <svg class="calc-table__svg" width="70" height="70">
-                            <use xlink:href="assets/images/sprite.svg#tshirt-center"></use>
+                    <div class="calc-table__row">
+                      <div class="calc-table__cell">Файл принта</div>
+                      <div class="calc-table__cell">
+                        <label class="form__label form__label--file"> 
+                          <svg class="form__svg" width="16" height="16">
+                            <use xlink:href="assets/images/sprite.svg#icon-paperclip"></use>
                           </svg>
-                          <div class="calc-table__box"><span>Грудь</span>
-                            <div class="calc-table__cell--select">
-                              <select class="calc-table__select" name="">
-                                <option class="calc-table__option" value="">А2</option>
-                                <option class="calc-table__option" value="">А2</option>
-                                <option class="calc-table__option" value="">А2</option>
-                              </select>
+                          <input class="visually-hidden" type="file" placeholder="Фото">Фото
+                        </label>
+                      </div>
+                    </div>
+                    <div class="calc-table__row">
+                      <div class="calc-table__cell calc-table__cell--hint"><span>Метод печати</span><a class="calc-table__hint" href="#">
+                          <svg class="calc-table__svg" width="16" height="16">
+                            <use xlink:href="assets/images/sprite.svg#icon-help-circle"> </use>
+                          </svg></a></div>
+                      <div class="calc-table__cell calc-table__cell--select">
+                        <select class="calc-table__select" name="">
+                          <option class="calc-table__option" value="">Шелкография</option>
+                          <option class="calc-table__option" value="">Шелкография</option>
+                          <option class="calc-table__option" value="">Шелкография</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="calc-table__row calc-table__row--place">
+                      <div class="calc-table__cell"><span>Где печатать</span></div>
+                      <div class="calc-table__cell">
+                        <ul class="calc-table__wrap">
+                          <li class="calc-table__item">
+                            <svg class="calc-table__svg" width="70" height="70">
+                              <use xlink:href="assets/images/sprite.svg#tshirt-center"></use>
+                            </svg>
+                            <div class="calc-table__box"><span>Грудь</span>
+                              <div class="calc-table__cell--select">
+                                <select class="calc-table__select" name="">
+                                  <option class="calc-table__option" value="">А2</option>
+                                  <option class="calc-table__option" value="">А2</option>
+                                  <option class="calc-table__option" value="">А2</option>
+                                </select>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="calc-table__item">
-                          <svg class="calc-table__svg" width="70" height="70">
-                            <use xlink:href="assets/images/sprite.svg#tshirt-top"></use>
-                          </svg>
-                          <div class="calc-table__box"><span>Спина</span>
-                            <div class="calc-table__cell--select">
-                              <select class="calc-table__select" name="">
-                                <option class="calc-table__option" value="">нет</option>
-                                <option class="calc-table__option" value="">нет</option>
-                                <option class="calc-table__option" value="">нет</option>
-                              </select>
+                          </li>
+                          <li class="calc-table__item">
+                            <svg class="calc-table__svg" width="70" height="70">
+                              <use xlink:href="assets/images/sprite.svg#tshirt-top"></use>
+                            </svg>
+                            <div class="calc-table__box"><span>Спина</span>
+                              <div class="calc-table__cell--select">
+                                <select class="calc-table__select" name="">
+                                  <option class="calc-table__option" value="">нет</option>
+                                  <option class="calc-table__option" value="">нет</option>
+                                  <option class="calc-table__option" value="">нет</option>
+                                </select>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="calc-table__item">
-                          <svg class="calc-table__svg" width="70" height="70">
-                            <use xlink:href="assets/images/sprite.svg#tshirt-sleeve"></use>
-                          </svg>
-                          <div class="calc-table__box"><span>Рукав</span>
-                            <div class="calc-table__cell--select">
-                              <select class="calc-table__select" name="">
-                                <option class="calc-table__option" value="">А6</option>
-                                <option class="calc-table__option" value="">А6</option>
-                                <option class="calc-table__option" value="">А6</option>
-                              </select>
+                          </li>
+                          <li class="calc-table__item">
+                            <svg class="calc-table__svg" width="70" height="70">
+                              <use xlink:href="assets/images/sprite.svg#tshirt-sleeve"></use>
+                            </svg>
+                            <div class="calc-table__box"><span>Рукав</span>
+                              <div class="calc-table__cell--select">
+                                <select class="calc-table__select" name="">
+                                  <option class="calc-table__option" value="">А6</option>
+                                  <option class="calc-table__option" value="">А6</option>
+                                  <option class="calc-table__option" value="">А6</option>
+                                </select>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                      </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="calc-table__row calc-table__row--sum">
+                      <div class="calc-table__cell">Стоимость изделий</div>
+                      <div class="calc-table__cell">1 650 ₽</div>
+                    </div>
+                    <div class="calc-table__row calc-table__row--print">
+                      <div class="calc-table__cell">Стоимость печати</div>
+                      <div class="calc-table__cell">800 ₽</div>
+                    </div>
+                    <div class="calc-table__row">
+                      <div class="calc-table__cell">Итого</div>
+                      <div class="calc-table__cell">2 450 ₽</div>
                     </div>
                   </div>
-                  <div class="calc-table__row calc-table__row--sum">
-                    <div class="calc-table__cell">Стоимость изделий</div>
-                    <div class="calc-table__cell">1 650 ₽</div>
-                  </div>
-                  <div class="calc-table__row calc-table__row--print">
-                    <div class="calc-table__cell">Стоимость печати</div>
-                    <div class="calc-table__cell">800 ₽</div>
-                  </div>
-                  <div class="calc-table__row">
-                    <div class="calc-table__cell">Итого</div>
-                    <div class="calc-table__cell">2 450 ₽</div>
+                  <div class="calc__row">
+                    <button class="calc__btn-app main-btn" type="">Оставить заявку</button><a class="calc__btn-print btn-red" href="#">Нанести принт</a>
                   </div>
                 </div>
-                <div class="calc__row">
-                  <button class="calc__btn-app main-btn" type="">Оставить заявку</button><a class="calc__btn-print btn-red" href="#">Нанести принт</a>
-                </div>
-              </div>
-              <div class="calc__cont" id="tab2">
-                <div class="calc-table">
-                  <div class="calc-table__row">
-                    <div class="calc-table__cell">Состав </div>
-                    <div class="calc-table__cell">100% хлопок, плотность 155-165 гр/м2.</div><a class="calc__btn btn-red" href="#">Таблица размеров</a>
-                  </div>
-                  <div class="calc-table__row">
-                    <div class="calc-table__cell">Количество</div>
-                    <div class="calc-table__cell">
-                      <button class="calc-table__btn">-</button><span class="calc-table__num">502</span>
-                      <button class="calc-table__btn">+</button>
+                <div class="calc__cont" id="tab2">
+                  <div class="calc-table">
+                    <div class="calc-table__row">
+                      <div class="calc-table__cell">Состав </div>
+                      <div class="calc-table__cell">100% хлопок, плотность 155-165 гр/м2.</div><a class="calc__btn btn-red" href="#">Таблица размеров</a>
                     </div>
-                  </div>
-                  <div class="calc-table__row">
-                    <div class="calc-table__cell">Модель</div>
-                    <div class="calc-table__cell calc-table__cell--select">
-                      <select class="calc-table__select" name="model">
-                        <option class="calc-table__option" value="">Утеплённая</option>
-                        <option class="calc-table__option" value="">Утеплённая</option>
-                        <option class="calc-table__option" value="">Утеплённая</option>
-                      </select>
+                    <div class="calc-table__row">
+                      <div class="calc-table__cell">Количество</div>
+                      <div class="calc-table__cell">
+                        <button class="calc-table__btn">-</button><span class="calc-table__num">502</span>
+                        <button class="calc-table__btn">+</button>
+                      </div>
                     </div>
-                  </div>
-                  <div class="calc-table__row calc-table__row--color">
-                    <div class="calc-table__cell">Доступные цвета</div>
-                    <div class="calc-table__cell"> 
-                      <ul class="calc__colors calc-colors">
-                        <li class="calc-colors__item" style="background-color: #5A040D;"></li>
-                        <li class="calc-colors__item" style="background-color: #00B6B1;"></li>
-                        <li class="calc-colors__item" style="background-color: #0153AA;"></li>
-                        <li class="calc-colors__item" style="background-color: #FFEA00;"></li>
-                        <li class="calc-colors__item" style="background-color: #FFFFFF;"></li>
-                        <li class="calc-colors__item" style="background-color: #070062;"></li>
-                        <li class="calc-colors__item" style="background-color: #D50005;"></li>
-                        <li class="calc-colors__item" style="background-color: #FF9000;"></li>
-                        <li class="calc-colors__item" style="background-color: #000000;"></li>
-                        <li class="calc-colors__item" style="background-color: #808080;"></li>
-                      </ul>
+                    <div class="calc-table__row">
+                      <div class="calc-table__cell">Модель</div>
+                      <div class="calc-table__cell calc-table__cell--select">
+                        <select class="calc-table__select" name="model">
+                          <option class="calc-table__option" value="">Утеплённая</option>
+                          <option class="calc-table__option" value="">Утеплённая</option>
+                          <option class="calc-table__option" value="">Утеплённая</option>
+                        </select>
+                      </div>
                     </div>
-                  </div>
-                  <div class="calc-table__row">
-                    <div class="calc-table__cell calc-table__cell--hint"><span>Принт</span><a class="calc-table__hint" href="#">
-                        <svg class="calc-table__svg" width="16" height="16">
-                          <use xlink:href="assets/images/sprite.svg#icon-help-circle"> </use>
-                        </svg></a></div>
-                    <div class="calc-table__cell calc-table__cell--select">
-                      <select class="calc-table__select" name="">
-                        <option class="calc-table__option" value="">Флюресцентная плёнка</option>
-                        <option class="calc-table__option" value="">Флюресцентная плёнка</option>
-                        <option class="calc-table__option" value="">Флюресцентная плёнка</option>
-                      </select>
+                    <div class="calc-table__row calc-table__row--color">
+                      <div class="calc-table__cell">Доступные цвета</div>
+                      <div class="calc-table__cell"> 
+                        <ul class="calc__colors calc-colors">
+                          <li class="calc-colors__item" style="background-color: #5A040D;"></li>
+                          <li class="calc-colors__item" style="background-color: #00B6B1;"></li>
+                          <li class="calc-colors__item" style="background-color: #0153AA;"></li>
+                          <li class="calc-colors__item" style="background-color: #FFEA00;"></li>
+                          <li class="calc-colors__item" style="background-color: #FFFFFF;"></li>
+                          <li class="calc-colors__item" style="background-color: #070062;"></li>
+                          <li class="calc-colors__item" style="background-color: #D50005;"></li>
+                          <li class="calc-colors__item" style="background-color: #FF9000;"></li>
+                          <li class="calc-colors__item" style="background-color: #000000;"></li>
+                          <li class="calc-colors__item" style="background-color: #808080;"></li>
+                        </ul>
+                      </div>
                     </div>
-                  </div>
-                  <div class="calc-table__row">
-                    <div class="calc-table__cell">Файл принта</div>
-                    <div class="calc-table__cell">
-                      <label class="form__label form__label--file"> 
-                        <svg class="form__svg" width="16" height="16">
-                          <use xlink:href="assets/images/sprite.svg#icon-paperclip"></use>
-                        </svg>
-                        <input class="visually-hidden" type="file" placeholder="Фото">Фото
-                      </label>
+                    <div class="calc-table__row">
+                      <div class="calc-table__cell calc-table__cell--hint"><span>Принт</span><a class="calc-table__hint" href="#">
+                          <svg class="calc-table__svg" width="16" height="16">
+                            <use xlink:href="assets/images/sprite.svg#icon-help-circle"> </use>
+                          </svg></a></div>
+                      <div class="calc-table__cell calc-table__cell--select">
+                        <select class="calc-table__select" name="">
+                          <option class="calc-table__option" value="">Флюресцентная плёнка</option>
+                          <option class="calc-table__option" value="">Флюресцентная плёнка</option>
+                          <option class="calc-table__option" value="">Флюресцентная плёнка</option>
+                        </select>
+                      </div>
                     </div>
-                  </div>
-                  <div class="calc-table__row">
-                    <div class="calc-table__cell calc-table__cell--hint"><span>Метод печати</span><a class="calc-table__hint" href="#">
-                        <svg class="calc-table__svg" width="16" height="16">
-                          <use xlink:href="assets/images/sprite.svg#icon-help-circle"> </use>
-                        </svg></a></div>
-                    <div class="calc-table__cell calc-table__cell--select">
-                      <select class="calc-table__select" name="">
-                        <option class="calc-table__option" value="">Шелкография</option>
-                        <option class="calc-table__option" value="">Шелкография</option>
-                        <option class="calc-table__option" value="">Шелкография</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="calc-table__row calc-table__row--place">
-                    <div class="calc-table__cell"><span>Где печатать</span></div>
-                    <div class="calc-table__cell">
-                      <ul class="calc-table__wrap">
-                        <li class="calc-table__item">
-                          <svg class="calc-table__svg" width="70" height="70">
-                            <use xlink:href="assets/images/sprite.svg#tshirt-center"></use>
+                    <div class="calc-table__row">
+                      <div class="calc-table__cell">Файл принта</div>
+                      <div class="calc-table__cell">
+                        <label class="form__label form__label--file"> 
+                          <svg class="form__svg" width="16" height="16">
+                            <use xlink:href="assets/images/sprite.svg#icon-paperclip"></use>
                           </svg>
-                          <div class="calc-table__box"><span>Грудь</span>
-                            <div class="calc-table__cell--select">
-                              <select class="calc-table__select" name="">
-                                <option class="calc-table__option" value="">А2</option>
-                                <option class="calc-table__option" value="">А2</option>
-                                <option class="calc-table__option" value="">А2</option>
-                              </select>
+                          <input class="visually-hidden" type="file" placeholder="Фото">Фото
+                        </label>
+                      </div>
+                    </div>
+                    <div class="calc-table__row">
+                      <div class="calc-table__cell calc-table__cell--hint"><span>Метод печати</span><a class="calc-table__hint" href="#">
+                          <svg class="calc-table__svg" width="16" height="16">
+                            <use xlink:href="assets/images/sprite.svg#icon-help-circle"> </use>
+                          </svg></a></div>
+                      <div class="calc-table__cell calc-table__cell--select">
+                        <select class="calc-table__select" name="">
+                          <option class="calc-table__option" value="">Шелкография</option>
+                          <option class="calc-table__option" value="">Шелкография</option>
+                          <option class="calc-table__option" value="">Шелкография</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="calc-table__row calc-table__row--place">
+                      <div class="calc-table__cell"><span>Где печатать</span></div>
+                      <div class="calc-table__cell">
+                        <ul class="calc-table__wrap">
+                          <li class="calc-table__item">
+                            <svg class="calc-table__svg" width="70" height="70">
+                              <use xlink:href="assets/images/sprite.svg#tshirt-center"></use>
+                            </svg>
+                            <div class="calc-table__box"><span>Грудь</span>
+                              <div class="calc-table__cell--select">
+                                <select class="calc-table__select" name="">
+                                  <option class="calc-table__option" value="">А2</option>
+                                  <option class="calc-table__option" value="">А2</option>
+                                  <option class="calc-table__option" value="">А2</option>
+                                </select>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="calc-table__item">
-                          <svg class="calc-table__svg" width="70" height="70">
-                            <use xlink:href="assets/images/sprite.svg#tshirt-top"></use>
-                          </svg>
-                          <div class="calc-table__box"><span>Спина</span>
-                            <div class="calc-table__cell--select">
-                              <select class="calc-table__select" name="">
-                                <option class="calc-table__option" value="">нет</option>
-                                <option class="calc-table__option" value="">нет</option>
-                                <option class="calc-table__option" value="">нет</option>
-                              </select>
+                          </li>
+                          <li class="calc-table__item">
+                            <svg class="calc-table__svg" width="70" height="70">
+                              <use xlink:href="assets/images/sprite.svg#tshirt-top"></use>
+                            </svg>
+                            <div class="calc-table__box"><span>Спина</span>
+                              <div class="calc-table__cell--select">
+                                <select class="calc-table__select" name="">
+                                  <option class="calc-table__option" value="">нет</option>
+                                  <option class="calc-table__option" value="">нет</option>
+                                  <option class="calc-table__option" value="">нет</option>
+                                </select>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="calc-table__item">
-                          <svg class="calc-table__svg" width="70" height="70">
-                            <use xlink:href="assets/images/sprite.svg#tshirt-sleeve"></use>
-                          </svg>
-                          <div class="calc-table__box"><span>Рукав</span>
-                            <div class="calc-table__cell--select">
-                              <select class="calc-table__select" name="">
-                                <option class="calc-table__option" value="">А6</option>
-                                <option class="calc-table__option" value="">А6</option>
-                                <option class="calc-table__option" value="">А6</option>
-                              </select>
+                          </li>
+                          <li class="calc-table__item">
+                            <svg class="calc-table__svg" width="70" height="70">
+                              <use xlink:href="assets/images/sprite.svg#tshirt-sleeve"></use>
+                            </svg>
+                            <div class="calc-table__box"><span>Рукав</span>
+                              <div class="calc-table__cell--select">
+                                <select class="calc-table__select" name="">
+                                  <option class="calc-table__option" value="">А6</option>
+                                  <option class="calc-table__option" value="">А6</option>
+                                  <option class="calc-table__option" value="">А6</option>
+                                </select>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                      </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="calc-table__row calc-table__row--sum">
+                      <div class="calc-table__cell">Стоимость изделий</div>
+                      <div class="calc-table__cell">1 650 ₽</div>
+                    </div>
+                    <div class="calc-table__row calc-table__row--print">
+                      <div class="calc-table__cell">Стоимость печати</div>
+                      <div class="calc-table__cell">800 ₽</div>
+                    </div>
+                    <div class="calc-table__row">
+                      <div class="calc-table__cell">Итого</div>
+                      <div class="calc-table__cell">2 450 ₽</div>
                     </div>
                   </div>
-                  <div class="calc-table__row calc-table__row--sum">
-                    <div class="calc-table__cell">Стоимость изделий</div>
-                    <div class="calc-table__cell">1 650 ₽</div>
-                  </div>
-                  <div class="calc-table__row calc-table__row--print">
-                    <div class="calc-table__cell">Стоимость печати</div>
-                    <div class="calc-table__cell">800 ₽</div>
-                  </div>
-                  <div class="calc-table__row">
-                    <div class="calc-table__cell">Итого</div>
-                    <div class="calc-table__cell">2 450 ₽</div>
+                  <div class="calc__row">
+                    <button class="calc__btn-app main-btn" type="submit">Оставить заявку</button><a class="calc__btn-print btn-red" href="#">Нанести принт</a>
                   </div>
                 </div>
-                <div class="calc__row">
-                  <button class="calc__btn-app main-btn" type="">Оставить заявку</button><a class="calc__btn-print btn-red" href="#">Нанести принт</a>
-                </div>
-              </div>
+              </form>
             </div>
           </div>
         </section>

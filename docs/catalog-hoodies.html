@@ -204,70 +204,72 @@
               </div>
             </div>
             <div class="calc__wrap">
-              <div class="calc__top">
-                <h2 class="calc__subtitle subtitle">Толстовка</h2>
-                <div class="calc__tabs">
-                  <label class="calc__radio-label">
-                    <input class="calc__radio-input visually-hidden" type="radio" name="sex" value="male" checked><span class="calc__radio-value">Мужская</span>
-                  </label>
-                  <label class="calc__radio-label">
-                    <input class="calc__radio-input visually-hidden" type="radio" name="sex" value="female"><span class="calc__radio-value">Женская</span>
-                  </label>
-                </div><a class="calc__btn btn-red" href="#">Таблица размеров</a>
-              </div>
-              <div class="calc__cont active" id="tab1">
-                <div class="calc-table">
-                  <div class="calc-table__row">
-                    <div class="calc-table__cell">Состав </div>
-                    <div class="calc-table__cell">100% хлопок, плотность 155-165 гр/м2.</div><a class="calc__btn btn-red" href="#">Таблица размеров</a>
-                  </div>
-                  <div class="calc-table__row">
-                    <div class="calc-table__cell">Количество</div>
-                    <div class="calc-table__cell">
-                      <button class="calc-table__btn">-</button><span class="calc-table__num">502</span>
-                      <button class="calc-table__btn">+</button>
+              <fomr class="calc__form" onsubmit="event.preventDefault();">
+                <div class="calc__top">
+                  <h2 class="calc__subtitle subtitle">Толстовка</h2>
+                  <div class="calc__tabs">
+                    <label class="calc__radio-label">
+                      <input class="calc__radio-input visually-hidden" type="radio" name="sex" value="male" checked><span class="calc__radio-value">Мужская</span>
+                    </label>
+                    <label class="calc__radio-label">
+                      <input class="calc__radio-input visually-hidden" type="radio" name="sex" value="female"><span class="calc__radio-value">Женская</span>
+                    </label>
+                  </div><a class="calc__btn btn-red" href="#">Таблица размеров</a>
+                </div>
+                <div class="calc__cont active" id="tab1">
+                  <div class="calc-table">
+                    <div class="calc-table__row">
+                      <div class="calc-table__cell">Состав </div>
+                      <div class="calc-table__cell">100% хлопок, плотность 155-165 гр/м2.</div><a class="calc__btn btn-red" href="#">Таблица размеров</a>
+                    </div>
+                    <div class="calc-table__row">
+                      <div class="calc-table__cell">Количество</div>
+                      <div class="calc-table__cell">
+                        <button class="calc-table__btn">-</button><span class="calc-table__num">502</span>
+                        <button class="calc-table__btn">+</button>
+                      </div>
+                    </div>
+                    <div class="calc-table__row">
+                      <div class="calc-table__cell">Модель</div>
+                      <div class="calc-table__cell calc-table__cell--select">
+                        <select class="calc-table__select" name="model">
+                          <option class="calc-table__option" value="">Утеплённая</option>
+                          <option class="calc-table__option" value="">Утеплённая</option>
+                          <option class="calc-table__option" value="">Утеплённая</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="calc-table__row calc-table__row--color">
+                      <div class="calc-table__cell">Доступные цвета</div>
+                      <div class="calc-table__cell"> 
+                        <ul class="calc__colors calc-colors">
+                          <li class="calc-colors__item" style="background-color: #5A040D;"></li>
+                          <li class="calc-colors__item" style="background-color: #00B6B1;"></li>
+                          <li class="calc-colors__item" style="background-color: #0153AA;"></li>
+                          <li class="calc-colors__item" style="background-color: #FFEA00;"></li>
+                          <li class="calc-colors__item" style="background-color: #FFFFFF;"></li>
+                          <li class="calc-colors__item" style="background-color: #070062;"></li>
+                          <li class="calc-colors__item" style="background-color: #D50005;"></li>
+                          <li class="calc-colors__item" style="background-color: #FF9000;"></li>
+                          <li class="calc-colors__item" style="background-color: #000000;"></li>
+                          <li class="calc-colors__item" style="background-color: #808080;"></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="calc-table__row calc-table__row--sum">
+                      <div class="calc-table__cell">Стоимость изделий</div>
+                      <div class="calc-table__cell">1 650 ₽</div>
+                    </div>
+                    <div class="calc-table__row">
+                      <div class="calc-table__cell">Итого</div>
+                      <div class="calc-table__cell">2 450 ₽</div>
                     </div>
                   </div>
-                  <div class="calc-table__row">
-                    <div class="calc-table__cell">Модель</div>
-                    <div class="calc-table__cell calc-table__cell--select">
-                      <select class="calc-table__select" name="model">
-                        <option class="calc-table__option" value="">Утеплённая</option>
-                        <option class="calc-table__option" value="">Утеплённая</option>
-                        <option class="calc-table__option" value="">Утеплённая</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="calc-table__row calc-table__row--color">
-                    <div class="calc-table__cell">Доступные цвета</div>
-                    <div class="calc-table__cell"> 
-                      <ul class="calc__colors calc-colors">
-                        <li class="calc-colors__item" style="background-color: #5A040D;"></li>
-                        <li class="calc-colors__item" style="background-color: #00B6B1;"></li>
-                        <li class="calc-colors__item" style="background-color: #0153AA;"></li>
-                        <li class="calc-colors__item" style="background-color: #FFEA00;"></li>
-                        <li class="calc-colors__item" style="background-color: #FFFFFF;"></li>
-                        <li class="calc-colors__item" style="background-color: #070062;"></li>
-                        <li class="calc-colors__item" style="background-color: #D50005;"></li>
-                        <li class="calc-colors__item" style="background-color: #FF9000;"></li>
-                        <li class="calc-colors__item" style="background-color: #000000;"></li>
-                        <li class="calc-colors__item" style="background-color: #808080;"></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="calc-table__row calc-table__row--sum">
-                    <div class="calc-table__cell">Стоимость изделий</div>
-                    <div class="calc-table__cell">1 650 ₽</div>
-                  </div>
-                  <div class="calc-table__row">
-                    <div class="calc-table__cell">Итого</div>
-                    <div class="calc-table__cell">2 450 ₽</div>
+                  <div class="calc__row">
+                    <button class="calc__btn-app main-btn" type="">Оставить заявку</button><a class="calc__btn-print btn-red" href="#">Нанести принт</a>
                   </div>
                 </div>
-                <div class="calc__row">
-                  <button class="calc__btn-app main-btn" type="">Оставить заявку</button><a class="calc__btn-print btn-red" href="#">Нанести принт</a>
-                </div>
-              </div>
+              </fomr>
             </div>
           </div>
         </section>

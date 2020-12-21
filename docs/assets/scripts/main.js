@@ -117,6 +117,7 @@ if (document.querySelector('.clients__swiper-top')) {
       },
       768: {
         slidesPerView: 3,
+        spaceBetween: 20,
       },
       280: {
         slidesPerView: 2,
@@ -139,11 +140,15 @@ if (document.querySelector('.clients__swiper-bot')) {
       },
       768: {
         slidesPerView: 3,
+        spaceBetween: 20,
       },
       280: {
         slidesPerView: 2,
         spaceBetween: 17,
       }
+    },
+    pagination: {
+      el: '.swiper-pagination',
     },
   });
 }
@@ -266,6 +271,9 @@ if (document.querySelector('.about-slider__bot')) {
         spaceBetween: 17,
       }
     },
+    pagination: {
+      el: '.swiper-pagination',
+    },
   });
 }
 //about slider end
@@ -337,6 +345,12 @@ if (document.querySelector('.main-size-table')) {
   btnClose.addEventListener('click', function(){
     table.classList.remove('active');
   });
+  let tableOverlay = document.querySelector('.size-table');
+  tableOverlay.addEventListener('click', function(){
+    if(table.classList.contains('active')) {
+      table.classList.remove('active');
+    }
+  });
 }
 
 //popup write-us
@@ -354,6 +368,12 @@ if (document.querySelectorAll('.js-write')) {
       writePopup.classList.remove('active');
     });
   }
+  let formOverlay = document.querySelector('.form-popup');
+  formOverlay.addEventListener('click', function(){
+    if(writePopup.classList.contains('active')) {
+      writePopup.classList.remove('active');
+    }
+  });
 }
 
 //about text more

@@ -190,79 +190,81 @@
                 <h2 class="calc__subtitle subtitle">Керамическая кружка</h2>
               </div>
               <div class="calc__cont">
-                <div class="calc-table">
-                  <div class="calc-table__row">
-                    <div class="calc-table__cell">Материал </div>
-                    <div class="calc-table__cell">Стекло</div>
-                  </div>
-                  <div class="calc-table__row">
-                    <div class="calc-table__cell">Количество</div>
-                    <div class="calc-table__cell">
-                      <button class="calc-table__btn">-</button><span class="calc-table__num">20</span>
-                      <button class="calc-table__btn">+</button>
+                <form class="calc__form" onsubmit="event.preventDefault();">
+                  <div class="calc-table">
+                    <div class="calc-table__row">
+                      <div class="calc-table__cell">Материал </div>
+                      <div class="calc-table__cell">Стекло</div>
+                    </div>
+                    <div class="calc-table__row">
+                      <div class="calc-table__cell">Количество</div>
+                      <div class="calc-table__cell">
+                        <button class="calc-table__btn">-</button><span class="calc-table__num">20</span>
+                        <button class="calc-table__btn">+</button>
+                      </div>
+                    </div>
+                    <div class="calc-table__row">
+                      <div class="calc-table__cell">Цвет</div>
+                      <div class="calc-table__cell calc-table__cell--select calc-table__cell--cupcolor">
+                        <div class="calc-table__color"></div>
+                        <select class="calc-table__select" name="model">
+                          <option class="calc-table__option" value="">Синий</option>
+                          <option class="calc-table__option" value="">Синий</option>
+                          <option class="calc-table__option" value="">Синий</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="calc-table__row">
+                      <div class="calc-table__cell calc-table__cell--hint"><span>Метод печати</span><a class="calc-table__hint" href="#">
+                          <svg class="calc-table__svg" width="16" height="16">
+                            <use xlink:href="assets/images/sprite.svg#icon-help-circle"> </use>
+                          </svg></a></div>
+                      <div class="calc-table__cell calc-table__cell--select">
+                        <select class="calc-table__select" name="">
+                          <option class="calc-table__option" value="">Круговая сублимационная</option>
+                          <option class="calc-table__option" value="">Круговая сублимационная</option>
+                          <option class="calc-table__option" value="">Круговая сублимационная</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="calc-table__row">
+                      <div class="calc-table__cell">Файл принта</div>
+                      <div class="calc-table__cell">
+                        <label class="form__label form__label--file"> 
+                          <svg class="form__svg" width="16" height="16">
+                            <use xlink:href="assets/images/sprite.svg#icon-paperclip"></use>
+                          </svg>
+                          <input class="visually-hidden" type="file" placeholder="Фото">Фото
+                        </label>
+                      </div>
+                    </div>
+                    <div class="calc-table__row">
+                      <div class="calc-table__cell calc-table__cell--hint"><span>Размер печати</span></div>
+                      <div class="calc-table__cell calc-table__cell--select">
+                        <select class="calc-table__select" name="">
+                          <option class="calc-table__option" value="">A6</option>
+                          <option class="calc-table__option" value="">A6</option>
+                          <option class="calc-table__option" value="">A6</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="calc-table__row calc-table__row--sum">
+                      <div class="calc-table__cell">Стоимость изделия</div>
+                      <div class="calc-table__cell">800 ₽</div>
+                    </div>
+                    <div class="calc-table__row calc-table__row--print">
+                      <div class="calc-table__cell">Стоимость печати</div>
+                      <div class="calc-table__cell">800 ₽</div>
+                    </div>
+                    <div class="calc-table__row">
+                      <div class="calc-table__cell">Итого</div>
+                      <div class="calc-table__cell">800 ₽</div>
                     </div>
                   </div>
-                  <div class="calc-table__row">
-                    <div class="calc-table__cell">Цвет</div>
-                    <div class="calc-table__cell calc-table__cell--select calc-table__cell--cupcolor">
-                      <div class="calc-table__color"></div>
-                      <select class="calc-table__select" name="model">
-                        <option class="calc-table__option" value="">Синий</option>
-                        <option class="calc-table__option" value="">Синий</option>
-                        <option class="calc-table__option" value="">Синий</option>
-                      </select>
-                    </div>
+                  <div class="calc__row">
+                    <button class="calc__btn-app main-btn" type="submit">Оставить заявку</button>
                   </div>
-                  <div class="calc-table__row">
-                    <div class="calc-table__cell calc-table__cell--hint"><span>Метод печати</span><a class="calc-table__hint" href="#">
-                        <svg class="calc-table__svg" width="16" height="16">
-                          <use xlink:href="assets/images/sprite.svg#icon-help-circle"> </use>
-                        </svg></a></div>
-                    <div class="calc-table__cell calc-table__cell--select">
-                      <select class="calc-table__select" name="">
-                        <option class="calc-table__option" value="">Круговая сублимационная</option>
-                        <option class="calc-table__option" value="">Круговая сублимационная</option>
-                        <option class="calc-table__option" value="">Круговая сублимационная</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="calc-table__row">
-                    <div class="calc-table__cell">Файл принта</div>
-                    <div class="calc-table__cell">
-                      <label class="form__label form__label--file"> 
-                        <svg class="form__svg" width="16" height="16">
-                          <use xlink:href="assets/images/sprite.svg#icon-paperclip"></use>
-                        </svg>
-                        <input class="visually-hidden" type="file" placeholder="Фото">Фото
-                      </label>
-                    </div>
-                  </div>
-                  <div class="calc-table__row">
-                    <div class="calc-table__cell calc-table__cell--hint"><span>Размер печати</span></div>
-                    <div class="calc-table__cell calc-table__cell--select">
-                      <select class="calc-table__select" name="">
-                        <option class="calc-table__option" value="">A6</option>
-                        <option class="calc-table__option" value="">A6</option>
-                        <option class="calc-table__option" value="">A6</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="calc-table__row calc-table__row--sum">
-                    <div class="calc-table__cell">Стоимость изделия</div>
-                    <div class="calc-table__cell">800 ₽</div>
-                  </div>
-                  <div class="calc-table__row calc-table__row--print">
-                    <div class="calc-table__cell">Стоимость печати</div>
-                    <div class="calc-table__cell">800 ₽</div>
-                  </div>
-                  <div class="calc-table__row">
-                    <div class="calc-table__cell">Итого</div>
-                    <div class="calc-table__cell">800 ₽</div>
-                  </div>
-                </div>
-                <div class="calc__row">
-                  <button class="calc__btn-app main-btn" type="">Оставить заявку</button>
-                </div>
+                </form>
               </div>
             </div>
           </div>
