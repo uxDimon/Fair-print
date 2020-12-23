@@ -107,9 +107,12 @@ if (document.querySelector('.clothes-list__swiper')) {
 if (document.querySelector('.clients__swiper-top')) {
   var mySwiper2 = new Swiper('.clients__swiper-top', {
     // Optional parameters
-    // autoplay: {
-    //   delay: 2000,
-    // },
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+    },
+    speed: 1500,
+    loop: true,
     breakpoints: {
       1024: {
         slidesPerView: 6,
@@ -130,9 +133,12 @@ if (document.querySelector('.clients__swiper-top')) {
 if (document.querySelector('.clients__swiper-bot')) {
   var mySwiper3 = new Swiper('.clients__swiper-bot', {
     // Optional parameters
-    // autoplay: {
-    //   delay: 2000,
-    // },
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+    },
+    speed: 1500,
+    loop: true,
     breakpoints: {
       1024: {
         slidesPerView: 6,
@@ -154,32 +160,72 @@ if (document.querySelector('.clients__swiper-bot')) {
 }
 // clients brand slider end
 
+
 if (document.querySelector('.production__slider')) {
-  var mySwiper9 = new Swiper('.production__slider .swiper-container', {
-    breakpoints: {
-      1350: {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        allowTouchMove: false,
-      },
-      768: {
-        slidesPerView: 2.5,
-        spaceBetween: 20,
-        allowTouchMove: true,
-      },
-      425: {
-        slidesPerView: 2,
-        spaceBetween: 17,
-        allowTouchMove: true,
-      },
-      280: {
-        slidesPerView: 1.5,
-        spaceBetween: 17,
-        allowTouchMove: true,
-      }
-    },
-  });
+  let styleProjects;
+  let sliderOn = false;
+
+  function initSlider() {
+    if (document.body.clientWidth >= 768 && sliderOn) {
+      styleProjects.destroy();
+      sliderOn = false;
+    }
+    if (document.body.clientWidth < 768 && !sliderOn) {
+      styleProjects = new Swiper(".production__slider .swiper-container", {
+        breakpoints: {
+          550: {
+            slidesPerView: 2.5,
+            spaceBetween: 20,
+            allowTouchMove: true,
+          },
+          425: {
+            slidesPerView: 2,
+            spaceBetween: 17,
+            allowTouchMove: true,
+          },
+          280: {
+            slidesPerView: 1.5,
+            spaceBetween: 17,
+            allowTouchMove: true,
+          }
+        },
+      });
+      sliderOn = true;
+    }
+  }
+
+  window.onresize = function () {
+    initSlider();
+  };
+
+  initSlider();
 }
+// if (document.querySelector('.production__slider')) {
+//   var mySwiper9 = new Swiper('.production__slider .swiper-container', {
+//     breakpoints: {
+//       1350: {
+//         slidesPerView: 3,
+//         spaceBetween: 30,
+//         allowTouchMove: false,
+//       },
+//       768: {
+//         slidesPerView: 2.5,
+//         spaceBetween: 20,
+//         allowTouchMove: true,
+//       },
+//       425: {
+//         slidesPerView: 2,
+//         spaceBetween: 17,
+//         allowTouchMove: true,
+//       },
+//       280: {
+//         slidesPerView: 1.5,
+//         spaceBetween: 17,
+//         allowTouchMove: true,
+//       }
+//     },
+//   });
+// }
 if (document.querySelector('.work-examples__swiper')) {
   var mySwiper4 = new Swiper('.work-examples__swiper', {
     // Optional parameters
@@ -345,12 +391,12 @@ if (document.querySelector('.main-size-table')) {
   btnClose.addEventListener('click', function(){
     table.classList.remove('active');
   });
-  let tableOverlay = document.querySelector('.size-table');
-  tableOverlay.addEventListener('click', function(){
-    if(table.classList.contains('active')) {
-      table.classList.remove('active');
-    }
-  });
+  // let tableOverlay = document.querySelector('.size-table');
+  // tableOverlay.addEventListener('click', function(){
+  //   if(table.classList.contains('active')) {
+  //     table.classList.remove('active');
+  //   }
+  // });
 }
 
 //popup write-us
@@ -368,12 +414,12 @@ if (document.querySelectorAll('.js-write')) {
       writePopup.classList.remove('active');
     });
   }
-  let formOverlay = document.querySelector('.form-popup');
-  formOverlay.addEventListener('click', function(){
-    if(writePopup.classList.contains('active')) {
-      writePopup.classList.remove('active');
-    }
-  });
+  // let formOverlay = document.querySelector('.form-popup');
+  // formOverlay.addEventListener('click', function(){
+  //   if(writePopup.classList.contains('active')) {
+  //     writePopup.classList.remove('active');
+  //   }
+  // });
 }
 
 //about text more
