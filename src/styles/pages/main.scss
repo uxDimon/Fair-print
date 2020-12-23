@@ -348,16 +348,25 @@
 .production__slider {
     position: absolute;
     width: 100%;
+    left: 0;
+    padding: 0 15px;
 }
 .production__list {
     max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
     @include list-reset;
+
+    @include w480 {
+        display: flex;
+        column-gap: 0;
+    }
 }
 .production__img-wrap {
     height: 350px;
 
     @include w480 {
-        width: 213px;
         height: 202px;
     }
 }
@@ -404,6 +413,7 @@
 }
 .clients__list {
     @include list-reset;
+    transition-timing-function: linear !important;
 }
 .clients__item {
     width: 170px;

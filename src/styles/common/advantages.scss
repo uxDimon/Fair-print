@@ -28,27 +28,25 @@
     }
 }
 .advantages__item {
+    height: 100%;
+    display: block;
+    padding: 34px 20px 30px;
     background: #FFFFFF;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     border-radius: 15px;
+    cursor: context-menu;
 
     &:hover {
         box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+    }
+    @include w480 {
+        min-height: 220px;
+        padding: 20px;
     }
 }
 .advantages__svg {
     width: 40px;
     height: 40px;
-}
-.advantages__link {
-    height: 100%;
-    display: block;
-    padding: 34px 20px 30px;
-
-    @include w480 {
-        min-height: 220px;
-        padding: 20px;
-    }
 }
 .advantages__caption {
     line-height: 21px;
