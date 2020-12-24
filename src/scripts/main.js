@@ -463,6 +463,22 @@ if (document.querySelectorAll('.application__text-wrap').length) {
   }
 }
 
+//map
+if (document.querySelector('.contact__map-wrap')) {
+  let mapImg = document.querySelector('.contact__map');
+  let map = document.querySelector('.map');
+  mapImg.addEventListener('click', function() {
+    map.classList.add('active');
+  });
+}
+if (document.querySelector('.contacts__map-wrap')) {
+  let mapImg = document.querySelector('.contacts__map');
+  let map = document.querySelector('.map');
+  mapImg.addEventListener('click', function() {
+    map.classList.add('active');
+  });
+}
+
 //accordion
 new Accordion('.help-tabs__wrap');
 new Accordion('.help-tabs__wrap--payment');

@@ -49,6 +49,7 @@
     }
 }
 .contacts__map-wrap {
+    position: relative;
     grid-column: 2 / -1;
     grid-row: 1 / span 2;
     height: 452px;
@@ -66,6 +67,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
+    cursor: pointer;
     @include w480 {
         border-radius: 0;
     }
