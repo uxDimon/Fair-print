@@ -204,19 +204,19 @@
               </div>
             </div>
             <div class="calc__wrap">
-              <form class="form__calc" onsubmit="event.preventDefault();">
+              <form class="form__calc" onsubmit="event.preventDefault();" data-tab>
                 <div class="calc__top">
                   <h2 class="calc__subtitle subtitle">Футболка</h2>
                   <div class="calc__tabs">
                     <label class="calc__radio-label">
-                      <input class="calc__radio-input visually-hidden" type="radio" name="sex" value="male" checked><span class="calc__radio-value">Мужская</span>
+                      <input class="calc__radio-input visually-hidden" type="radio" name="sex" value="male" checked data-nav-tab="tab-1"><span class="calc__radio-value">Мужская</span>
                     </label>
                     <label class="calc__radio-label">
-                      <input class="calc__radio-input visually-hidden" type="radio" name="sex" value="female"><span class="calc__radio-value">Женская</span>
+                      <input class="calc__radio-input visually-hidden" type="radio" name="sex" value="female" data-nav-tab="tab-2"><span class="calc__radio-value">Женская</span>
                     </label>
                   </div><a class="calc__btn btn-red" href="#">Таблица размеров</a>
                 </div>
-                <div class="calc__cont active" id="tab1">
+                <div class="calc__cont active" data-item-tab="tab-1">
                   <div class="calc-table">
                     <div class="calc-table__row">
                       <div class="calc-table__cell">Состав </div>
@@ -359,7 +359,7 @@
                     <button class="calc__btn-app main-btn" type="">Оставить заявку</button><a class="calc__btn-print btn-red" href="#">Нанести принт</a>
                   </div>
                 </div>
-                <div class="calc__cont" id="tab2">
+                <div class="calc__cont" data-item-tab="tab-2">
                   <div class="calc-table">
                     <div class="calc-table__row">
                       <div class="calc-table__cell">Состав </div>
