@@ -60,3 +60,19 @@
 .about__list {
     @include list-reset;
 }
+
+header.main .container .row .header-test {
+    position: relative;
+    padding-left: 23px;
+}
+.header-test::before {
+    position: absolute;
+    content: "";
+    top: 12px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background: url('/img/pics/icon-geolocation.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}

@@ -53,18 +53,61 @@ block content
                                 .calc__img-wrap
                                     img.calc__img(src="assets/images/hoodies-min.png", alt="")
                 .calc__wrap
-                    fomr.calc__form(onsubmit="event.preventDefault();")
+                    fomr.calc__form(onsubmit="event.preventDefault();" data-tab)
                         .calc__top
                             h2.calc__subtitle.subtitle Толстовка
                             .calc__tabs
                                 label.calc__radio-label
-                                    input.calc__radio-input.visually-hidden(type="radio" name="sex" value="male" checked)
+                                    input.calc__radio-input.visually-hidden(type="radio" name="sex" value="male" checked data-nav-tab="tab-1")
                                     span.calc__radio-value Мужская
                                 label.calc__radio-label
-                                    input.calc__radio-input.visually-hidden(type="radio" name="sex" value="female")
+                                    input.calc__radio-input.visually-hidden(type="radio" name="sex" value="female" data-nav-tab="tab-2")
                                     span.calc__radio-value Женская
                             a.calc__btn.btn-red(href="#") Таблица размеров
-                        .calc__cont.active#tab1
+                        .calc__cont.active(data-item-tab="tab-1")
+                            .calc-table
+                                .calc-table__row
+                                    .calc-table__cell Состав 
+                                    .calc-table__cell 100% хлопок, плотность 155-165 гр/м2.
+                                    a.calc__btn.btn-red(href="#") Таблица размеров
+                                .calc-table__row
+                                    .calc-table__cell Количество
+                                    .calc-table__cell
+                                        button.calc-table__btn -
+                                        span.calc-table__num 502
+                                        button.calc-table__btn +
+                                .calc-table__row
+                                    .calc-table__cell Модель
+                                    .calc-table__cell.calc-table__cell--select
+                                        select.calc-table__select(name="model")
+                                            option.calc-table__option(value="") Утеплённая
+                                            option.calc-table__option(value="") Утеплённая
+                                            option.calc-table__option(value="") Утеплённая
+                                .calc-table__row.calc-table__row--color
+                                    .calc-table__cell Доступные цвета
+                                    .calc-table__cell 
+                                        ul.calc__colors.calc-colors
+                                            li.calc-colors__item(style="background-color: #5A040D;")
+                                            li.calc-colors__item(style="background-color: #00B6B1;")
+                                            li.calc-colors__item(style="background-color: #0153AA;")
+                                            li.calc-colors__item(style="background-color: #FFEA00;")
+                                            li.calc-colors__item(style="background-color: #FFFFFF;")
+                                            li.calc-colors__item(style="background-color: #070062;")
+                                            li.calc-colors__item(style="background-color: #D50005;")
+                                            li.calc-colors__item(style="background-color: #FF9000;")
+                                            li.calc-colors__item(style="background-color: #000000;")
+                                            li.calc-colors__item(style="background-color: #808080;")
+                                .calc-table__row.calc-table__row--sum
+                                    .calc-table__cell Стоимость изделий
+                                    .calc-table__cell 1 650 ₽
+                                .calc-table__row
+                                    .calc-table__cell Итого
+                                    .calc-table__cell 2 450 ₽
+                            .calc__row
+                                button.calc__btn-app.main-btn(type="") Оставить заявку
+                                a.calc__btn-print.btn-red(href="#") Нанести принт
+
+                        .calc__cont(data-item-tab="tab-2")
                             .calc-table
                                 .calc-table__row
                                     .calc-table__cell Состав 

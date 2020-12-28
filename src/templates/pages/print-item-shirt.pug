@@ -52,18 +52,18 @@ block content
                                 .calc__img-wrap
                                     img.calc__img(src="assets/images/print-shirt-min.png", alt="")
                 .calc__wrap
-                    form.form__calc(onsubmit="event.preventDefault();")
+                    form.form__calc(onsubmit="event.preventDefault();" data-tab)
                         .calc__top
                             h2.calc__subtitle.subtitle Футболка
                             .calc__tabs
                                 label.calc__radio-label
-                                    input.calc__radio-input.visually-hidden(type="radio" name="sex" value="male" checked)
+                                    input.calc__radio-input.visually-hidden(type="radio" name="sex" value="male" checked data-nav-tab="tab-1")
                                     span.calc__radio-value Мужская
                                 label.calc__radio-label
-                                    input.calc__radio-input.visually-hidden(type="radio" name="sex" value="female")
+                                    input.calc__radio-input.visually-hidden(type="radio" name="sex" value="female" data-nav-tab="tab-2")
                                     span.calc__radio-value Женская
                             a.calc__btn.btn-red(href="#") Таблица размеров
-                        .calc__cont.active#tab1
+                        .calc__cont.active(data-item-tab="tab-1")
                             .calc-table
                                 .calc-table__row
                                     .calc-table__cell Состав 
@@ -173,7 +173,7 @@ block content
                             .calc__row
                                 button.calc__btn-app.main-btn(type="") Оставить заявку
                                 a.calc__btn-print.btn-red(href="#") Нанести принт
-                        .calc__cont#tab2
+                        .calc__cont(data-item-tab="tab-2")
                             .calc-table
                                 .calc-table__row
                                     .calc-table__cell Состав 
