@@ -58,6 +58,11 @@
     color: $color-f-grey;
     cursor: pointer;
 }
+.form__input-file-name {
+    &.active {
+        color: $color-foot-grey;
+    }
+}
 .form__svg {
     margin-right: 10px;
 }

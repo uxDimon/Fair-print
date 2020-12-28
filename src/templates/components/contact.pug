@@ -12,8 +12,8 @@ section.contact
                 label.form__label.form__label--file 
                     svg.form__svg(width="16" height="16")
                         use(xlink:href="assets/images/sprite.svg#icon-paperclip")
-                    input.visually-hidden(type="file" placeholder="Фото")
-                    | Фото
+                    input.visually-hidden(type="file" placeholder="Фото" onchange="uploadFile(this)")
+                    span.form__input-file-name Фото
                 textarea.form__field.form__field--comment(name="" placeholder="Ваш запрос по заказу")
 
                 .form__wrap
