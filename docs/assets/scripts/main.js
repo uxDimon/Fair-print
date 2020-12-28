@@ -19,6 +19,12 @@ if (document.querySelectorAll('.calc-table__cell--select')) {
   }
 }
 
+//input file
+function uploadFile(target) {
+  document.querySelector(".form__input-file-name").innerHTML = target.files[0].name;
+  document.querySelector(".form__input-file-name").classList.add('active');
+}
+
 //calculator tabs
 for (const tabs of document.querySelectorAll("[data-tab]")) {
   const buttons = tabs.querySelectorAll("[data-nav-tab]");

@@ -817,6 +817,9 @@ header.main .container .row .header-test {
   color: #ADADAD;
   cursor: pointer; }
 
+.form__input-file-name.active {
+  color: #42506B; }
+
 .form__svg {
   margin-right: 10px; }
 
