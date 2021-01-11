@@ -1,3 +1,6 @@
+AOS.init();
+window.addEventListener('load', AOS.refresh);
+
 //selects
 if (document.querySelectorAll('.calc-table__cell--select')) {
   let selectWraps = document.querySelectorAll('.calc-table__cell--select');
@@ -221,39 +224,10 @@ if (document.querySelector('.production__slider')) {
 
   initSlider();
 }
-// if (document.querySelector('.production__slider')) {
-//   var mySwiper9 = new Swiper('.production__slider .swiper-container', {
-//     breakpoints: {
-//       1350: {
-//         slidesPerView: 3,
-//         spaceBetween: 30,
-//         allowTouchMove: false,
-//       },
-//       768: {
-//         slidesPerView: 2.5,
-//         spaceBetween: 20,
-//         allowTouchMove: true,
-//       },
-//       425: {
-//         slidesPerView: 2,
-//         spaceBetween: 17,
-//         allowTouchMove: true,
-//       },
-//       280: {
-//         slidesPerView: 1.5,
-//         spaceBetween: 17,
-//         allowTouchMove: true,
-//       }
-//     },
-//   });
-// }
+
 if (document.querySelector('.work-examples__swiper')) {
   var mySwiper4 = new Swiper('.work-examples__swiper', {
     // Optional parameters
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    // },
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -378,8 +352,6 @@ if (document.querySelector('.gallery-thumbs')) {
     }
   });
 }
-
-AOS.init();
 
 //show calculator
 if (document.querySelectorAll('.clothes-list__link').length) {

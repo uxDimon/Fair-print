@@ -633,7 +633,7 @@ template {
       margin-top: 30px;
       padding-bottom: 0; } }
   .work-examples__swiper .swiper-button-next, .work-examples__swiper .swiper-button-prev {
-    top: 35%; }
+    top: 33%; }
     @media screen and (max-width: 767px) {
       .work-examples__swiper .swiper-button-next, .work-examples__swiper .swiper-button-prev {
         display: none; } }
@@ -701,17 +701,9 @@ template {
 .about__title {
   margin-bottom: 45px; }
 
-.about__wrap {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  -moz-column-gap: 30px;
-       column-gap: 30px; }
-  @media screen and (max-width: 767px) {
-    .about__wrap {
-      grid-template-columns: 1fr; } }
-  .about__wrap.more .about__column {
-    display: block;
-    transition: all 0.2s ease 0s; }
+.about__wrap.more .about__column {
+  display: block;
+  transition: all 0.2s ease 0s; }
 
 @media screen and (max-width: 767px) {
   .about__column {
@@ -882,11 +874,14 @@ header.main .container .row .header-test {
       border-radius: 0; } }
 
 .map {
+  display: none;
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
   z-index: 2; }
+  .map.active {
+    display: block; }
 
 .map-widget {
   width: 100%;
@@ -1723,7 +1718,6 @@ header.main .container .row .header-test {
 
 .header-main__search {
   position: absolute;
-  top: -4px;
   right: -6px;
   width: 0;
   height: 100%;
@@ -1843,7 +1837,7 @@ header.main .container .row .header-test {
     .burger-menu .header-main__search:focus + .header-main__search-submit {
       z-index: 3; }
   .burger-menu .header-main__search-submit {
-    top: 6px;
+    top: 10px;
     right: 10px; }
 
 .burger-menu__list,
