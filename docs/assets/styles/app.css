@@ -1733,7 +1733,7 @@ header.main .container .row .header-test {
     z-index: 1;
     background-color: #FFFFFF;
     border: 1px solid #EDEDED;
-    border-radius: 15px;
+    border-radius: 25px;
     outline: none; }
   .header-main__search:focus + .header-main__search-submit {
     z-index: 3; }
