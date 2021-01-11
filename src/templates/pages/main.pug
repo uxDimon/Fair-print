@@ -36,69 +36,59 @@ block content
         section.main-links
             h2.visually-hidden Каталог
             ul.main-links__list
-                li.main-links__item.main-links__item--fir
-                    //- (data-aos="fade-up")
+                li.main-links__item.main-links__item--fir(data-aos="fade-up")
                     a.main-links__link(href="#")
                         img.main-links__img(src="assets/images/product-hoodie-min.png", alt="")
                         .main-links__wrap
                             span.main-links__text Печать на толстовках
                             .main-links__btn от 1650 ₽
-                li.main-links__item.main-links__item--sec
-                    //- (data-aos="fade-up" data-aos-delay="200")
+                li.main-links__item.main-links__item--sec(data-aos="fade-up" data-aos-delay="200")
                     a.main-links__link(href="")
                         .main-links__wrap
                             span.main-links__text Печать на бейсболках
                             .main-links__btn от 1650 ₽
-                li.main-links__item.main-links__item--thir
-                    //- (data-aos="fade-up" data-aos-delay="50")
+                li.main-links__item.main-links__item--thir(data-aos="fade-up" data-aos-delay="50")
                     a.main-links__link(href="#")
                         .main-links__wrap
                             span.main-links__text Печать на бейсболках
                             .main-links__btn от 1650 ₽
-                li.main-links__item.main-links__item--four
-                    //- (data-aos="fade-up" data-aos-delay="200")
+                li.main-links__item.main-links__item--four(data-aos="fade-up" data-aos-delay="200")
                     a.main-links__link(href="#")
                         img.main-links__img(src="assets/images/product-cap-min.png", alt="")
                         .main-links__wrap
                             span.main-links__text Печать на бейсболках
                             .main-links__btn от 1650 ₽
-                li.main-links__item.main-links__item--fif
-                    //- (data-aos="fade-up" data-aos-delay="50")
+                li.main-links__item.main-links__item--fif(data-aos="fade-up" data-aos-delay="50")
                     a.main-links__link(href="#")
                         img.main-links__img(src="assets/images/product-cups-min.png", alt="")
                         .main-links__wrap
                             span.main-links__text Печать на бейсболках
                             .main-links__btn от 1650 ₽
-                li.main-links__item.main-links__item--six
-                    //- (data-aos="fade-up" data-aos-delay="200")
+                li.main-links__item.main-links__item--six(data-aos="fade-up" data-aos-delay="200")
                     a.main-links__link(href="#")
                         img.main-links__img(src="assets/images/product-bomber-min.png", alt="")
                         .main-links__wrap
                             span.main-links__text Печать на бейсболках
                             .main-links__btn от 1650 ₽
-                li.main-links__item.main-links__item--sev
-                    //- (data-aos="fade-up" data-aos-delay="50")
+                li.main-links__item.main-links__item--sev(data-aos="fade-up" data-aos-delay="50")
                     a.main-links__link(href="#")
                         img.main-links__img(src="assets/images/product-sweatshot-min.png", alt="")
                         .main-links__wrap
                             span.main-links__text Печать на бейсболках
                             .main-links__btn от 1650 ₽
-                li.main-links__item.main-links__item--eig
-                    //- (data-aos="fade-up" data-aos-delay="200")
+                li.main-links__item.main-links__item--eig(data-aos="fade-up" data-aos-delay="200")
                     a.main-links__link(href="#")
                         img.main-links__img(src="assets/images/product-cases-min.png", alt="")
                         .main-links__wrap
                             span.main-links__text Печать на бейсболках
                             .main-links__btn от 1650 ₽
-                li.main-links__item.main-links__item--nin
-                    //- (data-aos="fade-up" data-aos-delay="50")
+                li.main-links__item.main-links__item--nin(data-aos="fade-up" data-aos-delay="50")
                     a.main-links__link(href="#")
                         img.main-links__img(src="assets/images/product-mask-min.png", alt="")
                         .main-links__wrap
                             span.main-links__text Печать на бейсболках
                             .main-links__btn от 1650 ₽
-                li.main-links__item.main-links__item--ten
-                    //- (data-aos="fade-up" data-aos-delay="200")
+                li.main-links__item.main-links__item--ten(data-aos="fade-up" data-aos-delay="200")
                     a.main-links__link(href="#")
                         .main-links__wrap
                             span.main-links__text Печать на бейсболках
@@ -114,12 +104,10 @@ block content
                     include ../components/clothes-list.pug
                     .swiper-pagination
 
-        .main-advantages
-            //- (data-aos="fade-up")
+        .main-advantages(data-aos="fade-up")
             include ../components/advantages.pug
 
-        section.production
-            //- (data-aos="fade-up")
+        section.production(data-aos="fade-up")
             .container
                 .production__wrap
                     .production__left
@@ -172,8 +160,7 @@ block content
                             a.clients__link(href="#")
                                 img.clients__img(src="assets/images/logo-craft-store.png", width="100%" height="80" alt="")
                 
-                .clients__swiper-bot.swiper-container(dir="rtl")
-                    //- data-aos="fade-right"
+                .clients__swiper-bot.swiper-container(dir="rtl" /*data-aos="fade-right"*/)
                     ul.clients__list.swiper-wrapper
                         li.clients__item.swiper-slide
                             a.clients__link(href="#")

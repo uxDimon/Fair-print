@@ -11,13 +11,13 @@
     margin-bottom: 45px;
 }
 .about__wrap {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 30px;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    // column-gap: 30px;
 
-    @include w480 {
-        grid-template-columns: 1fr;
-    }
+    // @include w480 {
+    //     grid-template-columns: 1fr;
+    // }
 
     &.more {
         .about__column {
