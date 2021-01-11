@@ -1,20 +1,18 @@
 .clothes-list {
-    // display: grid;
-    // grid-template-columns: repeat(5, 1fr);
-    // column-gap: 30px;
-    // row-gap: 60px;
     @include list-reset;
+    justify-content: space-between;
 }
 .clothes-list__swiper {
+    overflow: visible;
+    @include w480 {
+        padding-bottom: 45px;
+    }
     .swiper-pagination {
         display: none;
         
         @include w480 {
             display: block;
         }
-    }
-    @include w480 {
-        padding-bottom: 45px;
     }
 }
 .catalog-list__item {
@@ -34,7 +32,6 @@
 }
 .clothes-list__img-wrap {
     position: relative;
-    width: 210px;
     height: 300px;
     border-radius: 15px;
     overflow: hidden;
