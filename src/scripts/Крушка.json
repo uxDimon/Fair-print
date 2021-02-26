@@ -1,0 +1,17 @@
+// Крушка
+{
+	"name": "Керамическая кружка",
+	"material": "Стекло",
+	"prise": 1000,
+	"imgUrl": ["http://localhost:3000/assets/images/product-cup.png", "http://localhost:3000/assets/images/product-cup.png", "http://localhost:3000/assets/images/product-cup.png"],
+	"colors": [
+		{
+			"name": "Синий",
+			"hex": "#29619B"
+		},
+		{
+			"name": "Зеленый",
+			"hex": "#6a9b29"
+		}
+	]
+}

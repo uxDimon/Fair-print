@@ -1,0 +1,54 @@
+// Толстовка
+{
+	"name": "Толстовка",
+	"material": "100% хлопок, плотность 155-165 гр/м2.",
+	"imgUrl": ["http://localhost:3000/assets/images/product-cup.png", "http://localhost:3000/assets/images/product-cup.png", "http://localhost:3000/assets/images/product-cup.png"],
+	"male": {
+		"available-colors": [
+			{
+				"name": "Синий",
+				"hex": "#29619B"
+			},
+			{
+				"name": "Зеленый",
+				"hex": "#6a9b29"
+			}
+		],
+		"model": [
+			{
+				"name": "Утеплённая",
+				"prise": 1200,
+				"id": "mh1"
+			},
+			{
+				"name": "Утеплённая2",
+				"prise": 1300,
+				"id": "mh2"
+			}
+		]
+	},
+	"female": {
+		"available-colors": [
+			{
+				"name": "Синий",
+				"hex": "#29619B"
+			},
+			{
+				"name": "Зеленый",
+				"hex": "#6a9b29"
+			}
+		],
+		"model": [
+			{
+				"name": "Утеплённая",
+				"prise": 800,
+				"id": "wh1"
+			},
+			{
+				"name": "Утеплённая2",
+				"prise": 900,
+				"id": "wh2"
+			}
+		]
+	}
+}
